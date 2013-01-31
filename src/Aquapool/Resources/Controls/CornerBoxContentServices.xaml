@@ -1,0 +1,76 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls"
+	mc:Ignorable="d"
+	x:Class="Aquapool.CornerBoxContentServices"
+	d:DesignWidth="180" d:DesignHeight="200" Width="Auto" Height="Auto">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.067*"/>
+			<ColumnDefinition Width="0.111*"/>
+			<ColumnDefinition Width="0.061*"/>
+			<ColumnDefinition Width="0.439*"/>
+			<ColumnDefinition Width="0.309*"/>
+			<ColumnDefinition Width="0.013*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.065*"/>
+			<RowDefinition Height="0.02*"/>
+			<RowDefinition Height="0.1*"/>
+			<RowDefinition Height="0.01*"/>
+			<RowDefinition Height="0.135*"/>
+			<RowDefinition Height="0.43*"/>
+			<RowDefinition Height="0.24*"/>
+		</Grid.RowDefinitions>
+		<Grid Grid.Column="1" Grid.Row="2"> 
+		<controls:Viewbox x:Name="Group" Width="20" Height="20.0088" Canvas.Left="0" Canvas.Top="0">
+			<Canvas Width="20" Height="20.0088">
+				<Path x:Name="Path" Width="20" Height="20.0088" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FF124F6D" Data="F1 M 20,20.0088L 0,20.0088L 0,0L 20,0L 20,20.0088"/>
+				<controls:Viewbox x:Name="Group_0" Width="20" Height="20.0088" Canvas.Left="0" Canvas.Top="0">
+					<Canvas Width="20" Height="20.0088">
+						<Canvas Width="800" Height="600.264" x:Name="Clip" Clip="F1 M 20,20.0088L 0,20.0088L 0,0L 20,0L 20,20.0088">
+							<Path x:Name="Path_1" Width="20" Height="20.0088" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Data="F1 M 19.9727,0L 19.9727,0C 9.13855,0 0.458008,8.6308 0,19.3564L 0,20.0088L 20,20.0088L 19.9727,0">
+								<Path.Fill>
+									<LinearGradientBrush StartPoint="1.68296,1.0981" EndPoint="2.68207,1.0981">
+										<LinearGradientBrush.RelativeTransform>
+											<TransformGroup>
+												<SkewTransform CenterX="1.68296" CenterY="1.0981" AngleX="-0.0249277" AngleY="0"/>
+												<RotateTransform CenterX="1.68296" CenterY="1.0981" Angle="229.988"/>
+											</TransformGroup>
+										</LinearGradientBrush.RelativeTransform>
+										<LinearGradientBrush.GradientStops>
+											<GradientStop Color="#FF2B566B" Offset="0"/>
+											<GradientStop Color="#FF426D82" Offset="0.482437"/>
+											<GradientStop Color="#FF5A8499" Offset="1"/>
+										</LinearGradientBrush.GradientStops>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+						</Canvas>
+					</Canvas>
+				</controls:Viewbox>
+				<Path x:Name="Path_2" Width="9.15515" Height="4.57764" Canvas.Left="8.34351" Canvas.Top="12.2194" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 15.2105,16.7971L 15.2105,14.9658L 8.34351,14.9658L 8.34351,14.0507L 15.2105,14.0507L 15.2105,12.2194L 17.4987,14.5078L 15.2105,16.7971 Z "/>
+			</Canvas>
+		</controls:Viewbox>
+		</Grid>
+		<controls:Viewbox Margin="0,0,0,0" Grid.ColumnSpan="4" Grid.RowSpan="1" Grid.Row="5" Grid.Column="1">
+			<TextBlock x:Name="TextBlock" TextAlignment="Left" Width="111" Height="57" Canvas.Left="0" Canvas.Top="0" RenderTransformOrigin="0.5,0.5"><TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform><Run FontFamily="Verdana" FontSize="6.75" Text="Die Unternehmensgruppe" Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontWeight="Bold" FontSize="6.75" Text="www.aquapool-werlsee.de" Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontSize="6.75" Text="heißt Sie recht" Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontSize="6.75" Text="Herzlich Willkommen." Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontSize="6.75" Text="Auf unserer Webpräsenz" Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontSize="6.75" Text="möchten wir Sie ausführlich" Foreground="#FF4D4D4D"/><Run Text=" "/><LineBreak/><Run FontFamily="Verdana" FontSize="6.75" Text="über unser Angebot informieren." Foreground="#FF4D4D4D"/></TextBlock>
+		</controls:Viewbox>
+		<controls:Viewbox Margin="0,0,0,0" Grid.ColumnSpan="1" Grid.RowSpan="3" Grid.Row="1" Grid.Column="3">
+			<TextBlock TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana" FontSize="11" FontWeight="Bold" Height="Auto" Width="Auto">
+				DIENST-<LineBreak/>LEISTUNGEN
+			</TextBlock>
+		</controls:Viewbox>
+	</Grid>
+</UserControl>

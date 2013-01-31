@@ -1,0 +1,12 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Aquapool.AquaCursor" d:DesignHeight="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="19" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+	<Grid x:Name="LayoutRoot" HorizontalAlignment="Left" VerticalAlignment="Top">
+		<Image Margin="0,0,0,0" Source="../Images/ap_cursor.png" Stretch="Fill"/>
+	</Grid>
+</UserControl>

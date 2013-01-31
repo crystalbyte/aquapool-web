@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6ECECE5-F977-4E2F-9144-092D59FA88FA}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aquapool</RootNamespace>
+    <AssemblyName>Aquapool</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Aquapool.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Aquapool.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>false</ThrowErrorsInValidation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crystalbyte.Transition, Version=1.0.0.0, Culture=neutral, PublicKeyToken=13976087e7cabc87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Crystalbyte Silverlight Library\Crystalbyte.Library\Crystalbyte.Library\Bin\Release\Crystalbyte.Transition.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Controls, Version=2.0.21024.1838, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Externals\Silverlight Toolkit\Microsoft.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Page Include="Resources\Background\HeaderGradient.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AbtiwaLogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AbtiwaMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AbtiwaSide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AquaCursor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\CornerBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\CornerBoxContentServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\DiveBureauLogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\DiveBureauMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\DiveBureauPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\DiveBureauSide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AbtiwaThumbnailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ImprintSideLineControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Resources\Background\HeaderGradient.xaml.cs">
+      <DependentUpon>HeaderGradient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AbtiwaLogo.xaml.cs">
+      <DependentUpon>AbtiwaLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AbtiwaMain.xaml.cs">
+      <DependentUpon>AbtiwaMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AbtiwaSide.xaml.cs">
+      <DependentUpon>AbtiwaSide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AquaCursor.xaml.cs">
+      <DependentUpon>AquaCursor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\CornerBox.xaml.cs">
+      <DependentUpon>CornerBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\CornerBoxContentServices.xaml.cs">
+      <DependentUpon>CornerBoxContentServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\DiveBureauLogo.xaml.cs">
+      <DependentUpon>DiveBureauLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\DiveBureauMain.xaml.cs">
+      <DependentUpon>DiveBureauMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\DiveBureauPage.xaml.cs">
+      <DependentUpon>DiveBureauPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\DiveBureauSide.xaml.cs">
+      <DependentUpon>DiveBureauSide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AbtiwaThumbnailPage.xaml.cs">
+      <DependentUpon>AbtiwaThumbnailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ImprintSideLineControl.xaml.cs">
+      <DependentUpon>ImprintSideLineControl.xaml</DependentUpon>
+    </Compile>
+    <Resource Include="Resources\Images\ap_cursor.png" />
+    <Resource Include="Resources\Images\map.jpg" />
+    <Resource Include="Resources\Images\taucher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effects\ClearEffect.cs" />
+    <Compile Include="Effects\FadeOutEffect.cs" />
+    <Compile Include="Page.xaml.cs">
+      <DependentUpon>Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Background\Wave.xaml.cs">
+      <DependentUpon>Wave.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\AbtiwaPage.xaml.cs">
+      <DependentUpon>AbtiwaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ButtonContactControl.xaml.cs">
+      <DependentUpon>ButtonContactControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ButtonHomeControl.xaml.cs">
+      <DependentUpon>ButtonHomeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ButtonImprintControl.xaml.cs">
+      <DependentUpon>ButtonImprintControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ButtonServicesControl.xaml.cs">
+      <DependentUpon>ButtonServicesControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ContactPage.xaml.cs">
+      <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\CornerBoxContentAbtiwa.xaml.cs">
+      <DependentUpon>CornerBoxContentAbtiwa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\CornerBoxContentDiveBureau.xaml.cs">
+      <DependentUpon>CornerBoxContentDiveBureau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\CornerBoxContentImprint.xaml.cs">
+      <DependentUpon>CornerBoxContentImprint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\GalleryButton.xaml.cs">
+      <DependentUpon>GalleryButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\GalleryPageAbtiwa.xaml.cs">
+      <DependentUpon>GalleryPageAbtiwa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ImprintPage.xaml.cs">
+      <DependentUpon>ImprintPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\Logo.xaml.cs">
+      <DependentUpon>Logo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\PlaceboControl.xaml.cs">
+      <DependentUpon>PlaceboControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\Seperator.xaml.cs">
+      <DependentUpon>Seperator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controls\ThumbnailControl.xaml.cs">
+      <DependentUpon>ThumbnailControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Background\Wave.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\AbtiwaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ButtonContactControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ButtonHomeControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ButtonImprintControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ButtonServicesControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ContactPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\CornerBoxContentAbtiwa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\CornerBoxContentDiveBureau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\CornerBoxContentImprint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\GalleryButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\GalleryPageAbtiwa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ImprintPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\Logo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\PlaceboControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\Seperator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls\ThumbnailControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\logo_werlsee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\hg_verlauf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\hg_welle_klein_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Abtiwa\t1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Abtiwa\t2.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t3.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t4.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t5.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t6.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t7.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\ap.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
