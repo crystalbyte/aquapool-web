@@ -1,208 +1,245 @@
 ﻿<UserControl
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	mc:Ignorable="d"
-	x:Class="Nbw.home"
-	d:DesignWidth="875" d:DesignHeight="600" xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls" xmlns:Nbw="clr-namespace:Nbw">
-	
-	<Grid x:Name="LayoutRoot_Copy" Height="Auto" Width="Auto">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="0.047*"/>
-			<RowDefinition Height="0.042*"/>
-			<RowDefinition Height="0.277*"/>
-			<RowDefinition Height="0.027*"/>
-			<RowDefinition Height="0.043*"/>
-			<RowDefinition Height="0.055*"/>
-			<RowDefinition Height="0.128*"/>
-			<RowDefinition Height="0.183*"/>
-			<RowDefinition Height="0.198*"/>
-		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="0.039*"/>
-			<ColumnDefinition Width="0.207*"/>
-			<ColumnDefinition Width="0.056*"/>
-			<ColumnDefinition Width="0.002*"/>
-			<ColumnDefinition Width="0.034*"/>
-			<ColumnDefinition Width="Auto" />
-			<ColumnDefinition Width="0.529*"/>
-			<ColumnDefinition Width="0.091*"/>
-			<ColumnDefinition Width="0.041*"/>
-		</Grid.ColumnDefinitions>
-		<Rectangle Grid.ColumnSpan="9" Grid.Row="3" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="0,0,0,-37">
-			<Rectangle.Fill>
-				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-					<GradientStop Color="#C0FFFFFF"/>
-					<GradientStop Color="#08FFFFFF" Offset="1"/>
-					<GradientStop Color="#7FC4DBED" Offset="0.504"/>
-				</LinearGradientBrush>
-			</Rectangle.Fill>
-		</Rectangle>
-		<controls:Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="ViewboxAquaHeader" Width="Auto" Grid.Column="1" Grid.Row="1" Grid.RowSpan="1">
-			<Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF" d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD" FontSize="7" x:Name="ButtonAquaHeaderDisabled" Padding="0,0,0,0" >
-				<TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="Herzlich Willkommen!" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0"/>
-			</Button>
-		</controls:Viewbox>
-		<controls:Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Margin="0,0,0,0" Grid.ColumnSpan="3" Grid.RowSpan="1" Grid.Row="2" Grid.Column="1">
-			<TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="10.5" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
-			<Run Text="Die Unternehmensgruppe " Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="www.aquapool-werlsee.de heißt Sie" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="recht Herzlich Willkommen." Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="Auf unserer Webpräsenz möchten" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="wir Sie ausführlich über unser" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="Angebot informieren." Foreground="#FF67A0CD"/>
-		</TextBlock>
-		</controls:Viewbox>
-		<controls:Viewbox HorizontalAlignment="Stretch" Margin="0,0,84,0" x:Name="ViewboxGalleryHeader" Width="Auto" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="4">
-			<Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF" d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD" FontSize="7" x:Name="ButtonAquaHeaderDisabled2" Padding="0,0,0,0" >
-				<TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="Kontakt" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0"/>
-			</Button>
-		</controls:Viewbox>
-		<controls:Viewbox Margin="0,0,0,0" Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2">
-			<TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="10.5" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0">
-			<Run Text="Sollten Sie Fragen und / oder" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="Anregungen haben, kontaktieren Sie " Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="uns bitte!" Foreground="#FF67A0CD"/>
-			<LineBreak/>
-			<LineBreak/><Run Text="Telefon:" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="+49 (0) 3362-23344" Foreground="#FF67A0CD"/>
-			<LineBreak/>
-			<LineBreak/><Run Text="Fax:" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="+49 (0) 3362-23355" Foreground="#FF67A0CD"/>
-			<LineBreak/>
-			<LineBreak/><Run Text="E-Mail:" Foreground="#FF67A0CD"/>
-			<LineBreak/><Run Text="info@auqapool-werlsee.de" Foreground="#FF67A0CD"/>
-		</TextBlock>
-		</controls:Viewbox>
-		<controls:Viewbox Margin="0,0,0,0" Grid.Column="6" Grid.RowSpan="9" VerticalAlignment="Top" Grid.ColumnSpan="3">
-		<Canvas x:Name="Start_8" Width="600.943" Height="612.847" Canvas.Left="0" Canvas.Top="0">
-		<Path x:Name="Karte_10" Width="476.798" Height="403.712" Canvas.Left="4.57224" Canvas.Top="107.151" Stretch="Fill" Data="M 402.828,306.675L 422.187,276.222L 406.525,280.49L 405.797,272.382L 378.61,264.518L 375.561,241.547L 345.765,213.869L 320.162,213.926L 320.775,194.732L 309.56,194.429L 311.96,184.029L 314.418,174.716L 325.287,170.175L 326.477,160.524L 329.367,137.683L 319.802,139.212L 303.347,123.974L 301.357,116.874L 298.647,107.151L 270.306,111.238L 284.873,131.412L 290.301,133.373L 290.373,134.036L 290.892,136.264L 291.685,138.512L 292.766,140.775L 292.78,140.797L 289.379,146.037L 274.451,147.443L 270.306,158.592L 260.735,159.868L 241.057,150.001L 221.856,170.723L 198.388,171.632L 173.947,169.396L 172.614,168.243L 167.524,163.53L 163.82,159.904L 162.125,154.088L 168.592,146.347L 159.747,132.45L 162.796,125.062L 156.208,121.307L 142.622,123.066L 145.483,135.982L 146.219,151.017L 133.85,152.07L 135.003,171.516L 101.545,172.179L 92.8232,203.144L 89.234,207.223L 99.7142,222.648L 96.3631,225.819L 51.624,218.323L 31.7021,230.144L 29.6835,239.225L 45.4688,237.762L 42.1818,252.026L 44.6187,261.779L 33.526,261.411L 34.0084,271.775L 36.4518,279.517L 33.5911,295.662L 37.6123,300.534L 36.4518,310.596L 50.9612,320.348L 26.7581,355.082L 19.0811,358.319L 17.0704,394.394L 26.7581,410.178L 4.57224,431.204L 8.60147,446.137L 19.0811,444.126L 34.3835,462.773L 32.0047,467.162L 38.463,470.393L 48.5252,461.497L 69.9177,461.129L 69.9177,452.236L 66.2561,449.001L 102.641,427.55L 105.445,429.986L 117.575,427.973L 121.164,447.781L 126.044,444.126L 140.971,445.713L 155.545,435.225L 167.971,450.585L 190.222,438.454L 210.396,453.88L 209.235,459.912L 222.52,462.773L 224.538,472.043L 252.388,476.426L 259.942,459.485L 252.388,432.73L 278.956,422.31L 290.236,447.781L 321.38,440.897L 333.879,448.148L 347.531,438.093L 350.824,454.247L 373.435,449.792L 389.948,467.162L 402.446,459.12L 415.729,472.402L 408.314,496.225L 416.58,510.863L 424.263,509.645L 433.59,482.58L 451.747,471.185L 456.59,452.263L 451.264,451.378L 460.591,440.465L 472.253,438.39L 479.417,423.16L 475.46,410.424L 481.37,389.824L 474.422,373.368L 460.461,357.46L 448.518,357.46L 430.116,339.485L 399.273,337.956L 389.89,349.418L 394.337,333.51L 404.334,319.066L 396.284,317.054L 402.828,306.675 Z ">
-			<Path.Fill>
-				<RadialGradientBrush RadiusX="0.463267" RadiusY="0.547134" Center="0.499999,0.5" GradientOrigin="0.499999,0.5">
-					<RadialGradientBrush.GradientStops>
-						<GradientStop Color="#FF009240" Offset="0"/>
-						<GradientStop Color="#FF008437" Offset="0.502825"/>
-						<GradientStop Color="#FF00772E" Offset="1"/>
-					</RadialGradientBrush.GradientStops>
-					<RadialGradientBrush.RelativeTransform>
-						<TransformGroup/>
-					</RadialGradientBrush.RelativeTransform>
-				</RadialGradientBrush>
-			</Path.Fill>
-		</Path>
-		<controls:Viewbox x:Name="Berlin_11" Width="265.44" Height="78.72" Canvas.Left="99.3432" Canvas.Top="315.247">
-			<Canvas Width="265.44" Height="78.72">
-				<Path Width="46.9874" Height="60.8047" Canvas.Left="6.11676" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 41.7849,36.2745C 48.8666,33.8909 52.6041,28.1633 52.6041,19.3337C 52.6041,9.47546 46.0768,6.7724 32.0065,6.7724L 19.3585,6.7724L 6.61676,66.5771L 27.5475,66.5771C 41.6248,66.5771 48.4655,60.2968 48.4655,46.9327C 48.4655,41.6866 46.3168,38.2631 41.7849,36.2745 Z M 26.1997,56.3966L 22.6223,56.3966L 26.0396,40.2515L 29.4572,40.2515C 32.7147,40.2515 34.7037,42.4003 34.7037,46.1387C 34.7037,52.6596 31.6058,56.3966 26.1997,56.3966 Z M 31.2855,30.7871L 28.1084,30.7871L 31.2052,16.2363L 34.3089,16.2363C 37.4126,16.2363 39.1621,18.0657 39.1621,21.4828C 39.1621,27.2891 36.2984,30.7871 31.2855,30.7871 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="3.18282,0.525315" EndPoint="3.18282,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-				</Path>
-				<Path Width="45.6326" Height="60.8047" Canvas.Left="52.5648" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 95.228,18.1454L 97.6974,6.7724L 65.8066,6.7724L 53.0648,66.5771L 85.6832,66.5771L 88.1527,54.962L 69.6244,54.962L 72.5615,40.9657L 89.7415,40.9657L 92.211,29.5187L 75.0305,29.5187L 77.4138,18.1454L 95.228,18.1454 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="2.23875,0.525315" EndPoint="2.23875,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-				</Path>
-				<Path Width="47.6147" Height="60.8047" Canvas.Left="93.6068" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 140.722,21.0097C 140.722,16.3167 139.294,12.7329 136.263,10.19C 132.766,7.16614 127.52,6.7724 120.124,6.7724L 106.842,6.7724L 94.1068,66.5771L 108.11,66.5771L 113.283,41.9198L 116.787,41.9198C 119.723,41.9198 121.553,43.5953 121.553,46.2186C 121.553,51.3852 119.09,57.2719 119.09,62.9185C 119.09,64.3477 119.243,65.5423 119.723,66.5771L 134.354,66.5771L 134.354,65.3806C 133.646,64.1141 133.407,62.678 133.407,60.9295C 133.407,55.4431 135.636,50.1162 135.636,45.265C 135.636,41.1259 133.727,38.7435 129.348,37.6293C 136.984,35.7995 140.722,30.2342 140.722,21.0097 Z M 118.535,31.3484L 115.585,31.3484L 118.615,16.9509L 121.712,16.9509C 124.89,16.9509 126.645,18.859 126.645,22.1969C 126.645,28.0048 123.782,31.3484 118.535,31.3484 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="1.26311,0.525315" EndPoint="1.26311,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-				</Path>
-				<Path Width="36.1612" Height="60.8047" Canvas.Left="140.529" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 157.661,54.8093L 167.841,6.7724L 153.764,6.7724L 141.029,66.5771L 173.728,66.5771L 176.19,54.8093L 157.661,54.8093 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="0.340079,0.525315" EndPoint="0.340079,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-				</Path>
-				<Path Width="27.8184" Height="60.8047" Canvas.Left="177.586" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 190.741,6.7724L 178.086,66.5771L 192.175,66.5771L 204.904,6.7724L 190.741,6.7724 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="-0.935902,0.525315" EndPoint="-0.935902,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-					
-				</Path>
-				<Path Width="51.6724" Height="60.8047" Canvas.Left="202.008" Canvas.Top="6.2724" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FF0088B7" Data="M 239.978,6.7724L 236.081,25.4608C 235.84,26.8081 235.046,32.3759 233.772,42.2406L 233.458,42.2406C 232.663,33.33 232.183,28.2437 232.023,26.9688L 229.4,6.7724L 215.163,6.7724L 202.508,66.5771L 215.643,66.5771L 219.461,47.7271C 220.176,44.23 220.81,38.3434 221.684,29.9932L 222.245,29.9932C 222.639,35.3195 223.199,40.8129 223.833,46.2988L 226.296,66.5771L 240.453,66.5771L 253.181,6.7724L 239.978,6.7724 Z ">
-					<Path.Fill>
-						<LinearGradientBrush StartPoint="-0.977304,0.525315" EndPoint="-0.977304,-0.284745">
-							<LinearGradientBrush.GradientStops>
-								<GradientStop Color="#FFFFFFFF" Offset="0"/>
-								<GradientStop Color="#FFFFFFFF" Offset="0.00561798"/>
-								<GradientStop Color="#FF7FC3DB" Offset="0.538136"/>
-								<GradientStop Color="#FF0088B7" Offset="1"/>
-							</LinearGradientBrush.GradientStops>
-						</LinearGradientBrush>
-					</Path.Fill>
-				</Path>
-			</Canvas>
-		</controls:Viewbox>
-		<controls:Viewbox x:Name="Welle_18" Width="808.872" Height="696.339" Canvas.Left="-105.238" Canvas.Top="-41.037">
-			<Canvas Width="808.872" Height="696.339">
-				<Canvas Width="600.943" Height="612.847" Clip="M 808.872,696.339L 105.238,696.339L 105.238,41.0368L 808.872,41.0368L 808.872,696.339 Z ">
-					<controls:Viewbox Width="697.126" Height="666.193" Canvas.Left="0" Canvas.Top="0">
-						<Canvas Width="697.126" Height="666.193">
-							<Path Width="117.073" Height="86.2462" Canvas.Left="570.311" Canvas.Top="156.546" Stretch="Fill" Data="M 669.624,199.168C 642.906,175.825 605.039,161.097 570.311,156.546C 588.777,174.277 607.381,191.887 626.234,209.218C 635.427,217.661 664.215,252.076 681.192,240.4C 697.126,229.443 678.284,206.73 669.624,199.168 Z ">
-								<Path.Fill>
-									<LinearGradientBrush StartPoint="-1.30335e-007,0.5" EndPoint="1,0.5">
-										<LinearGradientBrush.GradientStops>
-											<GradientStop Color="#FF3B89C5" Offset="0"/>
-											<GradientStop Color="#FF5FA1D1" Offset="0.745763"/>
-											<GradientStop Color="#FF83BADD" Offset="1"/>
-										</LinearGradientBrush.GradientStops>
-									</LinearGradientBrush>
-								</Path.Fill>
-							</Path>
-							<Path Width="634.817" Height="622.242" Canvas.Left="8.64537" Canvas.Top="11.7809" Stretch="Fill" Data="M 635.348,323.204C 581.806,268.587 508.342,229.443 442.666,192.204C 477.724,207.535 513.22,221.77 546.862,240.036C 568.659,251.869 590.472,263.707 612.284,275.54C 616.64,277.903 624.968,273.519 627.312,269.734C 632.773,260.922 621.235,250.408 615.453,244.628C 590.732,219.997 564.32,196.972 537.127,175.131C 516.509,158.576 495.182,140.404 472.246,127.144C 465.435,123.202 452.432,116.73 450.389,108.401C 445.832,89.8226 502.488,121.318 503.611,121.863C 517.237,128.412 531.828,135.34 546.917,137.62C 551.943,138.38 575.396,127.121 567.094,122.187C 572.186,125.216 611.148,149.489 612.341,136.679C 613.558,123.487 583.946,103.214 575.716,96.5906C 545.001,71.9366 510.141,52.2114 473.655,37.5042C 380.594,0 254.166,2.11816 164.048,53.042C 59.7317,111.987 0,227.358 9.66307,343.346L 9.72128,343.231C 10.9977,360.423 13.7204,377.731 17.9628,395.022C 59.2411,563.269 229.097,666.193 397.345,624.915C 506.872,598.043 588.121,518.168 620.512,418.223L 620.403,418.009C 525.762,557.584 376.437,644.381 182.805,539.299C 134.989,513.351 92.4037,439.378 86.5788,384.734C 81.8825,340.603 85.9937,287.961 125.068,260.08C 172.059,226.55 209.268,266.15 249.919,285.249C 269.244,294.323 291.568,298.411 312.394,292.528C 335.608,285.963 361.205,294.91 380.864,307.105C 409.827,325.082 436.743,351.633 472.304,355.609C 495.424,358.209 503.923,341.642 492.929,322.691C 487.779,313.817 430.888,269.019 462.085,278.2C 489.784,286.357 516.38,300.892 542.636,312.762C 571.4,325.773 600.686,341.328 631.03,350.365C 650.126,356.045 643.605,331.63 635.348,323.204 Z M 494.724,161.184C 509.082,169.909 556.284,196.045 548.152,214.865C 541.301,230.718 479.21,191.28 466.204,185.963C 433.343,172.519 399.728,160.795 366.128,149.31C 387.905,154.334 409.695,159.348 431.473,164.371C 438.093,165.903 485.299,180.991 468.627,164.775C 429.438,126.649 373.371,111.476 321.125,100.413C 381.551,110.531 442.086,129.218 494.724,161.184 Z M 370.766,72.5975C 441.918,82.9377 435.719,100.099 435.719,100.099C 432.185,110.512 412.583,101.425 412.583,101.425C 297.97,59.178 201.867,92.32 201.867,92.32C 278.131,59.7112 370.766,72.5975 370.766,72.5975 Z M 311.548,277.141C 306.953,284.453 293.648,273.939 293.648,273.939C 213.873,220.779 134.457,228.54 134.457,228.54C 198.626,217.562 266.979,244.301 266.979,244.301C 319.424,265.175 311.548,277.141 311.548,277.141 Z M 534.706,294.716C 494.149,276.346 452.78,259.468 410.831,244.551C 409.457,244.055 364.726,228.798 375.414,239.946C 385.605,250.582 403.752,254.673 416.303,262.123C 428.685,269.459 443.698,278.919 447.774,293.663C 451.198,306.102 443.084,319.607 430.326,309.56C 399.126,284.981 364.447,264.647 326.96,251.416C 292.945,239.41 258.904,227.413 224.522,216.492C 218.218,214.492 201.863,212.97 197.747,207.598C 190.456,198.077 212.443,203.074 217.646,204.614C 254.806,215.573 291.63,227.968 327.667,242.243C 335.997,245.538 430.591,292.622 431.481,290.98C 437.63,279.7 338.252,231.203 332.608,225.867C 306.224,200.959 353.878,207.931 367.67,212.01C 397.578,220.854 427.225,230.855 456.276,242.171C 474.418,249.242 492.516,256.812 509.581,266.216C 513.117,268.164 548.866,289.526 534.706,294.716 Z ">
-								<Path.Fill>
-									<LinearGradientBrush StartPoint="-0.0136187,0.516383" EndPoint="1.0105,0.516383">
-										<LinearGradientBrush.GradientStops>
-											<GradientStop Color="#FF3B89C5" Offset="0"/>
-											<GradientStop Color="#FF5FA1D1" Offset="0.745763"/>
-											<GradientStop Color="#FF83BADD" Offset="1"/>
-										</LinearGradientBrush.GradientStops>
-									</LinearGradientBrush>
-								</Path.Fill>
-							</Path>
-						</Canvas>
-					</controls:Viewbox>
-				</Canvas>
-			</Canvas>
-		</controls:Viewbox>
-		<Path Width="0.5" Height="614.744" Canvas.Left="-0.0975647" Canvas.Top="0.331879" Stretch="Fill" Fill="#FF105A92" Data="F1 M 0.402435,5.66519L 0.402435,8.33188L -0.0975647,8.33188L -0.0975647,5.66519L 0.402435,5.66519 Z M 0.402435,10.9986L 0.402435,13.6652L -0.0975647,13.6652L -0.0975647,10.9986L 0.402435,10.9986 Z M 0.402435,16.3319L 0.402435,18.9986L -0.0975647,18.9986L -0.0975647,16.3319L 0.402435,16.3319 Z M 0.402435,21.6652L 0.402435,24.3319L -0.0975647,24.3319L -0.0975647,21.6652L 0.402435,21.6652 Z M 0.402435,26.9986L 0.402435,29.6652L -0.0975647,29.6652L -0.0975647,26.9986L 0.402435,26.9986 Z M 0.402435,32.3319L 0.402435,34.9986L -0.0975647,34.9986L -0.0975647,32.3319L 0.402435,32.3319 Z M 0.402435,37.6652L 0.402435,40.3319L -0.0975647,40.3319L -0.0975647,37.6652L 0.402435,37.6652 Z M 0.402435,42.9986L 0.402435,45.6652L -0.0975647,45.6652L -0.0975647,42.9986L 0.402435,42.9986 Z M 0.402435,48.3319L 0.402435,50.9986L -0.0975647,50.9986L -0.0975647,48.3319L 0.402435,48.3319 Z M 0.402435,53.6652L 0.402435,56.3319L -0.0975647,56.3319L -0.0975647,53.6652L 0.402435,53.6652 Z M 0.402435,58.9986L 0.402435,61.6652L -0.0975647,61.6652L -0.0975647,58.9986L 0.402435,58.9986 Z M 0.402435,64.3319L 0.402435,66.9986L -0.0975647,66.9986L -0.0975647,64.3319L 0.402435,64.3319 Z M 0.402435,69.6652L 0.402435,72.3319L -0.0975647,72.3319L -0.0975647,69.6652L 0.402435,69.6652 Z M 0.402435,74.9986L 0.402435,77.6652L -0.0975647,77.6652L -0.0975647,74.9986L 0.402435,74.9986 Z M 0.402435,80.3319L 0.402435,82.9986L -0.0975647,82.9986L -0.0975647,80.3319L 0.402435,80.3319 Z M 0.402435,85.6652L 0.402435,88.3319L -0.0975647,88.3319L -0.0975647,85.6652L 0.402435,85.6652 Z M 0.402435,90.9986L 0.402435,93.6652L -0.0975647,93.6652L -0.0975647,90.9986L 0.402435,90.9986 Z M 0.402435,96.3319L 0.402435,98.9986L -0.0975647,98.9986L -0.0975647,96.3319L 0.402435,96.3319 Z M 0.402435,101.665L 0.402435,104.332L -0.0975647,104.332L -0.0975647,101.665L 0.402435,101.665 Z M 0.402435,106.999L 0.402435,109.665L -0.0975647,109.665L -0.0975647,106.999L 0.402435,106.999 Z M 0.402435,112.332L 0.402435,114.999L -0.0975647,114.999L -0.0975647,112.332L 0.402435,112.332 Z M 0.402435,117.665L 0.402435,120.332L -0.0975647,120.332L -0.0975647,117.665L 0.402435,117.665 Z M 0.402435,122.999L 0.402435,125.665L -0.0975647,125.665L -0.0975647,122.999L 0.402435,122.999 Z M 0.402435,128.332L 0.402435,130.999L -0.0975647,130.999L -0.0975647,128.332L 0.402435,128.332 Z M 0.402435,133.665L 0.402435,136.332L -0.0975647,136.332L -0.0975647,133.665L 0.402435,133.665 Z M 0.402435,138.999L 0.402435,141.665L -0.0975647,141.665L -0.0975647,138.999L 0.402435,138.999 Z M 0.402435,144.332L 0.402435,146.999L -0.0975647,146.999L -0.0975647,144.332L 0.402435,144.332 Z M 0.402435,149.665L 0.402435,152.332L -0.0975647,152.332L -0.0975647,149.665L 0.402435,149.665 Z M 0.402435,154.999L 0.402435,157.665L -0.0975647,157.665L -0.0975647,154.999L 0.402435,154.999 Z M 0.402435,160.332L 0.402435,162.999L -0.0975647,162.999L -0.0975647,160.332L 0.402435,160.332 Z M 0.402435,165.665L 0.402435,168.332L -0.0975647,168.332L -0.0975647,165.665L 0.402435,165.665 Z M 0.402435,170.999L 0.402435,173.665L -0.0975647,173.665L -0.0975647,170.999L 0.402435,170.999 Z M 0.402435,176.332L 0.402435,178.999L -0.0975647,178.999L -0.0975647,176.332L 0.402435,176.332 Z M 0.402435,181.665L 0.402435,184.332L -0.0975647,184.332L -0.0975647,181.665L 0.402435,181.665 Z M 0.402435,186.999L 0.402435,189.665L -0.0975647,189.665L -0.0975647,186.999L 0.402435,186.999 Z M 0.402435,192.332L 0.402435,194.999L -0.0975647,194.999L -0.0975647,192.332L 0.402435,192.332 Z M 0.402435,197.665L 0.402435,200.332L -0.0975647,200.332L -0.0975647,197.665L 0.402435,197.665 Z M 0.402435,202.999L 0.402435,205.665L -0.0975647,205.665L -0.0975647,202.999L 0.402435,202.999 Z M 0.402435,208.332L 0.402435,210.999L -0.0975647,210.999L -0.0975647,208.332L 0.402435,208.332 Z M 0.402435,213.665L 0.402435,216.332L -0.0975647,216.332L -0.0975647,213.665L 0.402435,213.665 Z M 0.402435,218.999L 0.402435,221.665L -0.0975647,221.665L -0.0975647,218.999L 0.402435,218.999 Z M 0.402435,224.332L 0.402435,226.999L -0.0975647,226.999L -0.0975647,224.332L 0.402435,224.332 Z M 0.402435,229.665L 0.402435,232.332L -0.0975647,232.332L -0.0975647,229.665L 0.402435,229.665 Z M 0.402435,234.999L 0.402435,237.665L -0.0975647,237.665L -0.0975647,234.999L 0.402435,234.999 Z M 0.402435,240.332L 0.402435,242.999L -0.0975647,242.999L -0.0975647,240.332L 0.402435,240.332 Z M 0.402435,245.665L 0.402435,248.332L -0.0975647,248.332L -0.0975647,245.665L 0.402435,245.665 Z M 0.402435,250.999L 0.402435,253.665L -0.0975647,253.665L -0.0975647,250.999L 0.402435,250.999 Z M 0.402435,256.332L 0.402435,258.999L -0.0975647,258.999L -0.0975647,256.332L 0.402435,256.332 Z M 0.402435,261.665L 0.402435,264.332L -0.0975647,264.332L -0.0975647,261.665L 0.402435,261.665 Z M 0.402435,266.999L 0.402435,269.665L -0.0975647,269.665L -0.0975647,266.999L 0.402435,266.999 Z M 0.402435,272.332L 0.402435,274.999L -0.0975647,274.999L -0.0975647,272.332L 0.402435,272.332 Z M 0.402435,277.665L 0.402435,280.332L -0.0975647,280.332L -0.0975647,277.665L 0.402435,277.665 Z M 0.402435,282.999L 0.402435,285.665L -0.0975647,285.665L -0.0975647,282.999L 0.402435,282.999 Z M 0.402435,288.332L 0.402435,290.999L -0.0975647,290.999L -0.0975647,288.332L 0.402435,288.332 Z M 0.402435,293.665L 0.402435,296.332L -0.0975647,296.332L -0.0975647,293.665L 0.402435,293.665 Z M 0.402435,298.999L 0.402435,301.665L -0.0975647,301.665L -0.0975647,298.999L 0.402435,298.999 Z M 0.402435,304.332L 0.402435,306.999L -0.0975647,306.999L -0.0975647,304.332L 0.402435,304.332 Z M 0.402435,309.665L 0.402435,312.332L -0.0975647,312.332L -0.0975647,309.665L 0.402435,309.665 Z M 0.402435,314.999L 0.402435,317.665L -0.0975647,317.665L -0.0975647,314.999L 0.402435,314.999 Z M 0.402435,320.332L 0.402435,322.999L -0.0975647,322.999L -0.0975647,320.332L 0.402435,320.332 Z M 0.402435,325.665L 0.402435,328.332L -0.0975647,328.332L -0.0975647,325.665L 0.402435,325.665 Z M 0.402435,330.999L 0.402435,333.665L -0.0975647,333.665L -0.0975647,330.999L 0.402435,330.999 Z M 0.402435,336.332L 0.402435,338.999L -0.0975647,338.999L -0.0975647,336.332L 0.402435,336.332 Z M 0.402435,341.665L 0.402435,344.332L -0.0975647,344.332L -0.0975647,341.665L 0.402435,341.665 Z M 0.402435,346.999L 0.402435,349.665L -0.0975647,349.665L -0.0975647,346.999L 0.402435,346.999 Z M 0.402435,352.332L 0.402435,354.999L -0.0975647,354.999L -0.0975647,352.332L 0.402435,352.332 Z M 0.402435,357.665L 0.402435,360.332L -0.0975647,360.332L -0.0975647,357.665L 0.402435,357.665 Z M 0.402435,362.999L 0.402435,365.665L -0.0975647,365.665L -0.0975647,362.999L 0.402435,362.999 Z M 0.402435,368.332L 0.402435,370.999L -0.0975647,370.999L -0.0975647,368.332L 0.402435,368.332 Z M 0.402435,373.665L 0.402435,376.332L -0.0975647,376.332L -0.0975647,373.665L 0.402435,373.665 Z M 0.402435,378.999L 0.402435,381.665L -0.0975647,381.665L -0.0975647,378.999L 0.402435,378.999 Z M 0.402435,384.332L 0.402435,386.999L -0.0975647,386.999L -0.0975647,384.332L 0.402435,384.332 Z M 0.402435,389.665L 0.402435,392.332L -0.0975647,392.332L -0.0975647,389.665L 0.402435,389.665 Z M 0.402435,394.999L 0.402435,397.665L -0.0975647,397.665L -0.0975647,394.999L 0.402435,394.999 Z M 0.402435,400.332L 0.402435,402.999L -0.0975647,402.999L -0.0975647,400.332L 0.402435,400.332 Z M 0.402435,405.665L 0.402435,408.332L -0.0975647,408.332L -0.0975647,405.665L 0.402435,405.665 Z M 0.402435,410.999L 0.402435,413.665L -0.0975647,413.665L -0.0975647,410.999L 0.402435,410.999 Z M 0.402435,416.332L 0.402435,418.999L -0.0975647,418.999L -0.0975647,416.332L 0.402435,416.332 Z M 0.402435,421.665L 0.402435,424.332L -0.0975647,424.332L -0.0975647,421.665L 0.402435,421.665 Z M 0.402435,426.999L 0.402435,429.665L -0.0975647,429.665L -0.0975647,426.999L 0.402435,426.999 Z M 0.402435,432.332L 0.402435,434.999L -0.0975647,434.999L -0.0975647,432.332L 0.402435,432.332 Z M 0.402435,437.665L 0.402435,440.332L -0.0975647,440.332L -0.0975647,437.665L 0.402435,437.665 Z M 0.402435,442.999L 0.402435,445.665L -0.0975647,445.665L -0.0975647,442.999L 0.402435,442.999 Z M 0.402435,448.332L 0.402435,450.999L -0.0975647,450.999L -0.0975647,448.332L 0.402435,448.332 Z M 0.402435,453.665L 0.402435,456.332L -0.0975647,456.332L -0.0975647,453.665L 0.402435,453.665 Z M 0.402435,458.999L 0.402435,461.665L -0.0975647,461.665L -0.0975647,458.999L 0.402435,458.999 Z M 0.402435,464.332L 0.402435,466.999L -0.0975647,466.999L -0.0975647,464.332L 0.402435,464.332 Z M 0.402435,469.665L 0.402435,472.332L -0.0975647,472.332L -0.0975647,469.665L 0.402435,469.665 Z M 0.402435,474.999L 0.402435,477.665L -0.0975647,477.665L -0.0975647,474.999L 0.402435,474.999 Z M 0.402435,480.332L 0.402435,482.999L -0.0975647,482.999L -0.0975647,480.332L 0.402435,480.332 Z M 0.402435,485.665L 0.402435,488.332L -0.0975647,488.332L -0.0975647,485.665L 0.402435,485.665 Z M 0.402435,490.999L 0.402435,493.665L -0.0975647,493.665L -0.0975647,490.999L 0.402435,490.999 Z M 0.402435,496.332L 0.402435,498.999L -0.0975647,498.999L -0.0975647,496.332L 0.402435,496.332 Z M 0.402435,501.665L 0.402435,504.332L -0.0975647,504.332L -0.0975647,501.665L 0.402435,501.665 Z M 0.402435,506.999L 0.402435,509.665L -0.0975647,509.665L -0.0975647,506.999L 0.402435,506.999 Z M 0.402435,512.332L 0.402435,514.999L -0.0975647,514.999L -0.0975647,512.332L 0.402435,512.332 Z M 0.402435,517.665L 0.402435,520.332L -0.0975647,520.332L -0.0975647,517.665L 0.402435,517.665 Z M 0.402435,522.999L 0.402435,525.665L -0.0975647,525.665L -0.0975647,522.999L 0.402435,522.999 Z M 0.402435,528.332L 0.402435,530.999L -0.0975647,530.999L -0.0975647,528.332L 0.402435,528.332 Z M 0.402435,533.665L 0.402435,536.332L -0.0975647,536.332L -0.0975647,533.665L 0.402435,533.665 Z M 0.402435,538.999L 0.402435,541.665L -0.0975647,541.665L -0.0975647,538.999L 0.402435,538.999 Z M 0.402435,544.332L 0.402435,546.999L -0.0975647,546.999L -0.0975647,544.332L 0.402435,544.332 Z M 0.402435,549.665L 0.402435,552.332L -0.0975647,552.332L -0.0975647,549.665L 0.402435,549.665 Z M 0.402435,554.999L 0.402435,557.665L -0.0975647,557.665L -0.0975647,554.999L 0.402435,554.999 Z M 0.402435,560.332L 0.402435,562.999L -0.0975647,562.999L -0.0975647,560.332L 0.402435,560.332 Z M 0.402435,565.665L 0.402435,568.332L -0.0975647,568.332L -0.0975647,565.665L 0.402435,565.665 Z M 0.402435,570.999L 0.402435,573.665L -0.0975647,573.665L -0.0975647,570.999L 0.402435,570.999 Z M 0.402435,576.332L 0.402435,578.999L -0.0975647,578.999L -0.0975647,576.332L 0.402435,576.332 Z M 0.402435,581.665L 0.402435,584.332L -0.0975647,584.332L -0.0975647,581.665L 0.402435,581.665 Z M 0.402435,586.999L 0.402435,589.665L -0.0975647,589.665L -0.0975647,586.999L 0.402435,586.999 Z M 0.402435,592.332L 0.402435,594.999L -0.0975647,594.999L -0.0975647,592.332L 0.402435,592.332 Z M 0.402435,597.665L 0.402435,600.332L -0.0975647,600.332L -0.0975647,597.665L 0.402435,597.665 Z M 0.402435,602.999L 0.402435,605.665L -0.0975647,605.665L -0.0975647,602.999L 0.402435,602.999 Z M 0.402435,608.332L 0.402435,610.999L -0.0975647,610.999L -0.0975647,608.332L 0.402435,608.332 Z M 0.402435,613.665L 0.402435,615.075L -0.0975647,615.075L -0.0975647,613.665L 0.402435,613.665 Z M 0.402435,0.331879L 0.402435,2.99857L -0.0975647,2.99857L -0.0975647,0.331879L 0.402435,0.331879 Z "/>
-	</Canvas>
-		</controls:Viewbox>
-		<Nbw:RedDot Grid.Column="7" Grid.Row="6"/>
-	</Grid>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="Aquapool.Nbw.home"
+    d:DesignWidth="875" d:DesignHeight="600"
+    xmlns:local="clr-namespace:Aquapool.Nbw">
+
+    <Grid x:Name="LayoutRoot_Copy" Height="Auto" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.047*" />
+            <RowDefinition Height="0.042*" />
+            <RowDefinition Height="0.277*" />
+            <RowDefinition Height="0.027*" />
+            <RowDefinition Height="0.043*" />
+            <RowDefinition Height="0.055*" />
+            <RowDefinition Height="0.128*" />
+            <RowDefinition Height="0.183*" />
+            <RowDefinition Height="0.198*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.039*" />
+            <ColumnDefinition Width="0.207*" />
+            <ColumnDefinition Width="0.056*" />
+            <ColumnDefinition Width="0.002*" />
+            <ColumnDefinition Width="0.034*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="0.529*" />
+            <ColumnDefinition Width="0.091*" />
+            <ColumnDefinition Width="0.041*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.ColumnSpan="9" Grid.Row="3" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="0,0,0,-37">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#C0FFFFFF" />
+                    <GradientStop Color="#08FFFFFF" Offset="1" />
+                    <GradientStop Color="#7FC4DBED" Offset="0.504" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="ViewboxAquaHeader" Width="Auto"
+                          Grid.Column="1" Grid.Row="1" Grid.RowSpan="1">
+            <Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF"
+                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
+                    FontSize="7" x:Name="ButtonAquaHeaderDisabled" Padding="0,0,0,0">
+                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="Herzlich Willkommen!"
+                           FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0" />
+            </Button>
+        </Viewbox>
+        <Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto"
+                          Margin="0,0,0,0" Grid.ColumnSpan="3" Grid.RowSpan="1" Grid.Row="2" Grid.Column="1">
+            <TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="10.5" Width="Auto"
+                       Height="Auto" Canvas.Left="0" Canvas.Top="0">
+                <Run Text="Die Unternehmensgruppe " Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="www.aquapool-werlsee.de heißt Sie" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="recht Herzlich Willkommen." Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="Auf unserer Webpräsenz möchten" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="wir Sie ausführlich über unser" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="Angebot informieren." Foreground="#FF67A0CD" />
+            </TextBlock>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Stretch" Margin="0,0,84,0" x:Name="ViewboxGalleryHeader" Width="Auto"
+                          Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="4">
+            <Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF"
+                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
+                    FontSize="7" x:Name="ButtonAquaHeaderDisabled2" Padding="0,0,0,0">
+                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="Kontakt" FontFamily="Trebuchet MS"
+                           FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0" />
+            </Button>
+        </Viewbox>
+        <Viewbox Margin="0,0,0,0" Grid.Column="1" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="10.5" Width="Auto"
+                       Height="Auto" Canvas.Left="0" Canvas.Top="0">
+                <Run Text="Sollten Sie Fragen und / oder" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="Anregungen haben, kontaktieren Sie " Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="uns bitte!" Foreground="#FF67A0CD" />
+                <LineBreak />
+                <LineBreak /><Run Text="Telefon:" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="+49 (0) 3362-23344" Foreground="#FF67A0CD" />
+                <LineBreak />
+                <LineBreak /><Run Text="Fax:" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="+49 (0) 3362-23355" Foreground="#FF67A0CD" />
+                <LineBreak />
+                <LineBreak /><Run Text="E-Mail:" Foreground="#FF67A0CD" />
+                <LineBreak /><Run Text="info@auqapool-werlsee.de" Foreground="#FF67A0CD" />
+            </TextBlock>
+        </Viewbox>
+        <Viewbox Margin="0,0,0,0" Grid.Column="6" Grid.RowSpan="9" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <Canvas x:Name="Start_8" Width="600.943" Height="612.847" Canvas.Left="0" Canvas.Top="0">
+                <Path x:Name="Karte_10" Width="476.798" Height="403.712" Canvas.Left="4.57224" Canvas.Top="107.151"
+                      Stretch="Fill"
+                      Data="M 402.828,306.675L 422.187,276.222L 406.525,280.49L 405.797,272.382L 378.61,264.518L 375.561,241.547L 345.765,213.869L 320.162,213.926L 320.775,194.732L 309.56,194.429L 311.96,184.029L 314.418,174.716L 325.287,170.175L 326.477,160.524L 329.367,137.683L 319.802,139.212L 303.347,123.974L 301.357,116.874L 298.647,107.151L 270.306,111.238L 284.873,131.412L 290.301,133.373L 290.373,134.036L 290.892,136.264L 291.685,138.512L 292.766,140.775L 292.78,140.797L 289.379,146.037L 274.451,147.443L 270.306,158.592L 260.735,159.868L 241.057,150.001L 221.856,170.723L 198.388,171.632L 173.947,169.396L 172.614,168.243L 167.524,163.53L 163.82,159.904L 162.125,154.088L 168.592,146.347L 159.747,132.45L 162.796,125.062L 156.208,121.307L 142.622,123.066L 145.483,135.982L 146.219,151.017L 133.85,152.07L 135.003,171.516L 101.545,172.179L 92.8232,203.144L 89.234,207.223L 99.7142,222.648L 96.3631,225.819L 51.624,218.323L 31.7021,230.144L 29.6835,239.225L 45.4688,237.762L 42.1818,252.026L 44.6187,261.779L 33.526,261.411L 34.0084,271.775L 36.4518,279.517L 33.5911,295.662L 37.6123,300.534L 36.4518,310.596L 50.9612,320.348L 26.7581,355.082L 19.0811,358.319L 17.0704,394.394L 26.7581,410.178L 4.57224,431.204L 8.60147,446.137L 19.0811,444.126L 34.3835,462.773L 32.0047,467.162L 38.463,470.393L 48.5252,461.497L 69.9177,461.129L 69.9177,452.236L 66.2561,449.001L 102.641,427.55L 105.445,429.986L 117.575,427.973L 121.164,447.781L 126.044,444.126L 140.971,445.713L 155.545,435.225L 167.971,450.585L 190.222,438.454L 210.396,453.88L 209.235,459.912L 222.52,462.773L 224.538,472.043L 252.388,476.426L 259.942,459.485L 252.388,432.73L 278.956,422.31L 290.236,447.781L 321.38,440.897L 333.879,448.148L 347.531,438.093L 350.824,454.247L 373.435,449.792L 389.948,467.162L 402.446,459.12L 415.729,472.402L 408.314,496.225L 416.58,510.863L 424.263,509.645L 433.59,482.58L 451.747,471.185L 456.59,452.263L 451.264,451.378L 460.591,440.465L 472.253,438.39L 479.417,423.16L 475.46,410.424L 481.37,389.824L 474.422,373.368L 460.461,357.46L 448.518,357.46L 430.116,339.485L 399.273,337.956L 389.89,349.418L 394.337,333.51L 404.334,319.066L 396.284,317.054L 402.828,306.675 Z ">
+                    <Path.Fill>
+                        <RadialGradientBrush RadiusX="0.463267" RadiusY="0.547134" Center="0.499999,0.5"
+                                             GradientOrigin="0.499999,0.5">
+                            <RadialGradientBrush.GradientStops>
+                                <GradientStop Color="#FF009240" Offset="0" />
+                                <GradientStop Color="#FF008437" Offset="0.502825" />
+                                <GradientStop Color="#FF00772E" Offset="1" />
+                            </RadialGradientBrush.GradientStops>
+                            <RadialGradientBrush.RelativeTransform>
+                                <TransformGroup />
+                            </RadialGradientBrush.RelativeTransform>
+                        </RadialGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Viewbox x:Name="Berlin_11" Width="265.44" Height="78.72" Canvas.Left="99.3432"
+                                  Canvas.Top="315.247">
+                    <Canvas Width="265.44" Height="78.72">
+                        <Path Width="46.9874" Height="60.8047" Canvas.Left="6.11676" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 41.7849,36.2745C 48.8666,33.8909 52.6041,28.1633 52.6041,19.3337C 52.6041,9.47546 46.0768,6.7724 32.0065,6.7724L 19.3585,6.7724L 6.61676,66.5771L 27.5475,66.5771C 41.6248,66.5771 48.4655,60.2968 48.4655,46.9327C 48.4655,41.6866 46.3168,38.2631 41.7849,36.2745 Z M 26.1997,56.3966L 22.6223,56.3966L 26.0396,40.2515L 29.4572,40.2515C 32.7147,40.2515 34.7037,42.4003 34.7037,46.1387C 34.7037,52.6596 31.6058,56.3966 26.1997,56.3966 Z M 31.2855,30.7871L 28.1084,30.7871L 31.2052,16.2363L 34.3089,16.2363C 37.4126,16.2363 39.1621,18.0657 39.1621,21.4828C 39.1621,27.2891 36.2984,30.7871 31.2855,30.7871 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="3.18282,0.525315" EndPoint="3.18282,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Path Width="45.6326" Height="60.8047" Canvas.Left="52.5648" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 95.228,18.1454L 97.6974,6.7724L 65.8066,6.7724L 53.0648,66.5771L 85.6832,66.5771L 88.1527,54.962L 69.6244,54.962L 72.5615,40.9657L 89.7415,40.9657L 92.211,29.5187L 75.0305,29.5187L 77.4138,18.1454L 95.228,18.1454 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="2.23875,0.525315" EndPoint="2.23875,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Path Width="47.6147" Height="60.8047" Canvas.Left="93.6068" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 140.722,21.0097C 140.722,16.3167 139.294,12.7329 136.263,10.19C 132.766,7.16614 127.52,6.7724 120.124,6.7724L 106.842,6.7724L 94.1068,66.5771L 108.11,66.5771L 113.283,41.9198L 116.787,41.9198C 119.723,41.9198 121.553,43.5953 121.553,46.2186C 121.553,51.3852 119.09,57.2719 119.09,62.9185C 119.09,64.3477 119.243,65.5423 119.723,66.5771L 134.354,66.5771L 134.354,65.3806C 133.646,64.1141 133.407,62.678 133.407,60.9295C 133.407,55.4431 135.636,50.1162 135.636,45.265C 135.636,41.1259 133.727,38.7435 129.348,37.6293C 136.984,35.7995 140.722,30.2342 140.722,21.0097 Z M 118.535,31.3484L 115.585,31.3484L 118.615,16.9509L 121.712,16.9509C 124.89,16.9509 126.645,18.859 126.645,22.1969C 126.645,28.0048 123.782,31.3484 118.535,31.3484 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="1.26311,0.525315" EndPoint="1.26311,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Path Width="36.1612" Height="60.8047" Canvas.Left="140.529" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 157.661,54.8093L 167.841,6.7724L 153.764,6.7724L 141.029,66.5771L 173.728,66.5771L 176.19,54.8093L 157.661,54.8093 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="0.340079,0.525315" EndPoint="0.340079,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Path Width="27.8184" Height="60.8047" Canvas.Left="177.586" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 190.741,6.7724L 178.086,66.5771L 192.175,66.5771L 204.904,6.7724L 190.741,6.7724 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="-0.935902,0.525315" EndPoint="-0.935902,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+
+                        </Path>
+                        <Path Width="51.6724" Height="60.8047" Canvas.Left="202.008" Canvas.Top="6.2724" Stretch="Fill"
+                              StrokeMiterLimit="2.75" Stroke="#FF0088B7"
+                              Data="M 239.978,6.7724L 236.081,25.4608C 235.84,26.8081 235.046,32.3759 233.772,42.2406L 233.458,42.2406C 232.663,33.33 232.183,28.2437 232.023,26.9688L 229.4,6.7724L 215.163,6.7724L 202.508,66.5771L 215.643,66.5771L 219.461,47.7271C 220.176,44.23 220.81,38.3434 221.684,29.9932L 222.245,29.9932C 222.639,35.3195 223.199,40.8129 223.833,46.2988L 226.296,66.5771L 240.453,66.5771L 253.181,6.7724L 239.978,6.7724 Z ">
+                            <Path.Fill>
+                                <LinearGradientBrush StartPoint="-0.977304,0.525315" EndPoint="-0.977304,-0.284745">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Color="#FFFFFFFF" Offset="0" />
+                                        <GradientStop Color="#FFFFFFFF" Offset="0.00561798" />
+                                        <GradientStop Color="#FF7FC3DB" Offset="0.538136" />
+                                        <GradientStop Color="#FF0088B7" Offset="1" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                    </Canvas>
+                </Viewbox>
+                <Viewbox x:Name="Welle_18" Width="808.872" Height="696.339" Canvas.Left="-105.238"
+                                  Canvas.Top="-41.037">
+                    <Canvas Width="808.872" Height="696.339">
+                        <Canvas Width="600.943" Height="612.847"
+                                Clip="M 808.872,696.339L 105.238,696.339L 105.238,41.0368L 808.872,41.0368L 808.872,696.339 Z ">
+                            <Viewbox Width="697.126" Height="666.193" Canvas.Left="0" Canvas.Top="0">
+                                <Canvas Width="697.126" Height="666.193">
+                                    <Path Width="117.073" Height="86.2462" Canvas.Left="570.311" Canvas.Top="156.546"
+                                          Stretch="Fill"
+                                          Data="M 669.624,199.168C 642.906,175.825 605.039,161.097 570.311,156.546C 588.777,174.277 607.381,191.887 626.234,209.218C 635.427,217.661 664.215,252.076 681.192,240.4C 697.126,229.443 678.284,206.73 669.624,199.168 Z ">
+                                        <Path.Fill>
+                                            <LinearGradientBrush StartPoint="-1.30335e-007,0.5" EndPoint="1,0.5">
+                                                <LinearGradientBrush.GradientStops>
+                                                    <GradientStop Color="#FF3B89C5" Offset="0" />
+                                                    <GradientStop Color="#FF5FA1D1" Offset="0.745763" />
+                                                    <GradientStop Color="#FF83BADD" Offset="1" />
+                                                </LinearGradientBrush.GradientStops>
+                                            </LinearGradientBrush>
+                                        </Path.Fill>
+                                    </Path>
+                                    <Path Width="634.817" Height="622.242" Canvas.Left="8.64537" Canvas.Top="11.7809"
+                                          Stretch="Fill"
+                                          Data="M 635.348,323.204C 581.806,268.587 508.342,229.443 442.666,192.204C 477.724,207.535 513.22,221.77 546.862,240.036C 568.659,251.869 590.472,263.707 612.284,275.54C 616.64,277.903 624.968,273.519 627.312,269.734C 632.773,260.922 621.235,250.408 615.453,244.628C 590.732,219.997 564.32,196.972 537.127,175.131C 516.509,158.576 495.182,140.404 472.246,127.144C 465.435,123.202 452.432,116.73 450.389,108.401C 445.832,89.8226 502.488,121.318 503.611,121.863C 517.237,128.412 531.828,135.34 546.917,137.62C 551.943,138.38 575.396,127.121 567.094,122.187C 572.186,125.216 611.148,149.489 612.341,136.679C 613.558,123.487 583.946,103.214 575.716,96.5906C 545.001,71.9366 510.141,52.2114 473.655,37.5042C 380.594,0 254.166,2.11816 164.048,53.042C 59.7317,111.987 0,227.358 9.66307,343.346L 9.72128,343.231C 10.9977,360.423 13.7204,377.731 17.9628,395.022C 59.2411,563.269 229.097,666.193 397.345,624.915C 506.872,598.043 588.121,518.168 620.512,418.223L 620.403,418.009C 525.762,557.584 376.437,644.381 182.805,539.299C 134.989,513.351 92.4037,439.378 86.5788,384.734C 81.8825,340.603 85.9937,287.961 125.068,260.08C 172.059,226.55 209.268,266.15 249.919,285.249C 269.244,294.323 291.568,298.411 312.394,292.528C 335.608,285.963 361.205,294.91 380.864,307.105C 409.827,325.082 436.743,351.633 472.304,355.609C 495.424,358.209 503.923,341.642 492.929,322.691C 487.779,313.817 430.888,269.019 462.085,278.2C 489.784,286.357 516.38,300.892 542.636,312.762C 571.4,325.773 600.686,341.328 631.03,350.365C 650.126,356.045 643.605,331.63 635.348,323.204 Z M 494.724,161.184C 509.082,169.909 556.284,196.045 548.152,214.865C 541.301,230.718 479.21,191.28 466.204,185.963C 433.343,172.519 399.728,160.795 366.128,149.31C 387.905,154.334 409.695,159.348 431.473,164.371C 438.093,165.903 485.299,180.991 468.627,164.775C 429.438,126.649 373.371,111.476 321.125,100.413C 381.551,110.531 442.086,129.218 494.724,161.184 Z M 370.766,72.5975C 441.918,82.9377 435.719,100.099 435.719,100.099C 432.185,110.512 412.583,101.425 412.583,101.425C 297.97,59.178 201.867,92.32 201.867,92.32C 278.131,59.7112 370.766,72.5975 370.766,72.5975 Z M 311.548,277.141C 306.953,284.453 293.648,273.939 293.648,273.939C 213.873,220.779 134.457,228.54 134.457,228.54C 198.626,217.562 266.979,244.301 266.979,244.301C 319.424,265.175 311.548,277.141 311.548,277.141 Z M 534.706,294.716C 494.149,276.346 452.78,259.468 410.831,244.551C 409.457,244.055 364.726,228.798 375.414,239.946C 385.605,250.582 403.752,254.673 416.303,262.123C 428.685,269.459 443.698,278.919 447.774,293.663C 451.198,306.102 443.084,319.607 430.326,309.56C 399.126,284.981 364.447,264.647 326.96,251.416C 292.945,239.41 258.904,227.413 224.522,216.492C 218.218,214.492 201.863,212.97 197.747,207.598C 190.456,198.077 212.443,203.074 217.646,204.614C 254.806,215.573 291.63,227.968 327.667,242.243C 335.997,245.538 430.591,292.622 431.481,290.98C 437.63,279.7 338.252,231.203 332.608,225.867C 306.224,200.959 353.878,207.931 367.67,212.01C 397.578,220.854 427.225,230.855 456.276,242.171C 474.418,249.242 492.516,256.812 509.581,266.216C 513.117,268.164 548.866,289.526 534.706,294.716 Z ">
+                                        <Path.Fill>
+                                            <LinearGradientBrush StartPoint="-0.0136187,0.516383"
+                                                                 EndPoint="1.0105,0.516383">
+                                                <LinearGradientBrush.GradientStops>
+                                                    <GradientStop Color="#FF3B89C5" Offset="0" />
+                                                    <GradientStop Color="#FF5FA1D1" Offset="0.745763" />
+                                                    <GradientStop Color="#FF83BADD" Offset="1" />
+                                                </LinearGradientBrush.GradientStops>
+                                            </LinearGradientBrush>
+                                        </Path.Fill>
+                                    </Path>
+                                </Canvas>
+                            </Viewbox>
+                        </Canvas>
+                    </Canvas>
+                </Viewbox>
+                <Path Width="0.5" Height="614.744" Canvas.Left="-0.0975647" Canvas.Top="0.331879" Stretch="Fill"
+                      Fill="#FF105A92"
+                      Data="F1 M 0.402435,5.66519L 0.402435,8.33188L -0.0975647,8.33188L -0.0975647,5.66519L 0.402435,5.66519 Z M 0.402435,10.9986L 0.402435,13.6652L -0.0975647,13.6652L -0.0975647,10.9986L 0.402435,10.9986 Z M 0.402435,16.3319L 0.402435,18.9986L -0.0975647,18.9986L -0.0975647,16.3319L 0.402435,16.3319 Z M 0.402435,21.6652L 0.402435,24.3319L -0.0975647,24.3319L -0.0975647,21.6652L 0.402435,21.6652 Z M 0.402435,26.9986L 0.402435,29.6652L -0.0975647,29.6652L -0.0975647,26.9986L 0.402435,26.9986 Z M 0.402435,32.3319L 0.402435,34.9986L -0.0975647,34.9986L -0.0975647,32.3319L 0.402435,32.3319 Z M 0.402435,37.6652L 0.402435,40.3319L -0.0975647,40.3319L -0.0975647,37.6652L 0.402435,37.6652 Z M 0.402435,42.9986L 0.402435,45.6652L -0.0975647,45.6652L -0.0975647,42.9986L 0.402435,42.9986 Z M 0.402435,48.3319L 0.402435,50.9986L -0.0975647,50.9986L -0.0975647,48.3319L 0.402435,48.3319 Z M 0.402435,53.6652L 0.402435,56.3319L -0.0975647,56.3319L -0.0975647,53.6652L 0.402435,53.6652 Z M 0.402435,58.9986L 0.402435,61.6652L -0.0975647,61.6652L -0.0975647,58.9986L 0.402435,58.9986 Z M 0.402435,64.3319L 0.402435,66.9986L -0.0975647,66.9986L -0.0975647,64.3319L 0.402435,64.3319 Z M 0.402435,69.6652L 0.402435,72.3319L -0.0975647,72.3319L -0.0975647,69.6652L 0.402435,69.6652 Z M 0.402435,74.9986L 0.402435,77.6652L -0.0975647,77.6652L -0.0975647,74.9986L 0.402435,74.9986 Z M 0.402435,80.3319L 0.402435,82.9986L -0.0975647,82.9986L -0.0975647,80.3319L 0.402435,80.3319 Z M 0.402435,85.6652L 0.402435,88.3319L -0.0975647,88.3319L -0.0975647,85.6652L 0.402435,85.6652 Z M 0.402435,90.9986L 0.402435,93.6652L -0.0975647,93.6652L -0.0975647,90.9986L 0.402435,90.9986 Z M 0.402435,96.3319L 0.402435,98.9986L -0.0975647,98.9986L -0.0975647,96.3319L 0.402435,96.3319 Z M 0.402435,101.665L 0.402435,104.332L -0.0975647,104.332L -0.0975647,101.665L 0.402435,101.665 Z M 0.402435,106.999L 0.402435,109.665L -0.0975647,109.665L -0.0975647,106.999L 0.402435,106.999 Z M 0.402435,112.332L 0.402435,114.999L -0.0975647,114.999L -0.0975647,112.332L 0.402435,112.332 Z M 0.402435,117.665L 0.402435,120.332L -0.0975647,120.332L -0.0975647,117.665L 0.402435,117.665 Z M 0.402435,122.999L 0.402435,125.665L -0.0975647,125.665L -0.0975647,122.999L 0.402435,122.999 Z M 0.402435,128.332L 0.402435,130.999L -0.0975647,130.999L -0.0975647,128.332L 0.402435,128.332 Z M 0.402435,133.665L 0.402435,136.332L -0.0975647,136.332L -0.0975647,133.665L 0.402435,133.665 Z M 0.402435,138.999L 0.402435,141.665L -0.0975647,141.665L -0.0975647,138.999L 0.402435,138.999 Z M 0.402435,144.332L 0.402435,146.999L -0.0975647,146.999L -0.0975647,144.332L 0.402435,144.332 Z M 0.402435,149.665L 0.402435,152.332L -0.0975647,152.332L -0.0975647,149.665L 0.402435,149.665 Z M 0.402435,154.999L 0.402435,157.665L -0.0975647,157.665L -0.0975647,154.999L 0.402435,154.999 Z M 0.402435,160.332L 0.402435,162.999L -0.0975647,162.999L -0.0975647,160.332L 0.402435,160.332 Z M 0.402435,165.665L 0.402435,168.332L -0.0975647,168.332L -0.0975647,165.665L 0.402435,165.665 Z M 0.402435,170.999L 0.402435,173.665L -0.0975647,173.665L -0.0975647,170.999L 0.402435,170.999 Z M 0.402435,176.332L 0.402435,178.999L -0.0975647,178.999L -0.0975647,176.332L 0.402435,176.332 Z M 0.402435,181.665L 0.402435,184.332L -0.0975647,184.332L -0.0975647,181.665L 0.402435,181.665 Z M 0.402435,186.999L 0.402435,189.665L -0.0975647,189.665L -0.0975647,186.999L 0.402435,186.999 Z M 0.402435,192.332L 0.402435,194.999L -0.0975647,194.999L -0.0975647,192.332L 0.402435,192.332 Z M 0.402435,197.665L 0.402435,200.332L -0.0975647,200.332L -0.0975647,197.665L 0.402435,197.665 Z M 0.402435,202.999L 0.402435,205.665L -0.0975647,205.665L -0.0975647,202.999L 0.402435,202.999 Z M 0.402435,208.332L 0.402435,210.999L -0.0975647,210.999L -0.0975647,208.332L 0.402435,208.332 Z M 0.402435,213.665L 0.402435,216.332L -0.0975647,216.332L -0.0975647,213.665L 0.402435,213.665 Z M 0.402435,218.999L 0.402435,221.665L -0.0975647,221.665L -0.0975647,218.999L 0.402435,218.999 Z M 0.402435,224.332L 0.402435,226.999L -0.0975647,226.999L -0.0975647,224.332L 0.402435,224.332 Z M 0.402435,229.665L 0.402435,232.332L -0.0975647,232.332L -0.0975647,229.665L 0.402435,229.665 Z M 0.402435,234.999L 0.402435,237.665L -0.0975647,237.665L -0.0975647,234.999L 0.402435,234.999 Z M 0.402435,240.332L 0.402435,242.999L -0.0975647,242.999L -0.0975647,240.332L 0.402435,240.332 Z M 0.402435,245.665L 0.402435,248.332L -0.0975647,248.332L -0.0975647,245.665L 0.402435,245.665 Z M 0.402435,250.999L 0.402435,253.665L -0.0975647,253.665L -0.0975647,250.999L 0.402435,250.999 Z M 0.402435,256.332L 0.402435,258.999L -0.0975647,258.999L -0.0975647,256.332L 0.402435,256.332 Z M 0.402435,261.665L 0.402435,264.332L -0.0975647,264.332L -0.0975647,261.665L 0.402435,261.665 Z M 0.402435,266.999L 0.402435,269.665L -0.0975647,269.665L -0.0975647,266.999L 0.402435,266.999 Z M 0.402435,272.332L 0.402435,274.999L -0.0975647,274.999L -0.0975647,272.332L 0.402435,272.332 Z M 0.402435,277.665L 0.402435,280.332L -0.0975647,280.332L -0.0975647,277.665L 0.402435,277.665 Z M 0.402435,282.999L 0.402435,285.665L -0.0975647,285.665L -0.0975647,282.999L 0.402435,282.999 Z M 0.402435,288.332L 0.402435,290.999L -0.0975647,290.999L -0.0975647,288.332L 0.402435,288.332 Z M 0.402435,293.665L 0.402435,296.332L -0.0975647,296.332L -0.0975647,293.665L 0.402435,293.665 Z M 0.402435,298.999L 0.402435,301.665L -0.0975647,301.665L -0.0975647,298.999L 0.402435,298.999 Z M 0.402435,304.332L 0.402435,306.999L -0.0975647,306.999L -0.0975647,304.332L 0.402435,304.332 Z M 0.402435,309.665L 0.402435,312.332L -0.0975647,312.332L -0.0975647,309.665L 0.402435,309.665 Z M 0.402435,314.999L 0.402435,317.665L -0.0975647,317.665L -0.0975647,314.999L 0.402435,314.999 Z M 0.402435,320.332L 0.402435,322.999L -0.0975647,322.999L -0.0975647,320.332L 0.402435,320.332 Z M 0.402435,325.665L 0.402435,328.332L -0.0975647,328.332L -0.0975647,325.665L 0.402435,325.665 Z M 0.402435,330.999L 0.402435,333.665L -0.0975647,333.665L -0.0975647,330.999L 0.402435,330.999 Z M 0.402435,336.332L 0.402435,338.999L -0.0975647,338.999L -0.0975647,336.332L 0.402435,336.332 Z M 0.402435,341.665L 0.402435,344.332L -0.0975647,344.332L -0.0975647,341.665L 0.402435,341.665 Z M 0.402435,346.999L 0.402435,349.665L -0.0975647,349.665L -0.0975647,346.999L 0.402435,346.999 Z M 0.402435,352.332L 0.402435,354.999L -0.0975647,354.999L -0.0975647,352.332L 0.402435,352.332 Z M 0.402435,357.665L 0.402435,360.332L -0.0975647,360.332L -0.0975647,357.665L 0.402435,357.665 Z M 0.402435,362.999L 0.402435,365.665L -0.0975647,365.665L -0.0975647,362.999L 0.402435,362.999 Z M 0.402435,368.332L 0.402435,370.999L -0.0975647,370.999L -0.0975647,368.332L 0.402435,368.332 Z M 0.402435,373.665L 0.402435,376.332L -0.0975647,376.332L -0.0975647,373.665L 0.402435,373.665 Z M 0.402435,378.999L 0.402435,381.665L -0.0975647,381.665L -0.0975647,378.999L 0.402435,378.999 Z M 0.402435,384.332L 0.402435,386.999L -0.0975647,386.999L -0.0975647,384.332L 0.402435,384.332 Z M 0.402435,389.665L 0.402435,392.332L -0.0975647,392.332L -0.0975647,389.665L 0.402435,389.665 Z M 0.402435,394.999L 0.402435,397.665L -0.0975647,397.665L -0.0975647,394.999L 0.402435,394.999 Z M 0.402435,400.332L 0.402435,402.999L -0.0975647,402.999L -0.0975647,400.332L 0.402435,400.332 Z M 0.402435,405.665L 0.402435,408.332L -0.0975647,408.332L -0.0975647,405.665L 0.402435,405.665 Z M 0.402435,410.999L 0.402435,413.665L -0.0975647,413.665L -0.0975647,410.999L 0.402435,410.999 Z M 0.402435,416.332L 0.402435,418.999L -0.0975647,418.999L -0.0975647,416.332L 0.402435,416.332 Z M 0.402435,421.665L 0.402435,424.332L -0.0975647,424.332L -0.0975647,421.665L 0.402435,421.665 Z M 0.402435,426.999L 0.402435,429.665L -0.0975647,429.665L -0.0975647,426.999L 0.402435,426.999 Z M 0.402435,432.332L 0.402435,434.999L -0.0975647,434.999L -0.0975647,432.332L 0.402435,432.332 Z M 0.402435,437.665L 0.402435,440.332L -0.0975647,440.332L -0.0975647,437.665L 0.402435,437.665 Z M 0.402435,442.999L 0.402435,445.665L -0.0975647,445.665L -0.0975647,442.999L 0.402435,442.999 Z M 0.402435,448.332L 0.402435,450.999L -0.0975647,450.999L -0.0975647,448.332L 0.402435,448.332 Z M 0.402435,453.665L 0.402435,456.332L -0.0975647,456.332L -0.0975647,453.665L 0.402435,453.665 Z M 0.402435,458.999L 0.402435,461.665L -0.0975647,461.665L -0.0975647,458.999L 0.402435,458.999 Z M 0.402435,464.332L 0.402435,466.999L -0.0975647,466.999L -0.0975647,464.332L 0.402435,464.332 Z M 0.402435,469.665L 0.402435,472.332L -0.0975647,472.332L -0.0975647,469.665L 0.402435,469.665 Z M 0.402435,474.999L 0.402435,477.665L -0.0975647,477.665L -0.0975647,474.999L 0.402435,474.999 Z M 0.402435,480.332L 0.402435,482.999L -0.0975647,482.999L -0.0975647,480.332L 0.402435,480.332 Z M 0.402435,485.665L 0.402435,488.332L -0.0975647,488.332L -0.0975647,485.665L 0.402435,485.665 Z M 0.402435,490.999L 0.402435,493.665L -0.0975647,493.665L -0.0975647,490.999L 0.402435,490.999 Z M 0.402435,496.332L 0.402435,498.999L -0.0975647,498.999L -0.0975647,496.332L 0.402435,496.332 Z M 0.402435,501.665L 0.402435,504.332L -0.0975647,504.332L -0.0975647,501.665L 0.402435,501.665 Z M 0.402435,506.999L 0.402435,509.665L -0.0975647,509.665L -0.0975647,506.999L 0.402435,506.999 Z M 0.402435,512.332L 0.402435,514.999L -0.0975647,514.999L -0.0975647,512.332L 0.402435,512.332 Z M 0.402435,517.665L 0.402435,520.332L -0.0975647,520.332L -0.0975647,517.665L 0.402435,517.665 Z M 0.402435,522.999L 0.402435,525.665L -0.0975647,525.665L -0.0975647,522.999L 0.402435,522.999 Z M 0.402435,528.332L 0.402435,530.999L -0.0975647,530.999L -0.0975647,528.332L 0.402435,528.332 Z M 0.402435,533.665L 0.402435,536.332L -0.0975647,536.332L -0.0975647,533.665L 0.402435,533.665 Z M 0.402435,538.999L 0.402435,541.665L -0.0975647,541.665L -0.0975647,538.999L 0.402435,538.999 Z M 0.402435,544.332L 0.402435,546.999L -0.0975647,546.999L -0.0975647,544.332L 0.402435,544.332 Z M 0.402435,549.665L 0.402435,552.332L -0.0975647,552.332L -0.0975647,549.665L 0.402435,549.665 Z M 0.402435,554.999L 0.402435,557.665L -0.0975647,557.665L -0.0975647,554.999L 0.402435,554.999 Z M 0.402435,560.332L 0.402435,562.999L -0.0975647,562.999L -0.0975647,560.332L 0.402435,560.332 Z M 0.402435,565.665L 0.402435,568.332L -0.0975647,568.332L -0.0975647,565.665L 0.402435,565.665 Z M 0.402435,570.999L 0.402435,573.665L -0.0975647,573.665L -0.0975647,570.999L 0.402435,570.999 Z M 0.402435,576.332L 0.402435,578.999L -0.0975647,578.999L -0.0975647,576.332L 0.402435,576.332 Z M 0.402435,581.665L 0.402435,584.332L -0.0975647,584.332L -0.0975647,581.665L 0.402435,581.665 Z M 0.402435,586.999L 0.402435,589.665L -0.0975647,589.665L -0.0975647,586.999L 0.402435,586.999 Z M 0.402435,592.332L 0.402435,594.999L -0.0975647,594.999L -0.0975647,592.332L 0.402435,592.332 Z M 0.402435,597.665L 0.402435,600.332L -0.0975647,600.332L -0.0975647,597.665L 0.402435,597.665 Z M 0.402435,602.999L 0.402435,605.665L -0.0975647,605.665L -0.0975647,602.999L 0.402435,602.999 Z M 0.402435,608.332L 0.402435,610.999L -0.0975647,610.999L -0.0975647,608.332L 0.402435,608.332 Z M 0.402435,613.665L 0.402435,615.075L -0.0975647,615.075L -0.0975647,613.665L 0.402435,613.665 Z M 0.402435,0.331879L 0.402435,2.99857L -0.0975647,2.99857L -0.0975647,0.331879L 0.402435,0.331879 Z " />
+            </Canvas>
+        </Viewbox>
+        <local:RedDot Grid.Column="7" Grid.Row="6" />
+    </Grid>
 </UserControl>

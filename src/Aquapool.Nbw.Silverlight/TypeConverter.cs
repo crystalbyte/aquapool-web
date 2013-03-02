@@ -1,51 +1,36 @@
 ﻿using System;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Ink;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
+using System.Globalization;
 using System.Windows.Data;
-using System.ComponentModel;
 
-namespace Nbw
-{
-    public class NegationConverter : IValueConverter
-    {
+namespace Aquapool.Nbw {
+    public class NegationConverter : IValueConverter {
         #region IValueConverter Members
 
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            var b = (bool) value;
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
+            var b = (bool)value;
             return !b;
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
             throw new NotImplementedException();
         }
 
         #endregion
     }
 
-    public class StringToBoolConverter : IValueConverter
-    {
-        #region IValueConverter Members
+    //public class StringToBoolConverter : IValueConverter {
+    //    #region IValueConverter Members
 
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+    //    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
+    //        var s = value as string;
+    //        return !string.IsNullOrEmpty(s) && bool.Parse(s);
+    //    }
 
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            var xamlString = (string)value;
-            return bool.Parse(xamlString);
-        }
+    //    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
+    //        var xamlString = (string)value;
+    //        return bool.Parse(xamlString);
+    //    }
 
-        #endregion
-    }
+    //    #endregion
+    //}
 }

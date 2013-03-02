@@ -1,79 +1,24 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Ink;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
-using System.Diagnostics;
 
-namespace Nbw
+namespace Aquapool.Nbw
 {
-	public partial class Root : UserControl
-	{
+    public partial class Root : UserControl
+    {
         private static readonly Root instance = new Root();
 
-        internal enum MenuType
-        {
-            Home,
-            Imprint,
-            KopierService,
-            Wasserbau,
-            YachtCharter,
-            Contact,
-            Services
-        }
-
         public Root()
-		{
-			// Required to initialize variables
-			this.InitializeComponent();
-            this.InitializeControls();
+        {
+            // Required to initialize variables
+            InitializeComponent();
+            InitializeControls();
             // HACK: Viewbox does not publish it's children
-            this.InitializeNavigationButtons();
-            this.Loaded += new RoutedEventHandler(Root_Loaded);
-            Application.Current.Host.Content.Resized += new EventHandler(Content_Resized);
-		}
-
-        void InitializeNavigationButtons()
-        {
-            var child = this.NavigationViewbox.Child as StackPanel;
-            this.ButtonHome = child.Children[0] as Button;
-            this.ButtonServices = child.Children[2] as Button;
-            this.ButtonContact = child.Children[4] as Button;
-            this.ButtonImprint = child.Children[6] as Button;
-        }
-
-        void Resize()
-        {
-            // height 910 / 900
-            this.VisualBorder.Height = Application.Current.Host.Content.ActualHeight;
-            this.VisualBorder.Width = Application.Current.Host.Content.ActualHeight * 0.989010989;
-        }
-
-        void Content_Resized(object sender, EventArgs e)
-        {
-            this.Resize();
-        }
-
-        void InitializeControls()
-        {
-            this.HeaderGrid.Opacity = 0;
-            this.LogoGrid.Opacity = 0;
-        }
-
-        void Root_Loaded(object sender, RoutedEventArgs e)
-        {
-#if DEBUG
-            Debug.WriteLine("Fading in controls");
-#endif
-            this.FirstTimeLoadStoryboard.Completed += delegate { Navigate(MenuType.Home); };
-            Utility.Launch(TimeSpan.Zero, this.StoryboardLogoFadeIn);
-            Utility.Launch(TimeSpan.FromMilliseconds(200), this.StoryboardHeaderFadeIn);
-            Utility.Launch(TimeSpan.FromMilliseconds(1), this.FirstTimeLoadStoryboard);
-            
+            InitializeNavigationButtons();
+            Loaded += Root_Loaded;
+            Application.Current.Host.Content.Resized += Content_Resized;
         }
 
         public static Root Instance
@@ -81,22 +26,65 @@ namespace Nbw
             get { return instance; }
         }
 
-        void SetPageTitle(string title)
+        private Grid MainArea
         {
-            (this.PageTitleViewbox.Child as TextBlock).Text = title;
+            get { return AnimatedContentGridIn; }
         }
 
-        void SwapPage(UserControl control)
+        private void InitializeNavigationButtons()
         {
-            this.MainArea.Opacity = 0;
-            this.MainArea.Children.Clear();
-            this.MainArea.Children.Add(control);
-            this.StoryboardContentIn.Begin();
+            var child = NavigationViewbox.Child as StackPanel;
+            ButtonHome = child.Children[0] as Button;
+            ButtonServices = child.Children[2] as Button;
+            ButtonContact = child.Children[4] as Button;
+            ButtonImprint = child.Children[6] as Button;
+        }
+
+        private void Resize()
+        {
+            // height 910 / 900
+            VisualBorder.Height = Application.Current.Host.Content.ActualHeight;
+            VisualBorder.Width = Application.Current.Host.Content.ActualHeight*0.989010989;
+        }
+
+        private void Content_Resized(object sender, EventArgs e)
+        {
+            Resize();
+        }
+
+        private void InitializeControls()
+        {
+            HeaderGrid.Opacity = 0;
+            LogoGrid.Opacity = 0;
+        }
+
+        private void Root_Loaded(object sender, RoutedEventArgs e)
+        {
+#if DEBUG
+            Debug.WriteLine("Fading in controls");
+#endif
+            FirstTimeLoadStoryboard.Completed += delegate { Navigate(MenuType.Home); };
+            Utility.Launch(TimeSpan.Zero, StoryboardLogoFadeIn);
+            Utility.Launch(TimeSpan.FromMilliseconds(200), StoryboardHeaderFadeIn);
+            Utility.Launch(TimeSpan.FromMilliseconds(1), FirstTimeLoadStoryboard);
+        }
+
+        private void SetPageTitle(string title)
+        {
+            (PageTitleViewbox.Child as TextBlock).Text = title;
+        }
+
+        private void SwapPage(UserControl control)
+        {
+            MainArea.Opacity = 0;
+            MainArea.Children.Clear();
+            MainArea.Children.Add(control);
+            StoryboardContentIn.Begin();
         }
 
         internal void Navigate(MenuType type)
         {
-            this.Navigate(type, false);
+            Navigate(type, false);
         }
 
         internal void Navigate(MenuType type, bool gotoState)
@@ -104,65 +92,65 @@ namespace Nbw
             switch (type)
             {
                 case MenuType.Home:
-                    this.SetPageTitle("Home");
-                    this.SetActive(type);
-                    this.SwapPage(new home());
+                    SetPageTitle("Home");
+                    SetActive(type);
+                    SwapPage(new home());
                     break;
                 case MenuType.Imprint:
-                    this.SetPageTitle("Impressum");
-                    this.SetActive(type);
-                    this.SwapPage(new ImprintPage());
+                    SetPageTitle("Impressum");
+                    SetActive(type);
+                    SwapPage(new ImprintPage());
                     break;
                 case MenuType.KopierService:
-                    this.SetPageTitle("Kopierservice Werlsee");
+                    SetPageTitle("Kopierservice Werlsee");
                     if (gotoState)
                     {
-                        VisualStateManager.GoToState(this.MenuKopierService, "MouseOver", true);
+                        VisualStateManager.GoToState(MenuKopierService, "MouseOver", true);
                     }
-                    this.SetActive(type);
-                    this.SwapPage(new KopierServicePage());
+                    SetActive(type);
+                    SwapPage(new KopierServicePage());
                     break;
                 case MenuType.Wasserbau:
                     if (gotoState)
                     {
-                        VisualStateManager.GoToState(this.MenuNbw, "MouseOver", true);
+                        VisualStateManager.GoToState(MenuNbw, "MouseOver", true);
                     }
-                    this.SetPageTitle("Niederbarnimer Wasserbau");
-                    this.SetActive(type);
-                    this.SwapPage(new WasserbauPage());
+                    SetPageTitle("Niederbarnimer Wasserbau");
+                    SetActive(type);
+                    SwapPage(new WasserbauPage());
                     break;
                 case MenuType.YachtCharter:
                     if (gotoState)
                     {
-                        VisualStateManager.GoToState(this.MenuYachtCharter, "MouseOver", true);
+                        VisualStateManager.GoToState(MenuYachtCharter, "MouseOver", true);
                     }
-                    this.SetPageTitle("Yachtcharter Süd/Ost");
-                    this.SetActive(type);
-                    this.SwapPage(new YachtCharterPage());
+                    SetPageTitle("Yachtcharter Süd/Ost");
+                    SetActive(type);
+                    SwapPage(new YachtCharterPage());
                     break;
                 case MenuType.Contact:
-                    this.SetPageTitle("Kontakt");
-                    this.SetActive(type);
-                    this.SwapPage(new ContactPage());
+                    SetPageTitle("Kontakt");
+                    SetActive(type);
+                    SwapPage(new ContactPage());
                     break;
                 case MenuType.Services:
-                    this.SetPageTitle("Übersicht");
-                    this.SetActive(type);
-                    this.SwapPage(new OverviewPage());
+                    SetPageTitle("Übersicht");
+                    SetActive(type);
+                    SwapPage(new OverviewPage());
                     break;
                 default:
                     break;
             }
         }
 
-        void Freeze()
+        private void Freeze()
         {
-            this.IsHitTestVisible = false;
+            IsHitTestVisible = false;
         }
 
-        void Unfreeze()
+        private void Unfreeze()
         {
-            this.IsHitTestVisible = true;
+            IsHitTestVisible = true;
         }
 
         private void ButtonHome_Click(object sender, RoutedEventArgs e)
@@ -185,11 +173,6 @@ namespace Nbw
             Navigate(MenuType.Imprint);
         }
 
-        Grid MainArea
-        {
-            get { return this.AnimatedContentGridIn; }
-        }
-
         private void MenuNbw_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Navigate(MenuType.Wasserbau);
@@ -205,115 +188,126 @@ namespace Nbw
             Navigate(MenuType.KopierService);
         }
 
-        void SetActive(MenuType type)
+        private void SetActive(MenuType type)
         {
             switch (type)
             {
                 case MenuType.Home:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = false;
                     break;
                 case MenuType.Imprint:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = false;
                     break;
                 case MenuType.KopierService:
-                    this.MenuKopierService.IsActive = true;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = true;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = false;
                     break;
                 case MenuType.Wasserbau:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = true;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = true;
                     break;
                 case MenuType.YachtCharter:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = true;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = true;
+                    MenuNbw.IsActive = false;
                     break;
                 case MenuType.Contact:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = false;
                     break;
                 case MenuType.Services:
-                    this.MenuKopierService.IsActive = false;
-                    this.MenuYachtCharter.IsActive = false;
-                    this.MenuNbw.IsActive = false;
+                    MenuKopierService.IsActive = false;
+                    MenuYachtCharter.IsActive = false;
+                    MenuNbw.IsActive = false;
                     break;
                 default:
                     break;
             }
-            this.SetNavigationActive(type);
+            SetNavigationActive(type);
         }
 
-        void SetNavigationActive(MenuType type)
+        private void SetNavigationActive(MenuType type)
         {
             switch (type)
             {
                 case MenuType.Home:
-                    this.ButtonHome.IsHitTestVisible = false;
-                    VisualStateManager.GoToState(this.ButtonHome, "MouseOver", true);
-                    this.ButtonServices.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonServices, "Normal", true);
-                    this.ButtonImprint.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonImprint, "Normal", true);
-                    this.ButtonContact.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonContact, "Normal", true);
+                    ButtonHome.IsHitTestVisible = false;
+                    VisualStateManager.GoToState(ButtonHome, "MouseOver", true);
+                    ButtonServices.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonServices, "Normal", true);
+                    ButtonImprint.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonImprint, "Normal", true);
+                    ButtonContact.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonContact, "Normal", true);
                     break;
                 case MenuType.Imprint:
-                    this.ButtonHome.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonHome, "Normal", true);
-                    this.ButtonServices.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonServices, "Normal", true);
-                    this.ButtonImprint.IsHitTestVisible = false;
-                    VisualStateManager.GoToState(this.ButtonImprint, "MouseOver", true);
-                    this.ButtonContact.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonContact, "Normal", true);
+                    ButtonHome.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonHome, "Normal", true);
+                    ButtonServices.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonServices, "Normal", true);
+                    ButtonImprint.IsHitTestVisible = false;
+                    VisualStateManager.GoToState(ButtonImprint, "MouseOver", true);
+                    ButtonContact.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonContact, "Normal", true);
                     break;
-                //case MenuType.KopierService:
-                //    this.SetNavigationActive(MenuType.Services);
-                //    break;
-                //case MenuType.Wasserbau:
-                //    this.SetNavigationActive(MenuType.Services);
-                //    break;
-                //case MenuType.YachtCharter:
-                //    this.SetNavigationActive(MenuType.Services);
-                //    break;
+                    //case MenuType.KopierService:
+                    //    this.SetNavigationActive(MenuType.Services);
+                    //    break;
+                    //case MenuType.Wasserbau:
+                    //    this.SetNavigationActive(MenuType.Services);
+                    //    break;
+                    //case MenuType.YachtCharter:
+                    //    this.SetNavigationActive(MenuType.Services);
+                    //    break;
                 case MenuType.Contact:
-                    this.ButtonHome.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonHome, "Normal", true);
-                    this.ButtonServices.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonServices, "Normal", true);
-                    this.ButtonImprint.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonImprint, "Normal", true);
-                    this.ButtonContact.IsHitTestVisible = false;
-                    VisualStateManager.GoToState(this.ButtonContact, "MouseOver", true);
+                    ButtonHome.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonHome, "Normal", true);
+                    ButtonServices.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonServices, "Normal", true);
+                    ButtonImprint.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonImprint, "Normal", true);
+                    ButtonContact.IsHitTestVisible = false;
+                    VisualStateManager.GoToState(ButtonContact, "MouseOver", true);
                     break;
                 case MenuType.Services:
-                    this.ButtonHome.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonHome, "Normal", true);
-                    this.ButtonServices.IsHitTestVisible = false;
-                    VisualStateManager.GoToState(this.ButtonServices, "MouseOver", true);
-                    this.ButtonImprint.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonImprint, "Normal", true);
-                    this.ButtonContact.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonContact, "Normal", true);
+                    ButtonHome.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonHome, "Normal", true);
+                    ButtonServices.IsHitTestVisible = false;
+                    VisualStateManager.GoToState(ButtonServices, "MouseOver", true);
+                    ButtonImprint.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonImprint, "Normal", true);
+                    ButtonContact.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonContact, "Normal", true);
                     break;
                 default:
-                    this.ButtonHome.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonHome, "Normal", true);
-                    this.ButtonServices.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonServices, "Normal", true);
-                    this.ButtonImprint.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonImprint, "Normal", true);
-                    this.ButtonContact.IsHitTestVisible = true;
-                    VisualStateManager.GoToState(this.ButtonContact, "Normal", true);
+                    ButtonHome.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonHome, "Normal", true);
+                    ButtonServices.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonServices, "Normal", true);
+                    ButtonImprint.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonImprint, "Normal", true);
+                    ButtonContact.IsHitTestVisible = true;
+                    VisualStateManager.GoToState(ButtonContact, "Normal", true);
                     break;
             }
         }
-	}
+
+        internal enum MenuType
+        {
+            Home,
+            Imprint,
+            KopierService,
+            Wasserbau,
+            YachtCharter,
+            Contact,
+            Services
+        }
+    }
 }

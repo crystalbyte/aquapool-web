@@ -8,7 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <DefaultClrNameSpace>Aquapool_2_Nbw</DefaultClrNameSpace>
     <AssemblyName>Aquapool.Nbw</AssemblyName>
-    <RootNamespace>Nbw</RootNamespace>
+    <RootNamespace>Aquapool.Nbw</RootNamespace>
     <ApplicationVersion>1.0.0.*</ApplicationVersion>
     <ApplicationRevision>0</ApplicationRevision>
     <AlwaysCompileMarkupFilesInSeparateDomain>false</AlwaysCompileMarkupFilesInSeparateDomain>
@@ -23,7 +23,7 @@
     <XapFilename>Aquapool_2_Nbw.xap</XapFilename>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-    <SilverlightAppEntry>Nbw.App</SilverlightAppEntry>
+    <SilverlightAppEntry>Aquapool.Nbw.App</SilverlightAppEntry>
     <CreateTestPage>true</CreateTestPage>
     <TestPageFileName>Default.html</TestPageFileName>
     <DefineConstants>SILVERLIGHT</DefineConstants>
@@ -78,8 +78,8 @@
     <Compile Include="ContactPage.xaml.cs">
       <DependentUpon>ContactPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="home.xaml.cs">
-      <DependentUpon>home.xaml</DependentUpon>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImprintPage.xaml.cs">
       <DependentUpon>ImprintPage.xaml</DependentUpon>
@@ -136,7 +136,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="home.xaml">
+    <Page Include="Home.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
