@@ -1,0 +1,16 @@
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\App.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\ContactPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\home.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\ImprintPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\KopierServicePage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\NbwGalleryPanel.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\NbwTextPanel.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\OverviewPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\RedDot.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\Root.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\StartPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\WasserbauPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\YachtCharterGalleryPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\YachtCharterPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\YachtCharterTextPage.g.cs
+C:\Users\Alexander\Documents\GitHub\nbw-web\src\Nbw\obj\Debug\Aquapool.Nbw.g.resources

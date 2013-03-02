@@ -2,9 +2,9 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
+// Allgemeine Informationen über eine Assembly werden über die folgenden 
+// Attribute gesteuert. Ändern Sie diese Attributwerte, um die
+// Assemblyinformationen zu ändern.
 [assembly: AssemblyTitle("Aquapool.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -14,22 +14,22 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
+// Durch Festlegen von ComVisible auf "false" werden die Typen in dieser Assembly unsichtbar 
+// für COM-Komponenten. Wenn Sie auf einen Typ in dieser Assembly von 
+// COM aus zugreifen müssen, legen Sie das ComVisible-Attribut für diesen Typ auf "true" fest.
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6d5fe990-bbe2-4f96-836e-28c81c3c7cec")]
+// Die folgende GUID bestimmt die ID der Typbibliothek, wenn dieses Projekt für COM verfügbar gemacht wird.
+[assembly: Guid("ee8a5cb0-10b9-4253-a1b2-98910c7b0af5")]
 
-// Version information for an assembly consists of the following four values:
+// Versionsinformationen für eine Assembly bestehen aus den folgenden vier Werten:
 //
-//      Major Version
-//      Minor Version 
-//      Build Number
+//      Hauptversion
+//      Nebenversion 
+//      Buildnummer
 //      Revision
 //
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+// Sie können alle Werte angeben oder die standardmäßigen Revisions- und Buildnummern 
+// übernehmen, indem Sie "*" wie folgt verwenden:
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

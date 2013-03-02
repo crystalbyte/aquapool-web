@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquapool", "Aquapool.csproj", "{FC276C92-E997-4CA7-9B3D-F416F410E55A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquapool.Web", "..\Aquapool.Web\Aquapool.Web.csproj", "{D1E66ADD-428F-4625-BB98-9EE617E064E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC276C92-E997-4CA7-9B3D-F416F410E55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC276C92-E997-4CA7-9B3D-F416F410E55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC276C92-E997-4CA7-9B3D-F416F410E55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC276C92-E997-4CA7-9B3D-F416F410E55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E66ADD-428F-4625-BB98-9EE617E064E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E66ADD-428F-4625-BB98-9EE617E064E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E66ADD-428F-4625-BB98-9EE617E064E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E66ADD-428F-4625-BB98-9EE617E064E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,263 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls"
+    xmlns:local="clr-namespace:Nbw"
+	x:Class="Nbw.App" 
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows">
+	<Application.Resources>
+        <local:NegationConverter x:Key="NegationConverter" />
+        <!-- Resources scoped at the Application level should be defined here. -->
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0.273088,0.191294" EndPoint="0.273088,0.554757">
+        	<GradientStop Color="#AFFFFFFF" Offset="0.0136986"/>
+        	<GradientStop Color="#91E1EDF6" Offset="0.251142"/>
+        	<GradientStop Color="#73C4DBED" Offset="0.584475"/>
+        	<GradientStop Color="#3AE1EDF6" Offset="0.850557"/>
+        	<GradientStop Color="#00FFFFFF" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="HeaderGradient2" StartPoint="0.53671,1.24487" EndPoint="0.53671,-0.0151306">
+        	<GradientStop Color="#00FFFFFF" Offset="0.0456621"/>
+        	<GradientStop Color="#6187ACC8" Offset="0.69863"/>
+        	<GradientStop Color="#C2105A92" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="SplittingGradientBrush" StartPoint="0.770408,1.09932" EndPoint="0.770408,0.459319">
+        	<GradientStop Color="#C2FFFFFF" Offset="0.0136986"/>
+        	<GradientStop Color="#A180D9D9" Offset="0.0143199"/>
+        	<GradientStop Color="#7F02B4B4" Offset="0.840183"/>
+        	<GradientStop Color="#40019CD9" Offset="0.999873"/>
+        	<GradientStop Color="#000085FF" Offset="1"/>
+        </LinearGradientBrush>
+		
+		<Style x:Key="GlossCloseButtonStyle" TargetType="Button">
+			  <Setter Property="Margin" Value="15,5,0,0" />
+		      <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="LayoutRoot">
+                            <vsm:VisualStateManager.VisualStateGroups>
+                                <vsm:VisualStateGroup x:Name="CommonStates">
+                                    <vsm:VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF08255D"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF085D16" KeySpline="0,1,1,1"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF548BC7"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF1C8C3E" KeySpline="0,1,1,1"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                            	<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD0EFFC"/>
+                                            	<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFD1FCD0"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </vsm:VisualState>
+                                    <vsm:VisualState x:Name="MouseOut" />
+                                </vsm:VisualStateGroup>
+                            </vsm:VisualStateManager.VisualStateGroups>
+                            <Canvas Width="22.6202" Height="22.6203" Clip="F1 M 0,0L 22.6202,0L 22.6202,22.6203L 0,22.6203L 0,0">
+                                <Ellipse x:Name="ellipse" Width="22.6202" Height="22.6202" Canvas.Left="0" Canvas.Top="3.05176e-005" Stretch="Fill" StrokeThickness="0.5" StrokeLineJoin="Round" Stroke="#FFFFFFFF">
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush StartPoint="0.495708,-0.00239916" EndPoint="0.495708,1.025">
+                                            <LinearGradientBrush.GradientStops>
+                                                <GradientStop Color="#FF08255D" Offset="0"/>
+                                                <GradientStop Color="#FF548BC7" Offset="0.449153"/>
+                                                <GradientStop Color="#FFD0EFFC" Offset="0.995763"/>
+                                            </LinearGradientBrush.GradientStops>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Canvas Width="799.69" Height="600.102" Clip="F1 M 11.3101,0.25C 17.4185,0.25 22.3702,5.20178 22.3702,11.3101C 22.3702,17.4185 17.4185,22.3703 11.3101,22.3703C 5.20172,22.3703 0.25,17.4185 0.25,11.3101C 0.25,5.20178 5.20172,0.25 11.3101,0.25 Z ">
+                                    <Ellipse Width="30.231" Height="13.2722" Canvas.Left="-3.80542" Canvas.Top="-3.00974" Stretch="Fill">
+                                        <Ellipse.Fill>
+                                            <LinearGradientBrush StartPoint="0.538618,0.303839" EndPoint="0.538618,1.01989">
+                                                <LinearGradientBrush.GradientStops>
+                                                    <GradientStop Color="#CDFFFFFF" Offset="0"/>
+                                                    <GradientStop Color="#00E8FBFF" Offset="1"/>
+                                                </LinearGradientBrush.GradientStops>
+                                            </LinearGradientBrush>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                </Canvas>
+                                <Path Width="9" Height="9.00003" Canvas.Left="6.72791" Canvas.Top="7.50262" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FFFFFFFF" Data="F1 M 7.22791,8.00262L 15.2279,16.0027"/>
+                                <Path Width="9" Height="8.99997" Canvas.Left="6.75525" Canvas.Top="7.50269" Stretch="Fill" StrokeMiterLimit="2.75" Stroke="#FFFFFFFF" Data="F1 M 7.25525,16.0027L 15.2552,8.00269"/>
+                            </Canvas>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+		</Style>
+        
+        <Style x:Key="GlossButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:Name="LayoutRoot">
+                            <vsm:VisualStateManager.VisualStateGroups>
+                                <vsm:VisualStateGroup x:Name="CommonStates">
+                                    <vsm:VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF08255D"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF085D16" KeySpline="0,1,1,1"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF548BC7"/>
+                                                <SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF1C8C3E" KeySpline="0,1,1,1"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                            	<SplineColorKeyFrame KeyTime="00:00:00" Value="#FFD0EFFC"/>
+                                            	<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFD1FCD0"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </vsm:VisualState>
+                                    <vsm:VisualState x:Name="MouseOut" />
+                                </vsm:VisualStateGroup>
+                            </vsm:VisualStateManager.VisualStateGroups>
+                            <StackPanel Orientation="Horizontal">
+                                <Canvas Width="22.6203" Height="22.6203" Clip="F1 M 0,0L 22.6203,0L 22.6203,22.6203L 0,22.6203L 0,0" VerticalAlignment="Top">
+                                	<Ellipse Width="22.6203" Height="22.6202" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" StrokeThickness="0.5" StrokeLineJoin="Round" Stroke="#FFFFFFFF" x:Name="ellipse">
+                                		<Ellipse.Fill>
+                                			<LinearGradientBrush StartPoint="0.495708,-0.00240054" EndPoint="0.495708,1.025">
+                                				<GradientStop Color="#FF08255D" Offset="0"/>
+                                				<GradientStop Color="#FF548BC7" Offset="0.449153"/>
+                                				<GradientStop Color="#FFD0EFFC" Offset="0.995763"/>
+                                			</LinearGradientBrush>
+                                		</Ellipse.Fill>
+                                	</Ellipse>
+                                	<Canvas Width="799.577" Height="599.929" Clip="F1 M 11.3101,0.249939C 17.4185,0.249939 22.3703,5.20178 22.3703,11.3101C 22.3703,17.4185 17.4185,22.3702 11.3101,22.3702C 5.20179,22.3702 0.25,17.4185 0.25,11.3101C 0.25,5.20178 5.20178,0.249939 11.3101,0.249939 Z ">
+                                		<Ellipse Width="30.231" Height="13.2722" Canvas.Left="-3.80539" Canvas.Top="-3.00977" Stretch="Fill">
+                                			<Ellipse.Fill>
+                                				<LinearGradientBrush StartPoint="0.538618,0.303839" EndPoint="0.538618,1.01989">
+                                					<GradientStop Color="#CDFFFFFF" Offset="0"/>
+                                					<GradientStop Color="#00E8FBFF" Offset="1"/>
+                                				</LinearGradientBrush>
+                                			</Ellipse.Fill>
+                                		</Ellipse>
+                                	</Canvas>
+                                	<Path Width="7.06379" Height="3.5318" Canvas.Left="7.53388" Canvas.Top="9.84918" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 12.8321,13.381L 12.8321,11.9681L 7.53388,11.9681L 7.53388,11.262L 12.8321,11.262L 12.8321,9.84918L 14.5977,11.6147L 12.8321,13.381 Z "/>
+                                </Canvas>
+                                <ContentPresenter Content="{TemplateBinding Content}" Height="Auto" Width="Auto" VerticalAlignment="Top" Margin="15,1,0,0" />
+                            </StackPanel>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+		<Style x:Key="NavigationButtonStyle" TargetType="Button">
+            <Setter Property="Cursor" Value="Hand" />
+			<Setter Property="Background" Value="#FF1F3B53"/>
+			<Setter Property="Foreground" Value="#FF000000"/>
+			<Setter Property="Padding" Value="3"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="BorderBrush">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFA3AEB9" Offset="0"/>
+						<GradientStop Color="#FF8399A9" Offset="0.375"/>
+						<GradientStop Color="#FF718597" Offset="0.375"/>
+						<GradientStop Color="#FF617584" Offset="1"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid x:Name="LayoutRoot">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Unfocused"/>
+									<vsm:VisualState x:Name="Focused"/>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="TextBlockContent" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+												<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF67A0CD"/>
+												<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FF02B4B4" KeySpline="0,0,0.465000003576279,0.989000022411346"/>
+											</ColorAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="Pressed"/>
+									<vsm:VisualState x:Name="Disabled"/>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<TextBlock Text="{TemplateBinding Content}" TextWrapping="Wrap" x:Name="TextBlockContent" Foreground="#FF67A0CD" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15.5"/>
+							<Rectangle Margin="0,0,0,0" Fill="{x:Null}" Stroke="{x:Null}"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="TextBoxContactStyle" TargetType="TextBox">
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="Background" Value="#FFFFFFFF"/>
+			<Setter Property="Foreground" Value="#FF000000"/>
+			<Setter Property="Padding" Value="2"/>
+			<Setter Property="BorderBrush">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFA3AEB9" Offset="0"/>
+						<GradientStop Color="#FF8399A9" Offset="0.375"/>
+						<GradientStop Color="#FF718597" Offset="0.375"/>
+						<GradientStop Color="#FF617584" Offset="1"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="TextBox">
+						<Grid x:Name="RootElement">
+							<vsm:VisualStateManager.VisualStateGroups>
+								<vsm:VisualStateGroup x:Name="CommonStates">
+									<vsm:VisualState x:Name="Normal"/>
+									<vsm:VisualState x:Name="MouseOver">
+										<Storyboard>
+											<ColorAnimationUsingKeyFrames Storyboard.TargetName="MouseOverBorder" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+												<SplineColorKeyFrame KeyTime="0" Value="#FF99C1E2"/>
+											</ColorAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Disabled">
+										<Storyboard>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="DisabledVisualElement" Storyboard.TargetProperty="Opacity">
+												<SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="ReadOnly">
+										<Storyboard>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetName="ReadOnlyVisualElement" Storyboard.TargetProperty="Opacity">
+												<SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</vsm:VisualState>
+								</vsm:VisualStateGroup>
+								<vsm:VisualStateGroup x:Name="FocusStates">
+									<vsm:VisualState x:Name="Focused">
+										<Storyboard/>
+									</vsm:VisualState>
+									<vsm:VisualState x:Name="Unfocused">
+										<Storyboard/>
+									</vsm:VisualState>
+								</vsm:VisualStateGroup>
+							</vsm:VisualStateManager.VisualStateGroups>
+							<Border x:Name="Border" Opacity="1" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="0,0,0,0" BorderThickness="0,0,0,0">
+								<Grid>
+									<Border x:Name="ReadOnlyVisualElement" Opacity="0" Background="#72F7F7F7"/>
+									<Border x:Name="MouseOverBorder" BorderBrush="Transparent" BorderThickness="1">
+										<ScrollViewer x:Name="ContentElement" BorderThickness="0" IsTabStop="False" Padding="{TemplateBinding Padding}"/>
+									</Border>
+								</Grid>
+							</Border>
+							<Border x:Name="DisabledVisualElement" IsHitTestVisible="False" Opacity="0" Background="#A5F7F7F7" BorderBrush="#A5F7F7F7" BorderThickness="{TemplateBinding BorderThickness}"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,17 @@
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.Silverlight.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\App.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\ContactPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\home.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\ImprintPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\KopierServicePage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\NbwGalleryPanel.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\NbwTextPanel.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\OverviewPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\RedDot.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Root.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\StartPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\WasserbauPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\YachtCharterGalleryPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\YachtCharterPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\YachtCharterTextPage.g.cs
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.g.resources

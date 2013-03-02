@@ -1,0 +1,255 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Nbw"
+    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls" 
+    xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d">
+    
+    <Style TargetType="local:PictureViewer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:PictureViewer">
+                    <Border
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}" BorderThickness="2,2,2,2" CornerRadius="2,2,2,2" BorderBrush="#FFDBEAF8">
+                    	<Border.Resources>
+                    		<Storyboard x:Name="SwitchImageStoryboard">
+                    			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_RectangleOverlay" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    				<SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.5000000" Value="0"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="progressBar" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="progressBar" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="15" KeySpline="0,1,1,1"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="progressBar" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    		</Storyboard>
+                    		<Storyboard x:Name="LoadNewImageStoryboard">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="PART_RectangleOverlay" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                                    <SplineDoubleKeyFrame KeySpline="0,1,1,1" KeyTime="00:00:00.2000000" Value="0.8"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="progressBar" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="14"/>
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="progressBar" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    				<SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                    			</DoubleAnimationUsingKeyFrames>
+                    		</Storyboard>
+                    	</Border.Resources>
+                        <Grid VerticalAlignment="Stretch"
+                              HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.898*"/>
+                                <RowDefinition Height="0.054*"/>
+                                <RowDefinition Height="0.048*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.064*"/>
+                                <ColumnDefinition Width="0.874*"/>
+                                <ColumnDefinition Width="0.062*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="PART_Image"
+                                   VerticalAlignment="Stretch"
+                                   HorizontalAlignment="Stretch"
+                                   Source="{TemplateBinding ImageSource}"
+                                   Stretch="Fill"
+                                   Grid.ColumnSpan="3" 
+                                   Grid.RowSpan="3" />
+                            <Rectangle x:Name="PART_RectangleOverlay"
+                                   Fill="White" 
+                                   HorizontalAlignment="Stretch" 
+                                   VerticalAlignment="Stretch" 
+                                   Grid.ColumnSpan="3" 
+                                   Grid.RowSpan="3" />
+                            <ProgressBar Height="Auto" 
+                                         Margin="0,0,0,0" 
+                                         VerticalAlignment="Stretch" 
+                                         Grid.ColumnSpan="1" 
+                                         Grid.Row="1" 
+                                         HorizontalContentAlignment="Stretch" 
+                                         VerticalContentAlignment="Stretch" 
+                                         Grid.Column="1" 
+                                         Minimum="{TemplateBinding Minimum}" 
+                                         Maximum="{TemplateBinding Maximum}"
+                                         Value="{TemplateBinding Value}" 
+										 x:Name="progressBar" 
+										 RenderTransformOrigin="0.5,0.5" >
+                            	<ProgressBar.RenderTransform>
+                            		<TransformGroup>
+                            			<ScaleTransform/>
+                            			<SkewTransform/>
+                            			<RotateTransform/>
+                            			<TranslateTransform/>
+                            		</TransformGroup>
+                            	</ProgressBar.RenderTransform>
+                            </ProgressBar>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="local:ThumbnailButton">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ThumbnailButton">
+                    <Border Padding="{TemplateBinding Padding}" 
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}" 
+							Margin="{TemplateBinding Margin}" 
+							BorderThickness="{TemplateBinding BorderThickness}" 
+							Visibility="{TemplateBinding Visibility}" 
+							Opacity="{TemplateBinding Opacity}" Cursor="Hand">
+                        <Grid Height="Auto" Width="Auto">
+                    		<Rectangle Fill="#FFFFFFFF" Opacity="0"/>
+                    		<StackPanel Width="Auto" Orientation="Horizontal" Margin="0,0,0,0">
+                    			<Image Source="{TemplateBinding ImageSource}" Stretch="Fill" controls:DockPanel.Dock="Left" Height="30" x:Name="ImageThumb" Width="30" />
+                    			<Grid Width="100" Height="36">
+                    				<Grid.ColumnDefinitions>
+                    					<ColumnDefinition Width="0.04*"/>
+                    					<ColumnDefinition Width="0.92*"/>
+                    					<ColumnDefinition Width="0.04*"/>
+                    				</Grid.ColumnDefinitions>
+                    				<TextBlock Text="{TemplateBinding Text}" TextWrapping="Wrap" x:Name="TextBlockPicName" FontFamily="Trebuchet MS" FontSize="9.5" Foreground="#FF67A0CD" Padding="0,2,0,0" Height="Auto" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+                    			</Grid>
+                    		</StackPanel>
+                    	</Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="local:MenuPanel">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:MenuPanel">
+                    <Grid DataContext="{TemplateBinding IsActive}" IsHitTestVisible="{Binding Converter={StaticResource NegationConverter}}">
+                        <Grid.Resources>
+                            <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0.770408,1.09932" EndPoint="0.770408,0.459321">
+                                <GradientStop Color="#C2FFFFFF" Offset="0.0136986"/>
+                                <GradientStop Color="#E17FA6C5" Offset="0.0143199"/>
+                                <GradientStop Color="#FF004E8B" Offset="0.840183"/>
+                                <GradientStop Color="#800069C5" Offset="0.999873"/>
+                                <GradientStop Color="#000085FF" Offset="1"/>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush x:Key="HeaderGradientMouseOver" StartPoint="0.770408,1.09932" EndPoint="0.770408,0.459321">
+                            	<GradientStop Color="#C2FFFFFF" Offset="0.0136986"/>
+                            	<GradientStop Color="#A180D9D9" Offset="0.0143199"/>
+                            	<GradientStop Color="#7F02B4B4" Offset="0.840183"/>
+                            	<GradientStop Color="#40019CD9" Offset="0.999873"/>
+                            	<GradientStop Color="#000085FF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Grid.Resources>
+                        <vsm:VisualStateManager.VisualStateGroups>
+                            <vsm:VisualStateGroup x:Name="MouseStates">
+                                <vsm:VisualState x:Name="MouseOver" >
+                                	<Storyboard>
+                                		<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGridBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                			<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#FFBEE6F5"/>
+                                		</ColorAnimationUsingKeyFrames>
+                                		<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                			<SplineColorKeyFrame KeyTime="00:00:00" Value="#E17FA6C5"/>
+                                			<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#C1FFFFFF"/>
+                                		</ColorAnimationUsingKeyFrames>
+                                		<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                			<SplineColorKeyFrame KeyTime="00:00:00" Value="#FF004E8B"/>
+                                			<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#7F02B4B4"/>
+                                		</ColorAnimationUsingKeyFrames>
+                                		<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[4].(GradientStop.Offset)">
+                                			<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                			<SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.982"/>
+                                		</DoubleAnimationUsingKeyFrames>
+                                		<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                                			<SplineColorKeyFrame KeyTime="00:00:00" Value="#800069C5"/>
+                                			<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#000085FF"/>
+                                		</ColorAnimationUsingKeyFrames>
+                                		<ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HitDummy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                			<SplineColorKeyFrame KeyTime="00:00:00.2000000" Value="#05000000"/>
+                                		</ColorAnimationUsingKeyFrames>
+                                	</Storyboard>
+                                </vsm:VisualState>
+                                <vsm:VisualState x:Name="MouseOut" />
+                            </vsm:VisualStateGroup>
+                            <vsm:VisualStateGroup x:Name="ActivityStates">
+                                <vsm:VisualState x:Name="Active">
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGridBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                            <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFBEE6F5"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                            <SplineColorKeyFrame KeyTime="00:00:00" Value="#E17FA6C5"/>
+                                            <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#C1FFFFFF"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                            <SplineColorKeyFrame KeyTime="00:00:00" Value="#FF004E8B"/>
+                                            <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#7F02B4B4"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[4].(GradientStop.Offset)">
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                                            <SplineDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.982"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="HeaderGrid" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                                            <SplineColorKeyFrame KeyTime="00:00:00" Value="#800069C5"/>
+                                            <SplineColorKeyFrame KeyTime="00:00:00.1000000" Value="#000085FF"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="HitDummy" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                            <SplineColorKeyFrame KeyTime="00:00:00" Value="#05000000"/>
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </vsm:VisualState>
+                            </vsm:VisualStateGroup>
+                        </vsm:VisualStateManager.VisualStateGroups>
+                        <Grid x:Name="LayoutRoot" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.132*"/>
+                                <RowDefinition Height="0.868*"/>
+                            </Grid.RowDefinitions>
+                            <Border x:Name="HeaderGridBorder" Background="#FF67A0CD" BorderBrush="#FFFFFFFF" BorderThickness="0,0,1,0">
+                                <Grid Height="Auto" x:Name="HeaderGrid" Width="Auto">
+                                    <Grid.Background>
+                                        <LinearGradientBrush StartPoint="0.770408,1.09932" EndPoint="0.770408,0.459321">
+                                            <GradientStop Color="#C2FFFFFF" Offset="0.0136986"/>
+                                            <GradientStop Color="#E17FA6C5" Offset="0.0143199"/>
+                                            <GradientStop Color="#FF004E8B" Offset="0.840183"/>
+                                            <GradientStop Color="#800069C5" Offset="0.999873"/>
+                                            <GradientStop Color="#000085FF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Grid.Background>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="0*"/>
+                                    </Grid.RowDefinitions>
+                                    <controls:Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" x:Name="TitleViewbox" Grid.RowSpan="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                                        <TextBlock FontSize="{TemplateBinding FontSize}" Text="{TemplateBinding Title}" TextWrapping="Wrap" Foreground="#FFFFFFFF" x:Name="TextBoxTitle" FontFamily="{TemplateBinding FontFamily}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}"/>
+                                    </controls:Viewbox>
+                                </Grid>
+                            </Border>
+                            <Grid x:Name="Content" Height="Auto" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Grid.Row="1" >
+                                <ContentPresenter Content="{TemplateBinding Content}" />
+                            </Grid>
+                            <Rectangle Grid.RowSpan="2" Fill="#00FFFFFF" x:Name="HitDummy"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

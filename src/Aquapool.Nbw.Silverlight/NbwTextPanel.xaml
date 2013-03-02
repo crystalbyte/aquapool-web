@@ -1,0 +1,41 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Nbw.NbwTextPanel"
+	d:DesignWidth="640" d:DesignHeight="600" xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls" xmlns:Nbw="clr-namespace:Nbw">
+
+	<Grid x:Name="LayoutRoot" Height="Auto" Width="Auto">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="0.068*"/>
+			<RowDefinition Height="0.05*"/>
+			<RowDefinition Height="0.065*"/>
+			<RowDefinition Height="0.127*"/>
+			<RowDefinition Height="0.115*"/>
+			<RowDefinition Height="0.16*"/>
+			<RowDefinition Height="0.205*"/>
+			<RowDefinition Height="0.168*"/>
+			<RowDefinition Height="0.042*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.017*"/>
+			<ColumnDefinition Width="0.531*"/>
+			<ColumnDefinition Width="0.344*"/>
+			<ColumnDefinition Width="0.078*"/>
+			<ColumnDefinition Width="0.03*"/>
+		</Grid.ColumnDefinitions>
+		<controls:Viewbox Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" x:Name="ViewboxMainText" Grid.ColumnSpan="3">
+			<TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0" FontFamily="Trebuchet MS"><Run  FontSize="10.5" Text="An der Steganlage mit 30 Liegeplätzen und E - Anschluss können Sie Ihre Segel- " Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="und Motoryachten am Werlsee festmachen. Durch eine hervorragende Wasserqualität, " Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="die direkte Anbindung an die Autobahn (Berliner Ring), die Parkmöglichkeit vor der " Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="Steganlage und den Interegioanschluss RE1 bieten diese Liegeplätze eine ideale " Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="Voraussetzung für die Ruhe am Steg und die Anbindung zum Zentrum in Berlin." Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run Text=" "/><LineBreak/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="WIR VERMIETEN LIEGEPLÄTZE FÜR:" Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run Text=" "/><LineBreak/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="•  Motoryachten" Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="•  Segelyachten" Foreground="#FF67A0CD"/><Run Text=" "/><LineBreak/><Run FontSize="10.5" Text="•  Ruderboote" Foreground="#FF67A0CD"/></TextBlock>
+		</controls:Viewbox>
+		<controls:Viewbox HorizontalAlignment="Stretch" Margin="0,0,104,0" x:Name="ViewboxAquaHeader_Copy" Width="Auto" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+			<Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF" d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD" FontSize="7" x:Name="ButtonAquaHeaderDisabled1" Padding="0,0,0,0" BorderThickness="0,0,0,0" >
+				<TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0" Padding="0,4,0,0" Text="Wir bringen Sie an das Wasser und stehen Ihnen zur Seite!"/>
+			</Button>
+		</controls:Viewbox>
+		<Border Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" x:Name="ImageBorder">
+			<Image Source="Media/NBW_Picture.jpg"/>
+		</Border>
+	</Grid>
+</UserControl>
