@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquapool.Abtiwa.Silverlight
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquapool.Nbw.Silverlight", "Aquapool.Nbw.Silverlight\Aquapool.Nbw.Silverlight.csproj", "{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquapool.Web", "Aquapool.Web\Aquapool.Web.csproj", "{45C266A1-D2A7-4BEF-97F9-AE1349A7D865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C266A1-D2A7-4BEF-97F9-AE1349A7D865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C266A1-D2A7-4BEF-97F9-AE1349A7D865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C266A1-D2A7-4BEF-97F9-AE1349A7D865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C266A1-D2A7-4BEF-97F9-AE1349A7D865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

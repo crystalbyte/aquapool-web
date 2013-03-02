@@ -8,7 +8,6 @@ C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\ob
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\OverviewPage.g.cs
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\RedDot.g.cs
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Root.g.cs
-C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\StartPage.g.cs
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\WasserbauPage.g.cs
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\YachtCharterGalleryPage.g.cs
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\YachtCharterPage.g.cs
@@ -17,8 +16,8 @@ C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\ob
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Aquapool.Nbw.dll
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Aquapool.Nbw.pdb
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\AppManifest.xaml
-C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Aquapool_2_Nbw.xap
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Default.html
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.dll
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.pdb
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\XapCacheFile.xml
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Aquapool.Nbw.xap

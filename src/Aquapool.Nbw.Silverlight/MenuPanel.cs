@@ -44,7 +44,6 @@ namespace Aquapool.Nbw
 
         // Using a DependencyProperty as the backing store for Title.  This enables animation, styling, binding, etc...
 
-        //[TypeConverter(typeof (StringToBoolConverter))]
         public bool IsLast { get; set; }
 
         public Grid Content

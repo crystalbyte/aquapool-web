@@ -5,8 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     x:Class="Aquapool.Nbw.RedDot"
-    d:DesignWidth="179" d:DesignHeight="179" Height="Auto" Width="Auto"
-    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls">
+    d:DesignWidth="179" d:DesignHeight="179" Height="Auto" Width="Auto">
     <UserControl.Resources>
         <Storyboard x:Name="StoryboardImpulse" AutoReverse="False" RepeatBehavior="Forever">
             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="EllipseImpulse2"

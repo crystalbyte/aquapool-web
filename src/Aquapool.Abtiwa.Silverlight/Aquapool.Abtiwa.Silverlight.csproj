@@ -254,7 +254,7 @@
     <Compile Include="Resources\Controls\ThumbnailControl.xaml.cs">
       <DependentUpon>ThumbnailControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Timer.cs" />
+    <Compile Include="TransitionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

@@ -140,35 +140,35 @@ namespace Aquapool
         {
             var a = new ThumbnailControl(Text1, Uri1);
             a.MouseLeftButtonUp += new MouseButtonEventHandler(a_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(5), this.TransitionThumbnail1.PerformTransition, a);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(5), this.TransitionThumbnail1.PerformTransition, a);
 
             var b = new ThumbnailControl(Text2, Uri2);
             b.MouseLeftButtonUp += new MouseButtonEventHandler(b_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(100), this.TransitionThumbnail2.PerformTransition, b);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(100), this.TransitionThumbnail2.PerformTransition, b);
 
             var c = new ThumbnailControl(Text3, Uri3);
             c.MouseLeftButtonUp += new MouseButtonEventHandler(c_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionThumbnail3.PerformTransition, c);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionThumbnail3.PerformTransition, c);
 
             var d = new ThumbnailControl(Text4, Uri4);
             d.MouseLeftButtonUp += new MouseButtonEventHandler(d_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(300), this.TransitionThumbnail4.PerformTransition, d);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(300), this.TransitionThumbnail4.PerformTransition, d);
 
             var e = new ThumbnailControl(Text5, Uri5);
             e.MouseLeftButtonUp += new MouseButtonEventHandler(e_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionThumbnail5.PerformTransition, e);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionThumbnail5.PerformTransition, e);
 
             var f = new ThumbnailControl(Text6, Uri6);
             f.MouseLeftButtonUp += new MouseButtonEventHandler(f_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionThumbnail6.PerformTransition, f);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionThumbnail6.PerformTransition, f);
 
             var g = new ThumbnailControl(Text7, Uri7);
             g.MouseLeftButtonUp += new MouseButtonEventHandler(g_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionThumbnail7.PerformTransition, g);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionThumbnail7.PerformTransition, g);
 
             var h = new ThumbnailControl(Text8, Uri8);
             h.MouseLeftButtonUp += new MouseButtonEventHandler(h_MouseLeftButtonUp);
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(700), this.TransitionThumbnail8.PerformTransition, h);
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(700), this.TransitionThumbnail8.PerformTransition, h);
         }
 
         void h_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

@@ -1,0 +1,118 @@
+﻿@{
+    ViewBag.Title = "Aqua Pool Werlsee";
+}
+
+@section styles {
+    <link href="~/Styles/Global.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Columns.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Footer.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -300px;
+            margin-left: -200px;
+        }
+
+        #motto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -180px;
+            margin-top: -40px;
+            color: #1F7F00;
+        }
+    </style>
+}
+
+<div id="mainDiv">
+    <img id="logo" alt="Aquapool Werlsee" src="~/Media/Images/Logos/www_ap_logo.png" />
+    <div id="motto">
+        <span style="font-size: 41px;">Aquapool</span>
+        <br />
+        <span style="font-size: 26px; margin-left: 56px; line-height: 90%;">findet für Sie</span>
+        <br />
+        <span style="font-size: 30px; margin-left: 1px; line-height: 90%;">immer eine Lösung!</span>
+    </div>
+    <div id="leftColumn" class="column leftColumn ">
+        <img alt="Aquapool Werlsee" src="~/Media/Images/Background/AP_lobby_menu_ecken_o.png" class="cornerImageTop" />
+        <div class="columnBody">
+            <img alt="Abtiwa" src="~/Media/Images/Logos/AP_abtiwa_logo.png" style="margin-top: 10px;">
+            <img alt="Abtiwa" src="~/Media/Images/Logos/AP_tauch_logo.png" style="margin-left: -15px; margin-top: 100px;">
+            <div class="entryLink" style="margin-top: 100px;">
+                <a href="@Href("~/Home/Abtiwa")" class="webLink">
+                    <div style="margin-top: 20px; padding-left: 32px;">
+                        <span>Webseite</span>
+                        <br />
+                        <span>betreten</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img src="~/Media/Images/Background/AP_lobby_menu_ecken_u.png" class="cornerImageBottom" />
+    </div>
+    <div id="rightColumn" class="column rightColumn">
+        <img alt="Aquapool Werlsee" src="~/Media/Images/Background/AP_lobby_menu_ecken_o.png" class="cornerImageTop" />
+        <div class="columnBody">
+            <img alt="Aquapool Yacht Charter" src="~/Media/Images/Logos/AP_yacht_logo.png" style="margin-left: 10px; margin-top: 10px;" />
+            <img src="~/Media/Images/Logos/AP_wasserbau_logo.png" style="margin-left: -12px; margin-top: 41px;" alt="Niederbarnimer Wasserbau" />
+            <img src="~/Media/Images/Logos/AP_kopier_logo.png" style="margin-left: 5px; margin-top: 41px;" alt="Kopierservice"/>
+            <div class="entryLink" style="margin-top: 41px;">
+                <a href="@Href("~/Home/Nbw")" class="webLink">
+                    <div style="margin-top: 20px; padding-left: 32px;">
+                        <span>Webseite</span>
+                        <br />
+                        <span>betreten</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img alt="Aquapool Werlsee" src="~/Media/Images/Background/AP_lobby_menu_ecken_u.png" class="cornerImageBottom" />
+    </div>
+    <div class="footer">
+        <div class="footerText footerBlock">
+            <span class="footerText bold">Anschrift:</span><br />
+            Werlseestraße 37
+            <br />
+            D-15537 Grünheide
+            <br />
+            OT Fangschleuse
+            <br />
+        </div>
+        <div class="footerText footerBlock">
+            <span class="footerText bold">Telefon:</span><br />
+            + 49 (0) 3362–23344
+            <br />
+            <span class="footerText bold">Fax:</span><br />
+            + 49 (0) 3362–23355
+            <br />
+        </div>
+        <div class="footerText footerBlock">
+            Für die Darstellung unserer Webpräsenz benötigen
+            <br />
+            Sie Microsoft Silverlight. Laden und installieren Sie
+            <br />
+            Microsoft Silverlight 
+                   <a class="footerText bold" target="_blank"
+                       href="http://www.microsoft.com/getsilverlight/Get-Started/Install/Default.aspx">hier</a><br />
+        </div>
+        <div class="footerText footerBlock">
+            Optimiert für
+            <br />
+            Internet Explorer 7.0 +,
+            <br />
+            Mozilla Firefox 2.0 +,
+            <br />
+            Safari 3.0 +
+            <br />
+        </div>
+        <div class="footerText footerBlock">
+            <br />
+            <br />
+            <br />
+            © 2010 Aquapool Werlsee 
+            <br />
+        </div>
+    </div>
+</div>

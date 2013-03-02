@@ -6,7 +6,7 @@ using System.Windows.Input;
 
 namespace Aquapool.Nbw
 {
-    public partial class Root : UserControl
+    public partial class Root
     {
         private static readonly Root instance = new Root();
 
@@ -33,7 +33,7 @@ namespace Aquapool.Nbw
 
         private void InitializeNavigationButtons()
         {
-            var child = NavigationViewbox.Child as StackPanel;
+            var child = (StackPanel)NavigationViewbox.Child;
             ButtonHome = child.Children[0] as Button;
             ButtonServices = child.Children[2] as Button;
             ButtonContact = child.Children[4] as Button;
@@ -71,7 +71,7 @@ namespace Aquapool.Nbw
 
         private void SetPageTitle(string title)
         {
-            (PageTitleViewbox.Child as TextBlock).Text = title;
+            ((TextBlock)PageTitleViewbox.Child).Text = title;
         }
 
         private void SwapPage(UserControl control)

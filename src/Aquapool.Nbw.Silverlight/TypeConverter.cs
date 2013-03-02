@@ -17,20 +17,4 @@ namespace Aquapool.Nbw {
 
         #endregion
     }
-
-    //public class StringToBoolConverter : IValueConverter {
-    //    #region IValueConverter Members
-
-    //    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
-    //        var s = value as string;
-    //        return !string.IsNullOrEmpty(s) && bool.Parse(s);
-    //    }
-
-    //    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) {
-    //        var xamlString = (string)value;
-    //        return bool.Parse(xamlString);
-    //    }
-
-    //    #endregion
-    //}
 }

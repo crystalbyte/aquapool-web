@@ -250,13 +250,13 @@ namespace Aquapool
 
         private void ShowUpperMenu()
         {
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionButtonHome.PerformTransition, new ButtonHomeControl());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionSeperator1.PerformTransition, new Seperator());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(700), this.TransitionButtonServices.PerformTransition, new ButtonServicesControl());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionSeperator2.PerformTransition, new Seperator());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(900), this.TransitionButtonContact.PerformTransition, new ButtonContactControl());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionSeperator3.PerformTransition, new Seperator());
-            TransitionTimer.Launch(TimeSpan.FromMilliseconds(1100), this.TransitionButtonImprint.PerformTransition, new ButtonImprintControl());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionButtonHome.PerformTransition, new ButtonHomeControl());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionSeperator1.PerformTransition, new Seperator());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(700), this.TransitionButtonServices.PerformTransition, new ButtonServicesControl());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionSeperator2.PerformTransition, new Seperator());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(900), this.TransitionButtonContact.PerformTransition, new ButtonContactControl());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionSeperator3.PerformTransition, new Seperator());
+            TransitionProvider.Launch(TimeSpan.FromMilliseconds(1100), this.TransitionButtonImprint.PerformTransition, new ButtonImprintControl());
         }
 
         private GalleryButton GetNewButton()
@@ -264,7 +264,7 @@ namespace Aquapool
             GalleryButton b = new GalleryButton();
             b.MouseLeftButtonUp += delegate
             {
-                TransitionTimer.Launch(TimeSpan.FromMilliseconds(1), this.TransitionThumbnailPage.PerformTransition, new AbtiwaThumbnailPage());
+                TransitionProvider.Launch(TimeSpan.FromMilliseconds(1), this.TransitionThumbnailPage.PerformTransition, new AbtiwaThumbnailPage());
             };
             return b;
         }
@@ -335,26 +335,26 @@ namespace Aquapool
                     this.ClearActiveStates();
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionBodyCanvas.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(300), this.TransitionAbtiwaMain.PerformTransition, new AbtiwaMain());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionIngMain.PerformTransition, new DiveBureauMain());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentServices());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionBodyCanvas.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(300), this.TransitionAbtiwaMain.PerformTransition, new AbtiwaMain());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionIngMain.PerformTransition, new DiveBureauMain());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentServices());
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionAbtiwaMain.PerformTransition, new AbtiwaMain());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionIngMain.PerformTransition, new DiveBureauMain());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(2000), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentServices());   
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionAbtiwaMain.PerformTransition, new AbtiwaMain());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionIngMain.PerformTransition, new DiveBureauMain());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(2000), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentServices());   
                         this.ShowUpperMenu();
                     }
                     this.BringToFront(BodyType.Menu);
@@ -364,23 +364,23 @@ namespace Aquapool
                     this.SetMenuActive(MenuTypes.Services);
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new AbtiwaPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionGalleryButton.PerformTransition, this.GetNewButton());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new AbtiwaPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionGalleryButton.PerformTransition, this.GetNewButton());
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new AbtiwaPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionGalleryButton.PerformTransition, this.GetNewButton());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new AbtiwaPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionGalleryButton.PerformTransition, this.GetNewButton());
                         this.ShowUpperMenu();
                     }
                     this.BringToFront(BodyType.Content);
@@ -390,25 +390,25 @@ namespace Aquapool
                     this.SetMenuActive(MenuTypes.Services);
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(300), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new DiveBureauPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(300), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new DiveBureauPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
                         
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new DiveBureauPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new DiveBureauPage());
                         //TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionThumbnailPage.PerformTransition, new DiveBureauThumbnailPanel());
                         this.ShowUpperMenu();
                     }
@@ -419,21 +419,21 @@ namespace Aquapool
                     this.SetMenuActive(MenuTypes.Services);
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, this.GalleryAbtiwa);
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, this.GalleryAbtiwa);
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, this.GalleryAbtiwa);
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, this.GalleryAbtiwa);
                         this.ShowUpperMenu();
                     }
                     this.BringToFront(BodyType.Content);
@@ -442,20 +442,20 @@ namespace Aquapool
                 case PageType.DiveBureauGallery:
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
                         //TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, this.GalleryDivingBureau);
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
                         //TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, this.GalleryDivingBureau);
                         this.ShowUpperMenu();
                     }
@@ -467,27 +467,27 @@ namespace Aquapool
                     this.SetMenuActive(MenuTypes.Imprint);
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new ImprintPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(700), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentImprint());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(900), this.TransitionThumbnailPage.PerformTransition, new ImprintSideLineControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new ImprintPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(700), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentImprint());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(900), this.TransitionThumbnailPage.PerformTransition, new ImprintSideLineControl());
 
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new ImprintPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentImprint());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(2000), this.TransitionThumbnailPage.PerformTransition, new ImprintSideLineControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new ImprintPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1800), this.TransitionCornerBoxContent.PerformTransition, new CornerBoxContentImprint());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(2000), this.TransitionThumbnailPage.PerformTransition, new ImprintSideLineControl());
                         this.ShowUpperMenu();
                     }
                     this.BringToFront(BodyType.Content);
@@ -498,23 +498,23 @@ namespace Aquapool
                     this.SetMenuActive(MenuTypes.Contact);
                     if (running)
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new ContactPage());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(300), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionAbtiwaMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionIngMain.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionBodyCanvas.PerformTransition, new ContactPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(300), this.TransitionThumbnailPage.PerformTransition, new PlaceboControl());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(500), this.TransitionGalleryButton.PerformTransition, new PlaceboControl());
                     }
                     else
                     {
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
-                        TransitionTimer.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new ContactPage());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(10), this.TransitionHeader.PerformTransition, new HeaderGradient());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(200), this.TransitionWave.PerformTransition, new Wave());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(400), this.TransitionLogo.PerformTransition, new Logo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(600), this.TransitionAbtiwaSide.PerformTransition, new AbtiwaSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(800), this.TransitionAbtiwaLogo.PerformTransition, new AbtiwaLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1000), this.TransitionIngSide.PerformTransition, new DiveBureauSide());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1200), this.TransitionIngLogo.PerformTransition, new DiveBureauLogo());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1400), this.TransitionCornerBox.PerformTransition, new CornerBox());
+                        TransitionProvider.Launch(TimeSpan.FromMilliseconds(1600), this.TransitionBodyCanvas.PerformTransition, new ContactPage());
                         this.ShowUpperMenu();
                     }
                     this.BringToFront(BodyType.Content);

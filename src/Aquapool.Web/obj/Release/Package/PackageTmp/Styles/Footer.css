@@ -1,0 +1,26 @@
+﻿.bold
+{
+    font-weight: bold;
+}
+
+.footerText
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #3B89C5;
+}
+
+.footerBlock
+{
+    float: left;
+    margin-right: 65px;
+}
+
+.footer
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 280px;
+    margin-left: -450px;
+}
