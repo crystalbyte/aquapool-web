@@ -1,6 +1,7 @@
 ﻿.column
 {
-    margin-top: 150px;
+    top: 50%;
+    margin-top: -300px;
     width: 211px;
     position: absolute;
     left: 50%;
@@ -50,6 +51,7 @@
 
 .columnBody
 {
+    margin-top: -4px;
     height: 500px;
     background-image: url('../Media/Images/Background/AP_lobby_menu_hg.png');
     background-repeat: repeat-y;

@@ -21,3 +21,4 @@ C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\ob
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.pdb
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\XapCacheFile.xml
 C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\bin\Debug\Aquapool.Nbw.xap
+C:\Users\Alexander\Documents\GitHub\aquapool-web\src\Aquapool.Nbw.Silverlight\obj\Debug\Aquapool.Nbw.Silverlight.csprojResolveAssemblyReference.cache
