@@ -1,7 +1,0 @@
-﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Aquapool" EntryPointType="Aquapool.App" RuntimeVersion="5.0.61118.0">
-  <Deployment.Parts>
-    <AssemblyPart x:Name="Aquapool" Source="Aquapool.dll" />
-    <AssemblyPart x:Name="Crystalbyte.Transition" Source="Crystalbyte.Transition.dll" />
-    <AssemblyPart x:Name="Microsoft.Windows.Controls" Source="Microsoft.Windows.Controls.dll" />
-  </Deployment.Parts>
-</Deployment>
