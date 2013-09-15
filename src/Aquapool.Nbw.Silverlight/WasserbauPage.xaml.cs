@@ -46,7 +46,7 @@ namespace Aquapool.Nbw
         private void ThumbnailButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             NbwGalleryPanel gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText1, 1, 6, Pictures.PicturePath1);
+            gallery.ShowPicture(Pictures.JettyText1, 1, 1, Pictures.JettyPath1);
         }
 
         private void SwapContent(UserControl contentControl)
@@ -86,8 +86,8 @@ namespace Aquapool.Nbw
 
         private void ThumbnailButton6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            NbwGalleryPanel gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
+            //NbwGalleryPanel gallery = EnsureGalleryPanelExistence();
+            //gallery.ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
         }
     }
 }

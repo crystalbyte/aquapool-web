@@ -22,7 +22,7 @@ namespace Aquapool.Nbw
             var uri = new Uri(path, UriKind.Relative);
             Viewer.LoadPicture(uri);
             TextBlockImageTitle.Text = text;
-            TextBlockPictureNumber.Text = "0" + min + " / " + "0" + max;
+            TextBlockPictureNumber.Text = min + " / " + max;
             current = min;
             CheckButtons();
         }
@@ -56,22 +56,22 @@ namespace Aquapool.Nbw
             switch (current)
             {
                 case 1:
-                    ShowPicture(Pictures.PictureText1, 1, 6, Pictures.PicturePath1);
+                    ShowPicture(Pictures.PictureText1, 1, 5, Pictures.PicturePath1);
                     break;
                 case 2:
-                    ShowPicture(Pictures.PictureText2, 2, 6, Pictures.PicturePath2);
+                    ShowPicture(Pictures.PictureText2, 2, 5, Pictures.PicturePath2);
                     break;
                 case 3:
-                    ShowPicture(Pictures.PictureText3, 3, 6, Pictures.PicturePath3);
+                    ShowPicture(Pictures.PictureText3, 3, 5, Pictures.PicturePath3);
                     break;
                 case 4:
-                    ShowPicture(Pictures.PictureText4, 4, 6, Pictures.PicturePath4);
+                    ShowPicture(Pictures.PictureText4, 4, 5, Pictures.PicturePath4);
                     break;
                 case 5:
-                    ShowPicture(Pictures.PictureText5, 5, 6, Pictures.PicturePath5);
+                    ShowPicture(Pictures.PictureText5, 5, 5, Pictures.PicturePath5);
                     break;
-                case 6:
-                    ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
+                //case 6:
+                //    ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
                     break;
                 default:
                     break;
@@ -85,7 +85,7 @@ namespace Aquapool.Nbw
             ButtonNextImage = ViewboxButtonNext.Child as Button;
             ButtonClose = ViewboxClose.Child as Button;
             TextBlockPictureNumber = ViewboxPictureNumber.Child as TextBlock;
-            TextBlockImageTitle = ViewboxImageTitleText.Child as TextBlock;
+            TextBlockImageTitle = TextBlockImageTitle as TextBlock;
         }
 
         public void Previous()
@@ -98,22 +98,22 @@ namespace Aquapool.Nbw
             switch (current)
             {
                 case 1:
-                    ShowPicture(Pictures.PictureText1, 1, 6, Pictures.PicturePath1);
+                    ShowPicture(Pictures.PictureText1, 1, 5, Pictures.PicturePath1);
                     break;
                 case 2:
-                    ShowPicture(Pictures.PictureText2, 2, 6, Pictures.PicturePath2);
+                    ShowPicture(Pictures.PictureText2, 2, 5, Pictures.PicturePath2);
                     break;
                 case 3:
-                    ShowPicture(Pictures.PictureText3, 3, 6, Pictures.PicturePath3);
+                    ShowPicture(Pictures.PictureText3, 3, 5, Pictures.PicturePath3);
                     break;
                 case 4:
-                    ShowPicture(Pictures.PictureText4, 4, 6, Pictures.PicturePath4);
+                    ShowPicture(Pictures.PictureText4, 4, 5, Pictures.PicturePath4);
                     break;
                 case 5:
-                    ShowPicture(Pictures.PictureText5, 5, 6, Pictures.PicturePath5);
+                    ShowPicture(Pictures.PictureText5, 5, 5, Pictures.PicturePath5);
                     break;
-                case 6:
-                    ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
+                //case 6:
+                //    ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
                     break;
                 default:
                     break;

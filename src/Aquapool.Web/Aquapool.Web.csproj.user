@@ -26,6 +26,8 @@
           <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
           <ProjectOutputReferences>
             <Ref Project="{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}" Folder="ClientBin">Aquapool.Nbw.xap</Ref>
+            <Ref Project="{E6FA7E70-7D67-4483-A64F-E43B728B1A52}" Folder="ClientBin">Aquapool.Lobby.xap</Ref>
+            <Ref Project="{E6ECECE5-F977-4E2F-9144-092D59FA88FA}" Folder="ClientBin">Aquapool.xap</Ref>
           </ProjectOutputReferences>
         </WebProjectProperties>
       </FlavorProperties>

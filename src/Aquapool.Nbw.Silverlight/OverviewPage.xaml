@@ -1,16 +1,13 @@
-﻿<UserControl
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls"
-    mc:Ignorable="d"
-    x:Class="Aquapool.Nbw.OverviewPage"
-    d:DesignWidth="900" d:DesignHeight="680"
-    HorizontalAlignment="Stretch"
-    VerticalAlignment="Stretch">
-    <UserControl.Resources>
-    </UserControl.Resources>
+﻿<UserControl x:Class="Aquapool.Nbw.OverviewPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             d:DesignHeight="680"
+             d:DesignWidth="900"
+             mc:Ignorable="d">
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.066*" />
@@ -30,71 +27,156 @@
             <ColumnDefinition Width="0.035*" />
             <ColumnDefinition Width="0.297*" />
         </Grid.ColumnDefinitions>
-        <Viewbox HorizontalAlignment="Left" Margin="0,0,0,0" x:Name="ViewboxNbwButton" Width="Auto"
-                          Grid.Column="1" Grid.Row="1" Grid.RowSpan="1" >
-            <Button Style="{StaticResource GlossButtonStyle}" Background="#FFFFFFFF"
-                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
-                    FontSize="7" x:Name="ButtonNbw" Click="ButtonNbw_Click" MouseEnter="ButtonNbw_MouseEnter"
-                    MouseLeave="ButtonNbw_MouseLeave">
-                <TextBlock FontSize="14.5" FontFamily="Trebuchet MS" FontWeight="Bold" Padding="0,2,0,0">
+        <Viewbox x:Name="ViewboxNbwButton"
+                 Grid.Row="1"
+                 Grid.RowSpan="1"
+                 Grid.Column="1"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Left">
+            <Button x:Name="ButtonNbw"
+                    Width="Auto"
+                    Height="Auto"
+                    Background="#FFFFFFFF"
+                    Click="ButtonNbw_Click"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    MouseEnter="ButtonNbw_MouseEnter"
+                    MouseLeave="ButtonNbw_MouseLeave"
+                    Style="{StaticResource GlossButtonStyle}"
+                    d:LayoutOverrides="HorizontalAlignment">
+                <TextBlock FontFamily="Trebuchet MS"
+                           FontSize="14.5"
+                           FontWeight="Bold"
+                           Padding="0,2,0,0">
                     <Run Text="Bei uns können Sie anlegen!" />
                 </TextBlock>
             </Button>
         </Viewbox>
-        <Viewbox HorizontalAlignment="Left" Margin="0,0,0,0" x:Name="ViewBoxYachtCharterButton" Width="Auto"
-                          Grid.Column="4" Grid.Row="1" Grid.RowSpan="1">
-            <Button Style="{StaticResource GlossButtonStyle}" Background="#FFFFFFFF" Width="251" Height="23"
-                    x:Name="ButtonYachtCharter" FontSize="7" Foreground="#FF67A0CD" Padding="0,0,0,0"
-                    Click="ButtonYachtCharter_Click" MouseEnter="ButtonYachtCharter_MouseEnter"
-                    MouseLeave="ButtonYachtCharter_MouseLeave">
-                <TextBlock FontSize="14.5" FontFamily="Trebuchet MS" FontWeight="Bold" Padding="0,1,0,0">
+        <Viewbox x:Name="ViewBoxYachtCharterButton"
+                 Grid.Row="1"
+                 Grid.RowSpan="1"
+                 Grid.Column="4"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Left">
+            <Button x:Name="ButtonYachtCharter"
+                    Width="251"
+                    Height="23"
+                    Background="#FFFFFFFF"
+                    Click="ButtonYachtCharter_Click"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    MouseEnter="ButtonYachtCharter_MouseEnter"
+                    MouseLeave="ButtonYachtCharter_MouseLeave"
+                    Padding="0,0,0,0"
+                    Style="{StaticResource GlossButtonStyle}">
+                <TextBlock FontFamily="Trebuchet MS"
+                           FontSize="14.5"
+                           FontWeight="Bold"
+                           Padding="0,1,0,0">
                     <Run Text="Mit uns Natur hautnah erleben!" />
                 </TextBlock>
             </Button>
         </Viewbox>
-        <Viewbox HorizontalAlignment="Left" Margin="0,0,0,0" Width="Auto" Grid.Column="7" Grid.Row="1"
-                          Grid.RowSpan="2" x:Name="ViewboxKopierServiceButton">
-            <Button Style="{StaticResource GlossButtonStyle}" Background="#FFFFFFFF" Width="216" Height="39"
-                    x:Name="ButtonKopierService" FontSize="7" Foreground="#FF67A0CD" Padding="0,0,0,0"
-                    Click="ButtonKopierService_Click" MouseEnter="ButtonKopierService_MouseEnter"
-                    MouseLeave="ButtonKopierService_MouseLeave">
-                <TextBlock VerticalAlignment="Top" FontSize="14.5" FontFamily="Trebuchet MS" FontWeight="Bold">
-                    <Run Text="Kopieren, Binden, Plotten" /><Run Text=" " /><LineBreak />
-                    <Run
-                        Text="alles in Farbe und mehr!" />
+        <Viewbox x:Name="ViewboxKopierServiceButton"
+                 Grid.Row="1"
+                 Grid.RowSpan="2"
+                 Grid.Column="7"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Left">
+            <Button x:Name="ButtonKopierService"
+                    Width="216"
+                    Height="39"
+                    Background="#FFFFFFFF"
+                    Click="ButtonKopierService_Click"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    MouseEnter="ButtonKopierService_MouseEnter"
+                    MouseLeave="ButtonKopierService_MouseLeave"
+                    Padding="0,0,0,0"
+                    Style="{StaticResource GlossButtonStyle}">
+                <TextBlock VerticalAlignment="Top"
+                           FontFamily="Trebuchet MS"
+                           FontSize="14.5"
+                           FontWeight="Bold">
+                    <Run Text="Kopieren, Binden, Plotten" /><Run Text=" " />
+                    <LineBreak />
+                    <Run Text="alles in Farbe und mehr!" />
                 </TextBlock>
             </Button>
         </Viewbox>
-        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Grid.Column="0" Grid.RowSpan="2" Grid.Row="4"
-              Grid.ColumnSpan="8" Visibility="Collapsed">
+        <Grid Grid.Row="4"
+              Grid.RowSpan="2"
+              Grid.Column="0"
+              Grid.ColumnSpan="8"
+              Width="Auto"
+              Margin="0,0,0,0"
+              HorizontalAlignment="Stretch"
+              Visibility="Collapsed">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.067*" />
                 <ColumnDefinition Width="0.933*" />
             </Grid.ColumnDefinitions>
-            <Path Height="Auto" x:Name="Path" Width="Auto" Stretch="Fill"
+            <Path x:Name="Path"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  Width="Auto"
+                  Height="Auto"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
                   Data="M19.055159,165.07019 C43.889706,163.43695 77.538788,203.23438 89.283188,214.01453 C116.80978,239.30457 143.97235,265.00134 170.93391,290.87518 C120.22911,284.23425 64.940186,262.74249 25.930288,228.67957 C13.286605,217.64484 -14.223597,184.50153 9.0409975,168.51208 C12.139459,166.38226 15.507361,165.30347 19.055159,165.07019 z M555.65912,111.12634 C552.89435,111.18829 550.42206,112.22974 548.74469,114.89703 C548.74469,114.89703 537.24658,132.35883 613.81903,162.81952 C613.81903,162.81952 713.61969,201.83716 807.30981,185.81775 C807.30981,185.81775 691.35754,197.14435 574.88123,119.57086 C574.88123,119.57086 563.95361,110.94049 555.65912,111.12634 z M362.77966,62.478516 C351.82343,62.68689 346.0968,77.174774 349.84641,90.788361 C355.79797,112.30426 377.71713,126.10779 395.79684,136.81372 C414.12164,147.68463 440.61719,153.65381 455.49664,169.17352 C471.10315,185.44189 405.79184,163.17834 403.78564,162.45471 C342.53671,140.68793 282.13583,116.0575 222.92009,89.252106 C202.24507,96.825562 254.44115,127.99786 259.60364,130.84052 C284.52109,144.56207 310.9436,155.60986 337.4332,165.92706 C379.8493,182.44128 423.1355,197.03442 466.80374,209.93939 C486.94073,215.8916 556.51849,226.06677 517.9967,189.71887 C509.75595,181.93256 364.65784,111.16382 373.63474,94.703522 C374.93484,92.307678 513.04926,161.01337 525.21045,165.82312 C577.82648,186.65332 631.59277,204.74078 685.849,220.7323 C693.4447,222.97925 725.54785,230.27179 714.90283,216.37836 C708.89227,208.53906 685.01288,206.31805 675.80902,203.39844 C625.60913,187.46393 575.90729,169.95618 526.24255,152.4364 C471.51025,133.13049 420.87531,103.4574 375.32187,67.591278 C370.66492,63.926239 366.43176,62.409058 362.77966,62.478516 z M307.95251,0.0043945313 C309.8938,0.028961182 311.92017,0.15679932 314.02994,0.39385986 C365.95297,6.1971436 405.25079,44.940918 447.53986,71.173615 C476.24368,88.968231 513.61627,102.02509 547.50958,92.44458 C577.91748,83.860657 610.5127,89.825806 638.72742,103.06659 C698.08014,130.9375 752.40845,188.72229 821.01813,139.79431 C824.58386,137.25146 827.95013,134.56744 831.1264,131.75415 L839.5,123.5224 L839.5,302.62201 L348.1225,302.62201 L341.95255,298.21381 C334.08914,292.25238 326.55176,285.82135 319.39944,278.867 C295.0571,255.2041 363.98178,277.22083 373.64673,279.45575 C405.44382,286.78729 437.25888,294.10291 469.05496,301.43439 C419.99722,284.67426 370.91644,267.56732 322.93781,247.94855 C306.9151,241.40161 239.87172,199.40869 213.30269,200.34192 C208.38249,200.51477 204.85031,202.15967 203.2872,205.77435 C191.41504,233.23749 260.3327,271.37555 281.29675,284.10657 C290.90344,289.93732 300.69031,295.46533 310.63452,300.70398 L314.40689,302.62201 L268.21408,302.62201 L265.48135,300.57068 C249.7477,288.50299 234.43723,275.83392 219.38576,263.75409 C179.68091,231.88409 141.11815,198.28485 105.02464,162.34277 C96.581833,153.90869 79.735199,138.56494 87.708977,125.70697 C91.132309,120.18353 103.29149,113.78558 109.65111,117.23492 C141.49818,134.50183 173.34528,151.7757 205.17136,169.04358 C254.29114,195.69806 306.11719,216.47034 357.30414,238.84082 C261.41183,184.50134 154.15042,127.38019 75.975433,47.680634 C63.920166,35.386444 54.399147,-0.24087524 82.28083,8.0472412 C126.58475,21.233063 169.34489,43.932404 211.34097,62.918488 C249.67668,80.239319 288.50946,101.44937 328.95239,113.35278 C374.50082,126.75049 291.43677,61.378174 283.91702,48.42926 C268.86774,22.504608 278.83368,-0.36380005 307.95251,0.0043945313 z"
-                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Grid.Column="1">
+                  Stretch="Fill">
                 <Path.Fill>
                     <LinearGradientBrush StartPoint="2.8026,-4.70529" EndPoint="2.8026,0.679383">
-                        <GradientStop Color="#44FFFFFF" Offset="0.0136986" />
-                        <GradientStop Color="#399EC3E0" Offset="0.182648" />
-                        <GradientStop Color="#2D3D87C1" Offset="0.840183" />
-                        <GradientStop Color="#179EC3E0" Offset="0.999873" />
+                        <GradientStop Offset="0.0136986" Color="#44FFFFFF" />
+                        <GradientStop Offset="0.182648" Color="#399EC3E0" />
+                        <GradientStop Offset="0.840183" Color="#2D3D87C1" />
+                        <GradientStop Offset="0.999873" Color="#179EC3E0" />
                     </LinearGradientBrush>
                 </Path.Fill>
             </Path>
         </Grid>
-        <Viewbox HorizontalAlignment="Stretch" Margin="3.5,0,3.5,0" Width="1" Grid.Column="2" Grid.RowSpan="6"
-                          Grid.ColumnSpan="1">
-            <Line X1="0" X2="0" Y1="0" Y2="1000" Fill="#FF105A92" Stroke="#FF105A92" Height="Auto"
-                  StrokeDashArray="7 7" StrokeThickness="1" />
+        <Viewbox Grid.RowSpan="6"
+                 Grid.Column="2"
+                 Grid.ColumnSpan="1"
+                 Width="1"
+                 Margin="3.5,0,3.5,0"
+                 HorizontalAlignment="Stretch">
+            <Line Height="Auto"
+                  Fill="#FF105A92"
+                  Stroke="#FF105A92"
+                  StrokeDashArray="7 7"
+                  StrokeThickness="1"
+                  X1="0"
+                  X2="0"
+                  Y1="0"
+                  Y2="1000" />
         </Viewbox>
-        <Viewbox HorizontalAlignment="Stretch" Margin="4,0,4,0" Width="1" Grid.Column="5" Grid.RowSpan="6">
-            <Line X1="0" X2="0" Y1="0" Y2="1000" Fill="#FF105A92" Stroke="#FF105A92" Height="Auto"
-                  StrokeDashArray="5 5" StrokeThickness="1" Width="1" />
+        <Viewbox Grid.RowSpan="6"
+                 Grid.Column="5"
+                 Width="1"
+                 Margin="4,0,4,0"
+                 HorizontalAlignment="Stretch">
+            <Line Width="1"
+                  Height="Auto"
+                  Fill="#FF105A92"
+                  Stroke="#FF105A92"
+                  StrokeDashArray="5 5"
+                  StrokeThickness="1"
+                  X1="0"
+                  X2="0"
+                  Y1="0"
+                  Y2="1000" />
         </Viewbox>
-        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Grid.Column="4" Grid.RowSpan="2"
-              x:Name="TextGridMid" Grid.Row="3">
+        <Grid x:Name="TextGridMid"
+              Grid.Row="3"
+              Grid.RowSpan="2"
+              Grid.Column="4"
+              Width="Auto"
+              Margin="0,0,0,0"
+              HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.138*" />
                 <RowDefinition Height="0.862*" />
@@ -103,120 +185,117 @@
                 <ColumnDefinition Width="0.593*" />
                 <ColumnDefinition Width="0.407*" />
             </Grid.ColumnDefinitions>
-            <Viewbox Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.Row="1">
-                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0"
-                           RenderTransformOrigin="0.5,0.5" FontFamily="Trebuchet MS">
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="WIR VERMIETEN FÜR SIE:" Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
-                    <LineBreak /><Run Text=" " /><LineBreak /><Run Text=" " /><LineBreak /><Run Text=" " />
-                    <Run
-                        FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
+            <Viewbox Grid.Row="1"
+                     Height="Auto"
+                     Margin="0,0,0,0"
+                     VerticalAlignment="Stretch">
+                <TextBlock Canvas.Left="0"
+                           Canvas.Top="0"
+                           Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           RenderTransformOrigin="0.5,0.5"
+                           TextAlignment="Left">
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="WIR VERMIETEN FÜR SIE:" />
                     <Run Text=" " />
-                    <Run
-                        FontFamily="Verdana" FontSize="10.5" Text="   Kabinenelektroyacht"
-                        Foreground="#FF67A0CD" />
-                    <Run Text=" " /><LineBreak /><Run Text=" " /><LineBreak />
-                    <Run
-                        Text=" " />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•"
-                         Foreground="#FF67A0CD" />
+                    <LineBreak /><Run Text=" " />
+                    <LineBreak /><Run Text=" " />
+                    <LineBreak /><Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
                     <Run Text=" " />
                     <Run FontFamily="Verdana"
                          FontSize="10.5"
-                         Text="   Motorboote"
-                         Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
+                         Foreground="#FF67A0CD"
+                         Text="   Kabinenelektroyacht" />
+                    <Run Text=" " />
+                    <LineBreak /><Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Motorboote" />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="•"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="   Ruderboote"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Ruderboote" />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="•"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="   Segelboote"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Segelboote" />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="•"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="   Wassertreter"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Wassertreter" />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="•"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
-                    <Run
-                        FontFamily="Verdana"
-                        FontSize="10.5"
-                        Text="   Kanus"
-                        Foreground="#FF67A0CD" />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
                     <LineBreak />
-                    <Run
-                        Text=" " />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run Text=" " />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Kanus" />
+                    <Run Text=" " />
+                    <LineBreak />
+                    <Run Text=" " />
                     <LineBreak />
                 </TextBlock>
             </Viewbox>
         </Grid>
-        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Grid.Column="1" Grid.RowSpan="2" Grid.Row="3"
-              x:Name="TextGridLeft">
+        <Grid x:Name="TextGridLeft"
+              Grid.Row="3"
+              Grid.RowSpan="2"
+              Grid.Column="1"
+              Width="Auto"
+              Margin="0,0,0,0"
+              HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.138*" />
                 <RowDefinition Height="0.443*" />
@@ -226,28 +305,56 @@
                 <ColumnDefinition Width="0.819*" />
                 <ColumnDefinition Width="0.181*" />
             </Grid.ColumnDefinitions>
-            <Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto"
-                              Grid.RowSpan="1" Grid.ColumnSpan="1" Grid.Row="1">
-                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0"
-                           FontFamily="Trebuchet MS">
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="WIR VERMIETEN FÜR SIE:" Foreground="#FF67A0CD" />
+            <Viewbox Grid.Row="1"
+                     Grid.RowSpan="1"
+                     Grid.ColumnSpan="1"
+                     Width="Auto"
+                     Height="Auto"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Stretch">
+                <TextBlock Canvas.Left="0"
+                           Canvas.Top="0"
+                           Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           TextAlignment="Left">
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="WIR VERMIETEN FÜR SIE:" />
                     <LineBreak />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="   Stegliegeplätze" Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Stegliegeplätze" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="   Ausrüstungen von Steganlagen"
-                         Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Ausrüstungen von Steganlagen" />
                     <LineBreak />
                     <LineBreak />
                 </TextBlock>
             </Viewbox>
         </Grid>
-        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Grid.Column="9" Grid.RowSpan="2"
-              x:Name="TextGridRight" Grid.Row="3">
+        <Grid x:Name="TextGridRight"
+              Grid.Row="3"
+              Grid.RowSpan="2"
+              Grid.Column="9"
+              Width="Auto"
+              Margin="0,0,0,0"
+              HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.134*" />
                 <RowDefinition Height="0.692*" />
@@ -257,36 +364,78 @@
                 <ColumnDefinition Width="0.844*" />
                 <ColumnDefinition Width="0.156*" />
             </Grid.ColumnDefinitions>
-            <Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto"
-                              Grid.RowSpan="2" Grid.Row="1">
-                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0"
-                           FontFamily="Trebuchet MS">
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="WIR ERSTELLEN FÜR SIE:" Foreground="#FF67A0CD" />
+            <Viewbox Grid.Row="1"
+                     Grid.RowSpan="2"
+                     Width="Auto"
+                     Height="Auto"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Stretch">
+                <TextBlock Canvas.Left="0"
+                           Canvas.Top="0"
+                           Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           TextAlignment="Left">
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="WIR ERSTELLEN FÜR SIE:" />
                     <LineBreak />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="  Großkopien bis A0+" Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  Großkopien bis A0+" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="  Farb- und Schwarz-Weiß Kopien"
-                         Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  Farb- und Schwarz-Weiß Kopien" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="  Farb- und Schwarz-Weiß" Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  Farb- und Schwarz-Weiß" />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="    Plottausdrucke bis A0+" Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="    Plottausdrucke bis A0+" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="  Bindungen verschiendenster Art"
-                         Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  Bindungen verschiendenster Art" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="•" Foreground="#FF67A0CD" />
-                    <Run FontFamily="Verdana" FontSize="10.5" Text="  u.ä." Foreground="#FF67A0CD" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontFamily="Verdana"
+                         FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  u.ä." />
                     <LineBreak />
                     <LineBreak />
                     <LineBreak />

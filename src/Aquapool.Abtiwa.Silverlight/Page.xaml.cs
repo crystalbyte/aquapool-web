@@ -328,7 +328,7 @@ namespace Aquapool
             switch (page)
             {
                 case PageType.Home:
-                    HtmlPage.Window.Navigate(new Uri("Aquapool.LobbyTestPage.html",UriKind.Relative));
+                    HtmlPage.Window.Navigate(new Uri("Abtiwa",UriKind.Relative));
                     break;
                 case PageType.Services:
                     this.SetMenuActive(MenuTypes.Services);

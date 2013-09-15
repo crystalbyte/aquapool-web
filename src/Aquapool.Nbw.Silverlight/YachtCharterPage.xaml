@@ -1,37 +1,51 @@
-﻿<UserControl
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    x:Class="Aquapool.Nbw.YachtCharterPage"
-    d:DesignWidth="875" d:DesignHeight="600"
-    xmlns:local="clr-namespace:Aquapool.Nbw">
+﻿<UserControl x:Class="Aquapool.Nbw.YachtCharterPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Aquapool.Nbw"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="600"
+             d:DesignWidth="875"
+             mc:Ignorable="d">
     <UserControl.Resources>
         <Storyboard x:Name="FadeInNbwContent">
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ContentGrid"
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="ContentGrid"
                                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
                 <SplineDoubleKeyFrame KeyTime="00:00:00" Value="-5" />
-                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" KeySpline="0,1,1,1" />
+                <SplineDoubleKeyFrame KeySpline="0,1,1,1"
+                                      KeyTime="00:00:00.5000000"
+                                      Value="0" />
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ContentGrid"
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="ContentGrid"
                                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
                 <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.9" />
-                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" KeySpline="0,1,1,1" />
+                <SplineDoubleKeyFrame KeySpline="0,1,1,1"
+                                      KeyTime="00:00:00.5000000"
+                                      Value="1" />
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ContentGrid"
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="ContentGrid"
                                            Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
                 <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0.9" />
-                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" KeySpline="0,1,1,1" />
+                <SplineDoubleKeyFrame KeySpline="0,1,1,1"
+                                      KeyTime="00:00:00.5000000"
+                                      Value="1" />
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ContentGrid"
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="ContentGrid"
                                            Storyboard.TargetProperty="(UIElement.Opacity)">
                 <SplineDoubleKeyFrame KeyTime="00:00:00" Value="0" />
-                <SplineDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" KeySpline="0,1,1,1" />
+                <SplineDoubleKeyFrame KeySpline="0,1,1,1"
+                                      KeyTime="00:00:00.5000000"
+                                      Value="1" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
-    <Grid x:Name="LayoutRoot" Height="Auto" Width="Auto">
+    <Grid x:Name="LayoutRoot"
+          Width="Auto"
+          Height="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.068*" />
             <RowDefinition Height="0.04*" />
@@ -54,98 +68,198 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="0.667*" />
         </Grid.ColumnDefinitions>
-        <Rectangle Grid.ColumnSpan="6" Grid.Row="4" Grid.RowSpan="4">
+        <Rectangle Grid.Row="4"
+                   Grid.RowSpan="4"
+                   Grid.ColumnSpan="6">
             <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
                     <GradientStop Color="#C0FFFFFF" />
-                    <GradientStop Color="#08FFFFFF" Offset="1" />
-                    <GradientStop Color="#7FC4DBED" Offset="0.504" />
+                    <GradientStop Offset="1" Color="#08FFFFFF" />
+                    <GradientStop Offset="0.504" Color="#7FC4DBED" />
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="ViewboxAquaHeader" Width="Auto"
-                          Grid.Column="1" Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="2">
-            <Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF"
-                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
-                    FontSize="7" x:Name="ButtonAquaHeaderDisabled" Padding="0,0,0,0">
-                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="YachtCharter Süd/Ost"
-                           FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0" />
+        <Viewbox x:Name="ViewboxAquaHeader"
+                 Grid.Row="1"
+                 Grid.RowSpan="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Stretch">
+            <Button x:Name="ButtonAquaHeaderDisabled"
+                    Width="Auto"
+                    Height="Auto"
+                    Background="#FFFFFFFF"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    IsEnabled="False"
+                    Padding="0,0,0,0"
+                    Style="{StaticResource GlossButtonStyle}"
+                    d:LayoutOverrides="HorizontalAlignment">
+                <TextBlock Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           FontSize="12.5"
+                           FontWeight="Bold"
+                           Padding="0,3,0,0"
+                           Text="YachtCharter Süd/Ost"
+                           TextAlignment="Left" />
             </Button>
         </Viewbox>
-        <Viewbox HorizontalAlignment="Stretch" Margin="3.5,0,3.5,0" Width="1" Grid.Column="5"
-                          Grid.RowSpan="11" Grid.ColumnSpan="1">
-            <Line X1="0" X2="0" Y1="0" Y2="1000" Fill="#FF105A92" Stroke="#FF105A92" Height="Auto"
-                  StrokeDashArray="7 7" StrokeThickness="1" />
+        <Viewbox Grid.RowSpan="11"
+                 Grid.Column="5"
+                 Grid.ColumnSpan="1"
+                 Width="1"
+                 Margin="3.5,0,3.5,0"
+                 HorizontalAlignment="Stretch">
+            <Line Height="Auto"
+                  Fill="#FF105A92"
+                  Stroke="#FF105A92"
+                  StrokeDashArray="7 7"
+                  StrokeThickness="1"
+                  X1="0"
+                  X2="0"
+                  Y1="0"
+                  Y2="1000" />
         </Viewbox>
-        <Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto"
-                          Margin="0,0,0,0" Grid.ColumnSpan="3" Grid.RowSpan="1" Grid.Row="3" Grid.Column="1">
-            <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0"
-                       FontFamily="Trebuchet MS" FontWeight="Bold">
-                <Run FontWeight="Bold" FontSize="10.5" Text="Auf dieser Seite finden Sie das " Foreground="#FF67A0CD" />
-                <Run
-                    Text=" " />
+        <Viewbox Grid.Row="3"
+                 Grid.RowSpan="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 Width="Auto"
+                 Height="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch">
+            <TextBlock Canvas.Left="0"
+                       Canvas.Top="0"
+                       Width="Auto"
+                       Height="Auto"
+                       FontFamily="Trebuchet MS"
+                       FontWeight="Bold"
+                       TextAlignment="Left">
+                <Run FontSize="10.5"
+                     FontWeight="Bold"
+                     Foreground="#FF67A0CD"
+                     Text="Auf dieser Seite finden Sie das " />
+                <Run Text=" " />
                 <LineBreak />
-                <Run FontWeight="Bold" FontSize="10.5"
-                     Text="umfangreiche Dienstleistungsangebot " Foreground="#FF67A0CD" />
-                <Run
-                    Text=" " />
+                <Run FontSize="10.5"
+                     FontWeight="Bold"
+                     Foreground="#FF67A0CD"
+                     Text="umfangreiche Dienstleistungsangebot " />
+                <Run Text=" " />
                 <LineBreak />
-                <Run FontWeight="Bold" FontSize="10.5"
-                     Text="der Firma YachtCharter Süd/Ost. "
-                     Foreground="#FF67A0CD" />
-                <Run
-                    Text=" " />
+                <Run FontSize="10.5"
+                     FontWeight="Bold"
+                     Foreground="#FF67A0CD"
+                     Text="der Firma YachtCharter Süd/Ost. " />
+                <Run Text=" " />
                 <LineBreak />
-                <Run
-                    FontWeight="Bold"
-                    FontSize="10.5"
-                    Text="Wir bringen Sie aufs Wasser und "
-                    Foreground="#FF67A0CD" />
-                <Run
-                    Text=" " />
+                <Run FontSize="10.5"
+                     FontWeight="Bold"
+                     Foreground="#FF67A0CD"
+                     Text="Wir bringen Sie aufs Wasser und " />
+                <Run Text=" " />
                 <LineBreak />
-                <Run
-                    FontWeight="Bold"
-                    FontSize="10.5"
-                    Text="stehen Ihnen zur Seite. "
-                    Foreground="#FF67A0CD" />
+                <Run FontSize="10.5"
+                     FontWeight="Bold"
+                     Foreground="#FF67A0CD"
+                     Text="stehen Ihnen zur Seite. " />
             </TextBlock>
         </Viewbox>
-        <Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="ViewboxGalleryHeader" Width="Auto"
-                          Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="5">
-            <Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF"
-                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
-                    FontSize="7" x:Name="ButtonAquaHeaderDisabled2" Padding="0,0,0,0">
-                <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Text="Bildergalerie"
-                           FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5" Padding="0,3,0,0" />
+        <Viewbox x:Name="ViewboxGalleryHeader"
+                 Grid.Row="5"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="1"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Stretch">
+            <Button x:Name="ButtonAquaHeaderDisabled2"
+                    Width="Auto"
+                    Height="Auto"
+                    Background="#FFFFFFFF"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    IsEnabled="False"
+                    Padding="0,0,0,0"
+                    Style="{StaticResource GlossButtonStyle}"
+                    d:LayoutOverrides="HorizontalAlignment">
+                <TextBlock Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           FontSize="12.5"
+                           FontWeight="Bold"
+                           Padding="0,3,0,0"
+                           Text="Bildergalerie"
+                           TextAlignment="Left" />
             </Button>
         </Viewbox>
-        <Grid Grid.Column="5" Grid.Row="4" Grid.RowSpan="4">
+        <Grid Grid.Row="4"
+              Grid.RowSpan="4"
+              Grid.Column="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.586*" />
                 <ColumnDefinition Width="0.414*" />
             </Grid.ColumnDefinitions>
             <Rectangle Grid.Column="1" Fill="#FFFFFFFF" />
         </Grid>
-        <Border Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="7" Grid.RowSpan="3">
-            <Viewbox Height="Auto" Width="Auto">
-                <StackPanel Height="Auto" x:Name="PictureGrid" Width="Auto" HorizontalAlignment="Stretch">
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/1.jpg" Margin="0,0,0,2"
-                                         MouseLeftButtonUp="ThumbnailButton_MouseLeftButtonUp" Text="Bild1" Width="135" />
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/2.jpg" Width="Auto" Margin="0,0,0,2"
-                                         Text="Bild2" MouseLeftButtonUp="ThumbnailButton2_MouseLeftButtonUp" />
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/3.jpg" Width="Auto" Margin="0,0,0,2"
-                                         Text="Bild3" MouseLeftButtonUp="ThumbnailButton3_MouseLeftButtonUp" />
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/4.jpg" Width="Auto" Margin="0,0,0,2"
-                                         Text="Bild4" MouseLeftButtonUp="ThumbnailButton4_MouseLeftButtonUp" />
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/5.jpg" Width="Auto" Margin="0,0,0,2"
-                                         Text="Bild5" MouseLeftButtonUp="ThumbnailButton5_MouseLeftButtonUp" />
-                    <local:ThumbnailButton Height="Auto" ImageSource="Media/Thumbs/6.jpg" Width="Auto" Margin="0,0,0,5"
-                                         Text="Bild6" MouseLeftButtonUp="ThumbnailButton6_MouseLeftButtonUp" />
+        <Border Grid.Row="7"
+                Grid.RowSpan="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2">
+            <Viewbox Width="Auto" Height="Auto">
+                <StackPanel x:Name="PictureGrid"
+                            Width="Auto"
+                            Height="Auto"
+                            HorizontalAlignment="Stretch">
+                    <local:ThumbnailButton Width="135"
+                                           Height="Auto"
+                                           Margin="0,0,0,2"
+                                           ImageSource="Media/Images/Thumbs/poros_60x45.jpg"
+                                           MouseLeftButtonUp="ThumbnailButton_MouseLeftButtonUp"
+                                           Text="Boot &quot;Poros&quot;" />
+                    <local:ThumbnailButton Width="Auto"
+                                           Height="Auto"
+                                           Margin="0,0,0,2"
+                                           ImageSource="Media/Images/Thumbs/deltic_60x60.jpg"
+                                           MouseLeftButtonUp="ThumbnailButton2_MouseLeftButtonUp"
+                                           Text="Boot &quot;Deltic&quot;" />
+                    <local:ThumbnailButton Width="Auto"
+                                           Height="Auto"
+                                           Margin="0,0,0,2"
+                                           ImageSource="Media/Images/Thumbs/kajak_60x60.jpg"
+                                           MouseLeftButtonUp="ThumbnailButton3_MouseLeftButtonUp"
+                                           Text="Kajak" />
+                    <local:ThumbnailButton Width="Auto"
+                                           Height="Auto"
+                                           Margin="0,0,0,2"
+                                           ImageSource="Media/Images/Thumbs/ruderboot_60x60.jpg"
+                                           MouseLeftButtonUp="ThumbnailButton4_MouseLeftButtonUp"
+                                           Text="Ruderboot" />
+                    <local:ThumbnailButton Width="Auto"
+                                           Height="Auto"
+                                           Margin="0,0,0,2"
+                                           ImageSource="Media/Images/Thumbs/wassertreter_60x60.jpg"
+                                           MouseLeftButtonUp="ThumbnailButton5_MouseLeftButtonUp"
+                                           Text="Wassertreter" />
+                    <!--
+                        <local:ThumbnailButton Width="Auto"
+                        Height="Auto"
+                        Margin="0,0,0,5"
+                        ImageSource="Media/Thumbs/6.jpg"
+                        MouseLeftButtonUp="ThumbnailButton6_MouseLeftButtonUp"
+                        Text="Bild6" />
+                    -->
                 </StackPanel>
             </Viewbox>
         </Border>
-        <Grid Margin="0,0,0,0" Grid.Column="6" Grid.RowSpan="10" x:Name="ContentGrid" RenderTransformOrigin="0.5,0.5">
+        <Grid x:Name="ContentGrid"
+              Grid.RowSpan="10"
+              Grid.Column="6"
+              Margin="0,0,0,0"
+              RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform />

@@ -1,0 +1,138 @@
+﻿<UserControl x:Class="Aquapool.Lobby.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="Auto" Height="Auto" 
+    xmlns:Crystalbyte="clr-namespace:Crystalbyte.Controls.Transition;assembly=Crystalbyte.Transition" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" Background="{x:Null}" 
+    xmlns:controls="clr-namespace:Microsoft.Windows.Controls;assembly=Microsoft.Windows.Controls">
+	<Grid Height="Auto" x:Name="BackgroundLayer" Width="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="{StaticResource BackgroundGradientBrush}">
+        <Grid Name="BackGroundRepeatLayer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Grid Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" x:Name="BackGroundRepeatLayer2"/>
+		<Grid x:Name="LayoutRoot" Background="{x:Null}" Height="910" Width="900" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+			<Border BorderThickness="3,0,3,0" Background="{x:Null}" BorderBrush="#3E000000">
+				<Grid Height="Auto" Width="Auto" Background="#FFFFFFFF">
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="BackLayer" VerticalAlignment="Stretch" Width="Auto" ShowGridLines="False">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.191*"/>
+							<ColumnDefinition Width="0.462*"/>
+							<ColumnDefinition Width="0.318*"/>
+							<ColumnDefinition Width="0.029*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.012*"/>
+							<RowDefinition Height="0.088*"/>
+							<RowDefinition Height="0.016*"/>
+							<RowDefinition Height="0.884*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionBackgroundGradient" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3"/>
+						<Crystalbyte:TransitionControl Grid.ColumnSpan="4" Grid.RowSpan="3" x:Name="TransitionGradient"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionLogo" Grid.Column="2" Grid.Row="1"/>
+					</Grid>
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="MapLayer" VerticalAlignment="Stretch" Width="Auto" ShowGridLines="False">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.079*"/>
+							<RowDefinition Height="0.213*"/>
+							<RowDefinition Height="0.076*"/>
+							<RowDefinition Height="0.133*"/>
+							<RowDefinition Height="0.499*"/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.098*"/>
+							<ColumnDefinition Width="0.256*"/>
+							<ColumnDefinition Width="0.146*"/>
+							<ColumnDefinition Width="0.5*"/>
+						</Grid.ColumnDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionMap" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="3"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionBerlinText" Grid.Column="1" Grid.Row="2"/>
+					</Grid>
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="WaveLayer" VerticalAlignment="Stretch" Width="Auto">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.6*"/>
+							<ColumnDefinition Width="0.4*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.599*"/>
+							<RowDefinition Height="0.401*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionWave"/>
+					</Grid>
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="TextLayer" VerticalAlignment="Stretch" Width="Auto" ShowGridLines="False">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.03*"/>
+							<ColumnDefinition Width="0.216*"/>
+							<ColumnDefinition Width="0.754*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.114*"/>
+							<RowDefinition Height="0.269*"/>
+							<RowDefinition Height="0.305*"/>
+							<RowDefinition Height="0.311*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Height="Auto" Margin="0,0,0,0" x:Name="TransitionTextBackground" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionTopText" Grid.Column="1" Grid.Row="1"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionBottomText" Grid.Column="1" Grid.Row="2"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Row="1" Grid.RowSpan="3" x:Name="TransitionSideLine"/>
+					</Grid>
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="MenuLayer" VerticalAlignment="Stretch" Width="Auto" ShowGridLines="False">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.659*"/>
+							<ColumnDefinition Width="0.257*"/>
+							<ColumnDefinition Width="0.084*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.288*"/>
+							<RowDefinition Height="0.033*"/>
+							<RowDefinition Height="0.013*"/>
+							<RowDefinition Height="0.033*"/>
+							<RowDefinition Height="0.632*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionAbtiwaButton" Grid.Column="1" Grid.Row="1" Grid.RowSpan="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionDiveBureauButton" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+					</Grid>
+					<Grid Height="Auto" HorizontalAlignment="Stretch" x:Name="DotLayer" VerticalAlignment="Stretch" Width="Auto">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.498*"/>
+							<ColumnDefinition Width="0.091*"/>
+							<ColumnDefinition Width="0.411*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.281*"/>
+							<RowDefinition Height="0.092*"/>
+							<RowDefinition Height="0.627*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" x:Name="TransitionRedDot" Grid.Column="1" Grid.Row="1"/>
+					</Grid>
+					<Grid Height="Auto" Width="Auto" x:Name="UpperMenuLayer" ShowGridLines="False">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.03*"/>
+							<ColumnDefinition Width="0.041*"/>
+							<ColumnDefinition Width="0.007*"/>
+							<ColumnDefinition Width="0.106*"/>
+							<ColumnDefinition Width="0.007*"/>
+							<ColumnDefinition Width="0.052*"/>
+							<ColumnDefinition Width="0.006*"/>
+							<ColumnDefinition Width="0.074*"/>
+							<ColumnDefinition Width="0.678*"/>
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="0.068*"/>
+							<RowDefinition Height="0.019*"/>
+							<RowDefinition Height="0.913*"/>
+						</Grid.RowDefinitions>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Column="1" Grid.Row="1" x:Name="TransitionButtonHome"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Column="3" Grid.Row="1" x:Name="TransitionButtonServices"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Column="5" Grid.Row="1" x:Name="TransitionButtonContact"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Column="7" Grid.Row="1" x:Name="TransitionButtonImprint"/>
+						<Crystalbyte:TransitionControl HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" Grid.Column="2" Grid.Row="1" x:Name="TransitionSeperator1"/>
+						<Crystalbyte:TransitionControl Margin="0,0,0,0" Grid.Column="4" Grid.Row="1" x:Name="TransitionSeperator2"/>
+						<Crystalbyte:TransitionControl Grid.Column="6" Grid.Row="1" x:Name="TransitionSeperator3"/>
+					</Grid>
+					<MediaElement Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" IsHitTestVisible="False" x:Name="MediaElementIntro" AutoPlay="False" Source="/Sound/Intro_Wasser_07112008.mp3"/>
+				</Grid>
+			</Border>
+		</Grid>
+		<Canvas Height="Auto" x:Name="CursorLayer" Width="Auto" IsHitTestVisible="False"/>
+	</Grid>
+</UserControl>

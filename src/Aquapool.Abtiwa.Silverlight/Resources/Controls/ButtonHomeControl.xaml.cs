@@ -22,7 +22,7 @@ namespace Aquapool
 
         private void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
-            HtmlPage.Window.Navigate(new Uri("Aquapool.LobbyTestPage.html", UriKind.Relative));
+            HtmlPage.Window.Navigate(new Uri("Abtiwa", UriKind.Relative));
         }
 
         public bool IsActive { get; set; }

@@ -57,13 +57,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Crystalbyte.Navigation">
+      <HintPath>..\..\externals\Crystalbyte.Navigation\Crystalbyte.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Crystalbyte.Shared">
+      <HintPath>..\..\externals\Crystalbyte.Navigation\Crystalbyte.Shared.dll</HintPath>
+    </Reference>
     <Reference Include="Crystalbyte.Transition, Version=1.0.0.0, Culture=neutral, PublicKeyToken=13976087e7cabc87, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Crystalbyte Silverlight Library\Crystalbyte.Library\Crystalbyte.Library\Bin\Release\Crystalbyte.Transition.dll</HintPath>
+      <HintPath>..\..\externals\Crystalbyte.Transition\Crystalbyte.Transition.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.Controls, Version=2.0.21024.1838, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Externals\Silverlight Toolkit\Microsoft.Windows.Controls.dll</HintPath>
+      <HintPath>..\..\externals\Silverlight.Toolkit\Microsoft.Windows.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="mscorlib" />
@@ -150,6 +156,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Message.cs" />
     <Compile Include="Resources\Background\HeaderGradient.xaml.cs">
       <DependentUpon>HeaderGradient.xaml</DependentUpon>
     </Compile>

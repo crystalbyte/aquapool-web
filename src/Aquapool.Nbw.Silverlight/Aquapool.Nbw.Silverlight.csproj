@@ -65,6 +65,7 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -88,6 +89,7 @@
       <DependentUpon>KopierServicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MenuPanel.cs" />
+    <Compile Include="Message.cs" />
     <Compile Include="NbwGalleryPanel.xaml.cs">
       <DependentUpon>NbwGalleryPanel.xaml</DependentUpon>
     </Compile>
@@ -214,34 +216,17 @@
     <Resource Include="Media\notavailable_004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Media\Thumbs\1.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Media\susanne_kroenert_200x243.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Media\Thumbs\2.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Media\Images\Thumbs\steganlage_60x60.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Media\Thumbs\3.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Media\Thumbs\4.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Media\Thumbs\5.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Media\Thumbs\6.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Media\Images\Thumbs\deltic_60x60.jpg" />
+    <Resource Include="Media\Images\Thumbs\kajak_60x60.jpg" />
+    <Resource Include="Media\Images\Thumbs\poros_60x45.jpg" />
+    <Resource Include="Media\Images\Thumbs\ruderboot_60x60.jpg" />
+    <Resource Include="Media\Images\Thumbs\wassertreter_60x60.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

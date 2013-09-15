@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Aesthetic Med - Contact Formular Submission</title>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+        }
+
+        html {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            font-size: 0.85em;
+        }
+
+        #company-name {
+            font-weight: bold;
+        }
+
+        #contact-window {
+            padding: 7px 20px;
+            display: inline-block;
+            background-color: #ECEEF5;
+            border: 1px solid #9DACCE;
+            color: #2e4e89;
+        }
+
+        #header {
+            color: whitesmoke;
+            font-size: 1.2em;
+            padding: 7px 20px;
+            background-color: #2e4e89;
+        }
+
+            #header span {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        #subject {
+            padding: 10px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        #text {
+            padding: 0;
+        }
+
+        #mail-container {
+            color: #333;
+        }
+
+        .close {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <span id="company-name">Aesthetic Med</span>
+        <span>-</span>
+        <span>Kontaktanfrage</span>
+    </div>
+    <div style="margin-top: 20px;">
+        <div id="contact-window">
+            <div>
+                <span>@sender</span>
+            </div>
+            <div>
+                <a href="mailto:@email?subject=Aesthetic%20Med%20-%20Kontaktanfrage">@email</a>
+            </div>
+            <div id="phone-block">
+                <span>@phone</span>
+            </div>
+        </div>
+    </div>
+    <div id="mail-container">
+        <div id="subject">
+            <span>@subject</span>
+        </div>
+        <div id="text">@text</div>
+    </div>
+</body>
+</html>

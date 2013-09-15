@@ -11,7 +11,7 @@
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Aquapool.Web</RootNamespace>
+    <RootNamespace>Aquapool</RootNamespace>
     <AssemblyName>Aquapool.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
@@ -20,7 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
-    <SilverlightApplicationList>{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}|..\Aquapool.Nbw.Silverlight\Aquapool.Nbw.Silverlight.csproj|ClientBin|False</SilverlightApplicationList>
+    <SilverlightApplicationList>{E73E7AD9-AE04-4CF5-BEDF-80FED349E556}|..\Aquapool.Nbw.Silverlight\Aquapool.Nbw.Silverlight.csproj|ClientBin|False,{E6FA7E70-7D67-4483-A64F-E43B728B1A52}|..\Aquapool.Abtiwa.Lobby.Silverlight\Aquapool.Abtiwa.Lobby.Silverlight.csproj|ClientBin|False,{E6ECECE5-F977-4E2F-9144-092D59FA88FA}|..\Aquapool.Abtiwa.Silverlight\Aquapool.Abtiwa.Silverlight.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,10 +131,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientBin\Aquapool.Lobby.xap" />
     <Content Include="ClientBin\Aquapool.Nbw.xap" />
+    <Content Include="ClientBin\Aquapool.xap" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\aquapool - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\aquapool - Web Deploy.pubxml" />
@@ -144,12 +147,29 @@
     <Content Include="Media\Images\Background\AP_lobby_menu_ecken_o.png" />
     <Content Include="Media\Images\Background\AP_lobby_menu_ecken_u.png" />
     <Content Include="Media\Images\Background\AP_lobby_menu_hg.png" />
+    <Content Include="Media\Images\Gallery\deltic_600x600.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Images\Gallery\kajak_600x600.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Images\Gallery\poros_600x450.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Images\Gallery\ruderboot_600x600.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Images\Gallery\steganlage_600x600.jpg" />
+    <Content Include="Media\Images\Gallery\wassertreter_600x600.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Media\Images\Logos\AP_abtiwa_logo.png" />
     <Content Include="Media\Images\Logos\AP_kopier_logo.png" />
     <Content Include="Media\Images\Logos\AP_tauch_logo.png" />
     <Content Include="Media\Images\Logos\AP_wasserbau_logo.png" />
     <Content Include="Media\Images\Logos\AP_yacht_logo.png" />
     <Content Include="Media\Images\Logos\www_ap_logo.png" />
+    <Content Include="message-template.html" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -169,6 +189,9 @@
     <Content Include="Styles\Columns.css" />
     <Content Include="Styles\Footer.css" />
     <Content Include="Styles\Global.css" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -183,10 +206,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Nbw.cshtml" />
     <Content Include="Views\Home\Abtiwa.cshtml" />
+    <Content Include="Views\Home\Lobby.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

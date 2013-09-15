@@ -46,7 +46,7 @@ namespace Aquapool.Nbw
         private void ThumbnailButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText1, 1, 6, Pictures.PicturePath1);
+            gallery.ShowPicture(Pictures.PictureText1, 1, 5, Pictures.PicturePath1);
         }
 
         private void SwapContent(UserControl contentControl)
@@ -63,31 +63,31 @@ namespace Aquapool.Nbw
         private void ThumbnailButton2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText2, 2, 6, Pictures.PicturePath2);
+            gallery.ShowPicture(Pictures.PictureText2, 2, 5, Pictures.PicturePath2);
         }
 
         private void ThumbnailButton3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText3, 3, 6, Pictures.PicturePath3);
+            gallery.ShowPicture(Pictures.PictureText3, 3, 5, Pictures.PicturePath3);
         }
 
         private void ThumbnailButton4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText4, 4, 6, Pictures.PicturePath4);
+            gallery.ShowPicture(Pictures.PictureText4, 4, 5, Pictures.PicturePath4);
         }
 
         private void ThumbnailButton5_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText5, 5, 6, Pictures.PicturePath5);
+            gallery.ShowPicture(Pictures.PictureText5, 5, 5, Pictures.PicturePath5);
         }
 
         private void ThumbnailButton6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
-            gallery.ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
+            //YachtCharterGalleryPage gallery = EnsureGalleryPanelExistence();
+            //gallery.ShowPicture(Pictures.PictureText6, 6, 6, Pictures.PicturePath6);
         }
     }
 }
