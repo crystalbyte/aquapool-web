@@ -6,6 +6,7 @@
                     xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows"
                     mc:Ignorable="d">
 
+    <local:NegationConverter x:Key="NegationConverter" />
     <Style TargetType="local:PictureViewer">
         <Setter Property="Template">
             <Setter.Value>

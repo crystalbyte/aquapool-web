@@ -128,7 +128,7 @@
                        Margin="5,0,0,0"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Center"
-                       FontFamily="Verdana"
+                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -171,63 +171,63 @@
                                   Grid.ColumnSpan="2">
                     <TextBlock x:Name="TextBlockFirstText"
                                FontSize="6.5"
-                               TextAlignment="Left"><Run FontFamily="Verdana"
+                               TextAlignment="Left"><Run 
                              FontSize="7.5"
                              Foreground="#FF0088B7"
                              Text=" VERKEHRSWASSER- UND FLUSSBAU, GRUND- UND SPEZIALTIEFBAU, BETON-" />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF0088B7"
                              Text="UND STAHLBETONBAU, BRÜCKENBAU" />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="Als Fachbüro für konstruktiven Verkehrswasserbau mit der Spezialisierung" />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="für schwimmende und feste Steganlagen, Hafen- und Kaianlagen," />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="schwimmende Häuser, Slipanlagen, Ufer – und Sohlsicherungen, sowie," />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="Spezialtief-, Beton-, Stahlbeton- und Brückenbau sind wir uneingeschränktgut" />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="ausgebildete und erfahrene Dipl.-Ingenieure und Techniker, die überwiegend" />
                         <!--  <Run Text=" "/>  -->
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="kontinuierlich in den o.g. Bereichen aller Leistungsphasen der HOAI im Bereich" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
                              Text="der Objekt- und Tragwerksplanung sowie Bauleitung und Projektsteuerung" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="7.5"
                              Foreground="#FF4D4D4D"
-                             Text="seit nun fast 20 Jahren arbeiten." />
+                             Text="seit über 20 Jahren arbeiten." />
                     </TextBlock>
                 </controls:Viewbox>
                 <controls:Viewbox x:Name="Group_Copy"
@@ -365,142 +365,142 @@
                                FontSize="2.5"
                                RenderTransformOrigin="0.5,0.5"
                                TextAlignment="Left">
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF0088B7"
                              Text="WIR PLANEN, BERECHNEN UND REALISIEREN FÜR SIE" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="VERKEHRSWASSERBAU" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  feste und schwimmende Steganlagen aus allen Materialien" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  schwimmende Häuser" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Hafen- und Kaianlagen für Binnen- und Seehäfen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Slipanlagen und Bootsanlegestellen für sämtliche Schiffsgrößen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Abweisedalben und Leitwerke für Brücken und Kaianlagen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Ufer- und Sohlsicherungen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Uferwände und Hochwasserschutzanlagen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Bootshausgründungen" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="FLUSSBAU" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Wehre und Schleusen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Uferbefestigungen und Fischaufstiege" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="GRUND – UND SPEZIALTIEFBAU" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Spundwände" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Bohrpfähle" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Verankerungen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Baugruben" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Auftriebssicherungen" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Unterfangungen" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="BETON – UND STAHLBETONBAU" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Fundamente" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Widerlager" />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Stützmauern" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="BRÜCKENBAU" />
                         <LineBreak />
                         <LineBreak />
-                        <Run FontFamily="Verdana"
+                        <Run 
                              FontSize="6.5"
                              Foreground="#FF4D4D4D"
                              Text="•  Fußgänger – und Radbrücken" />

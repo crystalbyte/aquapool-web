@@ -9,7 +9,7 @@
 
 	<Grid x:Name="LayoutRoot">
 		<Border Padding="2,0,2,0">
-			<Button x:Name="ButtonServices" Click="ButtonServices_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkServicesStyle}" BorderThickness="0,0,0,0" FontSize="11.5" FontFamily="Verdana"/>
+			<Button x:Name="ButtonServices" Click="ButtonServices_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkServicesStyle}" BorderThickness="0,0,0,0" FontSize="11.5" />
 		</Border>
 	</Grid>
 </UserControl>

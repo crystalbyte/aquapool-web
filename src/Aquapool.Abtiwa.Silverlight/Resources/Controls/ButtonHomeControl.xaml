@@ -30,7 +30,7 @@
             </vsm:VisualStateGroup>
         </vsm:VisualStateManager.VisualStateGroups>
         <Border Padding="1,0,1,0">
-			<Button Content="Home" x:Name="ButtonHome" Click="ButtonHome_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkHomeStyle}" FontFamily="Verdana" FontSize="11.5" Foreground="#FFFFFFFF"/>
+			<Button Content="Home" x:Name="ButtonHome" Click="ButtonHome_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkHomeStyle}"  FontSize="11.5" Foreground="#FFFFFFFF"/>
 		</Border>
 	</Grid>
 </UserControl>

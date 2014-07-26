@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Windows;
@@ -42,10 +43,10 @@ namespace Aquapool
 
         public void ShowPicture(int current, int max, Uri uri, string text)
         {
-            this.ButtonLeft.Content = current.ToString();
-            this.ButtonRight.Content = max.ToString();
-            (this.ViewboxDescription.Child as TextBlock).Text = text;
-            this.SwapPicture(uri);
+            ButtonLeft.Content = current.ToString(CultureInfo.InvariantCulture);
+            ButtonRight.Content = max.ToString(CultureInfo.InvariantCulture);
+            TextBlockDescription.Text = text;
+            SwapPicture(uri);
         }
 
         private void SwapPicture(Uri uri)

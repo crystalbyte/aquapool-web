@@ -30,7 +30,7 @@
             </vsm:VisualStateGroup>
         </vsm:VisualStateManager.VisualStateGroups>
         <Border Padding="1,0,1,0">
-			<Button Content="Imprint" x:Name="ButtonImprint" Click="ButtonImprint_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkImprintStyle}" Background="#FF355B7B" FontFamily="Verdana" FontSize="11.5" Foreground="#FFFFFFFF"/>
+			<Button Content="Imprint" x:Name="ButtonImprint" Click="ButtonImprint_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkImprintStyle}" Background="#FF355B7B"  FontSize="11.5" Foreground="#FFFFFFFF"/>
 		</Border>
 	</Grid>
 </UserControl>

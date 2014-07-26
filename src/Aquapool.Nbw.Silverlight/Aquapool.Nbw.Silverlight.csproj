@@ -228,6 +228,11 @@
     <Resource Include="Media\Images\Thumbs\ruderboot_60x60.jpg" />
     <Resource Include="Media\Images\Thumbs\wassertreter_60x60.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\Intro_Wasser_07112008.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

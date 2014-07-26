@@ -124,9 +124,7 @@
                      Height="Auto"
                      HorizontalAlignment="Stretch"
                      VerticalAlignment="Stretch">
-                <TextBlock Canvas.Left="0"
-                           Canvas.Top="0"
-                           Width="Auto"
+                <TextBlock Width="Auto"
                            Height="Auto"
                            FontFamily="Trebuchet MS"
                            TextAlignment="Left">
@@ -180,6 +178,9 @@
                          Text="E-Mail:" />
                     <LineBreak /><Run FontSize="9.5"
                          Foreground="#FF67A0CD"
+                         Text="susanne.kroenert@web.de" />
+                    <LineBreak /><Run FontSize="9.5"
+                         Foreground="#FF67A0CD"
                          Text="info@aquapool-werlsee.de" />
                     <LineBreak />
                     <LineBreak />
@@ -196,7 +197,6 @@
                        Canvas.Top="0"
                        Width="Auto"
                        Height="Auto"
-                       FontFamily="Verdana"
                        TextAlignment="Left">
                 <Run FontSize="10.5"
                      FontWeight="Bold"

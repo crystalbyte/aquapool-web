@@ -42,7 +42,7 @@
 									<vsm:VisualState x:Name="Disabled"/>
 								</vsm:VisualStateGroup>
 							</vsm:VisualStateManager.VisualStateGroups>
-							<controls:Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" RenderTransformOrigin="0.5,0.5" FontSize="20" FontFamily="Verdana">
+							<controls:Viewbox Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" RenderTransformOrigin="0.5,0.5" FontSize="20" >
 								<controls:Viewbox.RenderTransform>
 									<TransformGroup>
 										<ScaleTransform/>
@@ -51,7 +51,7 @@
 										<TranslateTransform/>
 									</TransformGroup>
 								</controls:Viewbox.RenderTransform>
-								<TextBlock Text="Ing. -u. Statikbüro" TextWrapping="Wrap" Foreground="#FFFFFFFF" FontFamily="Verdana" FontSize="12" RenderTransformOrigin="0.5,0.5">
+								<TextBlock Text="Ing. -u. Statikbüro" TextWrapping="Wrap" Foreground="#FFFFFFFF"  FontSize="12" RenderTransformOrigin="0.5,0.5">
 									<TextBlock.RenderTransform>
 										<TransformGroup>
 											<ScaleTransform ScaleX="5" ScaleY="5"/>

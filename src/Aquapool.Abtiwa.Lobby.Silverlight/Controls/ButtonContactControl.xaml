@@ -9,7 +9,7 @@
 
 	<Grid x:Name="LayoutRoot">
 		<Border Padding="2,0,2,0">
-			<Button Content="Contact" x:Name="ButtonContact" Click="ButtonContact_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkContactStyle}" Background="#FFFFFFFF" FontSize="11.5" FontFamily="Verdana"/>
+			<Button Content="Contact" x:Name="ButtonContact" Click="ButtonContact_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkContactStyle}" Background="#FFFFFFFF" FontSize="11.5" />
 		</Border>
 	</Grid>
 </UserControl>

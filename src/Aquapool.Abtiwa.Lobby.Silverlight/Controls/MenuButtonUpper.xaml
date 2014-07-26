@@ -71,7 +71,7 @@
 										<TranslateTransform/>
 									</TransformGroup>
 								</controls:Viewbox.RenderTransform>
-								<TextBlock x:Name="TextBlockIng" FontFamily="Verdana" FontSize="20.5" Foreground="#FFFFFFFF" Text="Ing. -u. Statikbüro" TextWrapping="Wrap" Height="Auto" Width="Auto" FontStretch="Expanded" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch">
+								<TextBlock x:Name="TextBlockIng"  FontSize="20.5" Foreground="#FFFFFFFF" Text="Ing. -u. Statikbüro" TextWrapping="Wrap" Height="Auto" Width="Auto" FontStretch="Expanded" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch">
 									<TextBlock.RenderTransform>
 										<TransformGroup>
 											<ScaleTransform/>

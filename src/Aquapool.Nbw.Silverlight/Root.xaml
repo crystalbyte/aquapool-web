@@ -6,7 +6,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              Width="Auto"
              Height="Auto"
-             Background="#DBFFFF"
              d:DesignHeight="910"
              d:DesignWidth="900"
              mc:Ignorable="d">
@@ -127,17 +126,27 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
-    <Grid x:Name="LayoutRoot" Background="White">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
         <Border x:Name="VisualBorder"
                 Width="900"
                 Height="910"
                 HorizontalAlignment="Stretch"
+                Background="White"
                 BorderBrush="#FF1F3B53"
                 BorderThickness="1,0,1,0">
             <Grid x:Name="VisualGrid"
                   Width="Auto"
                   Height="Auto"
                   Background="{x:Null}">
+                <MediaElement x:Name="MediaElementIntro"
+                              Width="Auto"
+                              Height="Auto"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              AutoPlay="True"
+                              IsHitTestVisible="False"
+                              Source="/Media/Intro_Wasser_07112008.mp3" />
                 <Grid x:Name="BackgroundGrid"
                       Width="Auto"
                       Height="Auto"

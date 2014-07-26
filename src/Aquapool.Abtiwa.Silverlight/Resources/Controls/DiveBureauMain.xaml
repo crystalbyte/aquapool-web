@@ -82,7 +82,7 @@
 			<Grid Height="Auto" Width="Auto" Background="#CAFFFFFF"/>
 		</Border>
 		<controls:Viewbox Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Stretch" FontSize="9" Canvas.ZIndex="10">
-			<TextBlock Width="Auto" RenderTransformOrigin="0.5,0.5" FontFamily="Verdana" FontSize="10" Foreground="#FFFFFFFF" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontStretch="Normal" FontWeight="Thin" Text="Wir tauchen für sie ab!"><TextBlock.RenderTransform>
+			<TextBlock Width="Auto" RenderTransformOrigin="0.5,0.5"  FontSize="10" Foreground="#FFFFFFFF" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontStretch="Normal" FontWeight="Thin" Text="Wir tauchen für sie ab!"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform AngleX="0"/>
@@ -136,7 +136,7 @@
 		</Border>
 		<Grid Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="2" x:Name="TextLayer" Margin="0,0,0,0">
 			<controls:Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto">
-				<TextBlock x:Name="TextBlock" TextAlignment="Left" Width="Auto" Height="Auto" LineHeight="12" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch"><Run FontFamily="Verdana" FontSize="8.25" Text="WIR ERSTELLEN FÜR SIE:" Foreground="#FF0088B7"/><Run Text=" "/><LineBreak/><LineBreak/><Run FontFamily="Verdana" FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run FontFamily="Verdana" FontSize="7.5" Text="   Unter- und Überwassergutachten" Foreground="#FF4D4D4D"/><LineBreak/><Run FontFamily="Verdana" FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run FontFamily="Verdana" FontSize="7.5" Text="   Abnahmebescheinigungen" Foreground="#FF4D4D4D"/><LineBreak/><Run FontFamily="Verdana" FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run FontFamily="Verdana" FontSize="7.5" Text="   Beweissicherung" Foreground="#FF4D4D4D"/><LineBreak/></TextBlock>
+				<TextBlock x:Name="TextBlock" TextAlignment="Left" Width="Auto" Height="Auto" LineHeight="12" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch"><Run  FontSize="8.25" Text="WIR ERSTELLEN FÜR SIE:" Foreground="#FF0088B7"/><Run Text=" "/><LineBreak/><LineBreak/><Run  FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run  FontSize="7.5" Text="   Unter- und Überwassergutachten" Foreground="#FF4D4D4D"/><LineBreak/><Run  FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run  FontSize="7.5" Text="   Abnahmebescheinigungen" Foreground="#FF4D4D4D"/><LineBreak/><Run  FontSize="7.5" Text="•" Foreground="#FF4D4D4D"/><Run Text=" "/><Run  FontSize="7.5" Text="   Beweissicherung" Foreground="#FF4D4D4D"/><LineBreak/></TextBlock>
 			</controls:Viewbox>
 		</Grid>
 	</Grid>

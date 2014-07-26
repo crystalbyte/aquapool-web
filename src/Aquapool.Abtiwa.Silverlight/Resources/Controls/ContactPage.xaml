@@ -157,7 +157,7 @@
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       FontFamily="Verdana"
+                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -261,7 +261,7 @@
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       FontFamily="Verdana"
+                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -291,26 +291,26 @@
                            Canvas.Top="0"
                            Width="Auto"
                            Height="Auto"
-                           FontSize="6.5"><Run FontFamily="Verdana"
+                           FontSize="6.5"><Run 
                          FontSize="7.5"
                          Foreground="#FF0088B7"
                          Text="AQUAPOOL WERLSEE" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="6.75"
                          FontWeight="Bold"
                          Foreground="#FF4D4D4D"
                          Text="Anschrift:" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="Werlseestraße 37" /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="D-15537 Grünheide" /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="OT Fangschleuse" />
@@ -330,13 +330,13 @@
                               FontSize="9.5">
                 <TextBlock Canvas.Left="0"
                            Canvas.Top="0"
-                           FontSize="6.5"><Run FontFamily="Verdana"
+                           FontSize="6.5"><Run 
                          FontSize="6.75"
                          FontWeight="Bold"
                          Foreground="#FF4D4D4D"
                          Text="Fax:" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="6.75"
                          Foreground="#FF4D4D4D"
                          Text="+49 (0) 3362-23355" />
@@ -356,13 +356,13 @@
                               FontSize="9.5">
                 <TextBlock Canvas.Left="0"
                            Canvas.Top="0"
-                           FontSize="6.5"><Run FontFamily="Verdana"
+                           FontSize="6.5"><Run 
                          FontSize="6.75"
                          FontWeight="Bold"
                          Foreground="#FF4D4D4D"
                          Text="Telefon:" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run FontFamily="Verdana"
+                    <LineBreak /><Run 
                          FontSize="6.75"
                          Foreground="#FF4D4D4D"
                          Text="+49 (0) 3362-23344" />
@@ -455,7 +455,7 @@
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       FontFamily="Verdana"
+                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -516,7 +516,7 @@
                                    Canvas.Top="0"
                                    Width="Auto"
                                    Height="Auto"
-                                   FontFamily="Verdana"
+                                   
                                    FontSize="6.75"
                                    TextAlignment="Right"><Run Foreground="#FF0088B7" Text="*NAME:" /><Run Text=" " />
                             <LineBreak /><Run Text=" " />
@@ -598,7 +598,7 @@
                                    Canvas.Top="0"
                                    Width="Auto"
                                    Height="Auto"
-                                   FontFamily="Verdana"
+                                   
                                    FontSize="6.75"
                                    FontStyle="Italic"><Run Foreground="#FF0088B7" Text="Die mit * gekennzeichneten " /><Run Text=" " />
                             <LineBreak /><Run Foreground="#FF0088B7" Text="Felder bitte ausfüllen!" />

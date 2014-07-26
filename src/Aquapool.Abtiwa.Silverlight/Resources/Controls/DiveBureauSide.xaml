@@ -65,7 +65,7 @@
 						<TranslateTransform/>
 					</TransformGroup>
 				</controls:Viewbox.RenderTransform>
-				<TextBlock Text="Ingenieur Tauchbüro" TextWrapping="Wrap" Foreground="#FFFFFFFF" RenderTransformOrigin="0.5,0.5" FontFamily="Verdana" FontSize="12">
+				<TextBlock Text="Ingenieur Tauchbüro" TextWrapping="Wrap" Foreground="#FFFFFFFF" RenderTransformOrigin="0.5,0.5"  FontSize="12">
 					<TextBlock.RenderTransform>
 						<TransformGroup>
 							<ScaleTransform ScaleX="5" ScaleY="5"/>

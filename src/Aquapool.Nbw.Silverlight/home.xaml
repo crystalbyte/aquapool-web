@@ -16,7 +16,7 @@
             <RowDefinition Height="0.027*" />
             <RowDefinition Height="0.043*" />
             <RowDefinition Height="0.055*" />
-            <RowDefinition Height="0.128*" />
+            <RowDefinition Height="0.140*" />
             <RowDefinition Height="0.183*" />
             <RowDefinition Height="0.198*" />
         </Grid.RowDefinitions>
@@ -147,7 +147,8 @@
                 <LineBreak /><Run Foreground="#FF67A0CD" Text="+49 (0) 3362-23355" />
                 <LineBreak />
                 <LineBreak /><Run Foreground="#FF67A0CD" Text="E-Mail:" />
-                <LineBreak /><Run Foreground="#FF67A0CD" Text="info@auqapool-werlsee.de" />
+                <LineBreak /><Run Foreground="#FF67A0CD" Text="susanne.kroenert@web.de" />
+                <LineBreak /><Run Foreground="#FF67A0CD" Text="info@aquapool-werlsee.de" />
             </TextBlock>
         </Viewbox>
         <Viewbox Grid.RowSpan="9"

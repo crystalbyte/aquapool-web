@@ -9,7 +9,7 @@
 
 	<Grid x:Name="LayoutRoot">
 		<Border Padding="2,0,2,0">
-			<Button Content="Home" x:Name="ButtonHome" Click="ButtonHome_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkHomeStyle}" FontSize="11.5" FontFamily="Verdana"/>
+			<Button Content="Home" x:Name="ButtonHome" Click="ButtonHome_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkHomeStyle}" FontSize="11.5" />
 		</Border>
 	</Grid>
 </UserControl>

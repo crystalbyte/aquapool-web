@@ -129,11 +129,11 @@ namespace Aquapool
 
         private void InitializeCursor()
         {
-            this.MouseMove += new MouseEventHandler(Page_MouseMove);
-            cc.IsHitTestVisible = false;
-            cc.SetValue(Canvas.ZIndexProperty, 100000);
-            this.CursorLayer.Children.Add(cc);
-            this.Cursor = Cursors.None;
+            //this.MouseMove += new MouseEventHandler(Page_MouseMove);
+            //cc.IsHitTestVisible = false;
+            //cc.SetValue(Canvas.ZIndexProperty, 100000);
+            //this.CursorLayer.Children.Add(cc);
+            //this.Cursor = Cursors.None;
         }
 
         void Page_MouseMove(object sender, MouseEventArgs e)
@@ -268,61 +268,7 @@ namespace Aquapool
             };
             return b;
         }
-
-        private void CreateBackground()
-        {
-            StackPanel ver = new StackPanel();
-            int v = 0;
-            while (v < this.ActualHeight)
-            {
-                StackPanel hor = new StackPanel();
-                hor.VerticalAlignment = VerticalAlignment.Top;
-                hor.Height = 500;
-                hor.HorizontalAlignment = HorizontalAlignment.Stretch;
-                hor.Orientation = Orientation.Horizontal;
-                int h = 0;
-                while (h < this.ActualWidth)
-                {
-                    Image image = new Image();
-                    image.Stretch = Stretch.Uniform;
-                    image.Source = new BitmapImage(new Uri("Resources/Images/hg_verlauf2.png", UriKind.Relative));
-                    hor.Children.Add(image);
-                    h += 59;
-                }
-                this.BackGroundRepeatLayer.Children.Clear();
-                ver.Children.Add(hor);
-                v += 500;
-            }
-            this.BackGroundRepeatLayer.Children.Add(ver);
-        }
-
-        private void CreateBackground2()
-        {
-            StackPanel ver = new StackPanel();
-            int v = 0;
-            while (v < this.ActualHeight)
-            {
-                StackPanel hor = new StackPanel();
-                hor.VerticalAlignment = VerticalAlignment.Top;
-                hor.Height = 35;
-                hor.HorizontalAlignment = HorizontalAlignment.Stretch;
-                hor.Orientation = Orientation.Horizontal;
-                int h = 0;
-                while (h < this.ActualWidth)
-                {
-                    Image image = new Image();
-                    image.Stretch = Stretch.Uniform;
-                    image.Source = new BitmapImage(new Uri("Resources/Images/hg_welle_klein_transparent.png", UriKind.Relative));
-                    hor.Children.Add(image);
-                    h += 91;
-                }
-                this.BackGroundRepeatLayer2.Children.Clear();
-                ver.Children.Add(hor);
-                v += 35;
-            }
-            this.BackGroundRepeatLayer.Children.Add(ver);
-        }
-
+       
         internal void Navigate(PageType page)
         {
             switch (page)
@@ -606,7 +552,7 @@ namespace Aquapool
 
         private void Content_Resized(object sender, EventArgs e)
         {
-            this.Resize();
+            //this.Resize();
         }
 
         private void Resize()
@@ -614,8 +560,6 @@ namespace Aquapool
             // height 910 / 900
             this.LayoutRoot.Height = Application.Current.Host.Content.ActualHeight;
             this.LayoutRoot.Width = Application.Current.Host.Content.ActualHeight * 0.989010989;
-            //this.CreateBackground();
-            this.CreateBackground2();
         }
 
         private void ButtonHome_Click(object sender, RoutedEventArgs e)

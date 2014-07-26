@@ -102,31 +102,31 @@
                    Height="Auto"
                    FontSize="9"
                    TextAlignment="Left">
-            <Run FontFamily="Verdana"
+            <Run 
                  Foreground="#FF4D4D4D"
                  Text="Auf dieser Seite finden Sie das " /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="umfangreiche Dienstleistungs-" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
-                 Text="angebot des " /><Run Text=" " /><Run FontFamily="Verdana"
+                 Text="angebot des " /><Run Text=" " /><Run 
                  FontWeight="Bold"
                  Foreground="#FF4D4D4D"
                  Text="Ing.–Tauchbüros." /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Von der Bestandsaufnahme über " /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="die Baubegleitung zur Beweis-" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="sicherung bis zur Abnahme Ihres" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Bauvorhabens stehen wir Ihnen " /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="zur Seite und Tauchen für Sie ab." />
         </TextBlock>
@@ -138,7 +138,7 @@
                           Margin="0,0,0,0">
             <TextBlock Width="Auto"
                        Height="Auto"
-                       FontFamily="Verdana"
+                       
                        FontSize="11.5"
                        FontWeight="Bold"
                        Foreground="#FFFFFFFF"

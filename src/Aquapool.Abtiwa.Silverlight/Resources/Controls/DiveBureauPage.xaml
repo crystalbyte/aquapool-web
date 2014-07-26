@@ -78,7 +78,7 @@
 			<Rectangle Fill="#FF85BF50" Stroke="{x:Null}" Height="Auto" Width="Auto"/>
 		</Border>
 		<controls:Viewbox Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="9.5" Grid.Column="4" Grid.RowSpan="1">
-			<TextBlock Width="Auto" RenderTransformOrigin="0.5,0.5" FontFamily="Verdana" FontSize="10" Foreground="#FFFFFFFF" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontStretch="Normal" FontWeight="Thin" Text="Wir tauchen für Sie ab!"><TextBlock.RenderTransform>
+			<TextBlock Width="Auto" RenderTransformOrigin="0.5,0.5"  FontSize="10" Foreground="#FFFFFFFF" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontStretch="Normal" FontWeight="Thin" Text="Wir tauchen für Sie ab!"><TextBlock.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
 						<SkewTransform AngleX="0"/>
@@ -107,13 +107,13 @@
 				</Grid.RowDefinitions>
 				<controls:Viewbox Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1" Grid.Column="2" x:Name="ViewBoxFirstText">
 					<TextBlock x:Name="TextBlockFirst" TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0" FontSize="6.5">
-						<Run FontFamily="Verdana" FontSize="7.5" Text="INGENIEUR TAUCHBÜRO" Foreground="#FF0088B7"/>
+						<Run  FontSize="7.5" Text="INGENIEUR TAUCHBÜRO" Foreground="#FF0088B7"/>
 						<LineBreak/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="Nach der erfolgreichen Prüfung als ausgebildete Ing.-Taucherin im Jahr 1995" Foreground="#FF4D4D4D"/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="können wir für Sie Unter- und Überwassergutachten, Abnahmen und" Foreground="#FF4D4D4D"/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="Beweissicherungen für wasserbauliche Anlagen durchführen und dokumentieren." Foreground="#FF4D4D4D"/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="Selbstverständlich können wir auch Ultraschallrestwanddicken- messungen im " Foreground="#FF4D4D4D"/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="Unter- und Überwasserbereich durchführen." Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="Nach der erfolgreichen Prüfung als ausgebildete Ing.-Taucherin im Jahr 1995" Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="können wir für Sie Unter- und Überwassergutachten, Abnahmen und" Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="Beweissicherungen für wasserbauliche Anlagen durchführen und dokumentieren." Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="Selbstverständlich können wir auch Ultraschallrestwanddicken- messungen im " Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="Unter- und Überwasserbereich durchführen." Foreground="#FF4D4D4D"/>
 						<LineBreak/>
 					</TextBlock>
 				</controls:Viewbox>
@@ -173,11 +173,11 @@
 				</controls:Viewbox>
 				<controls:Viewbox Margin="0,0,1,0" Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="4" Grid.RowSpan="2" x:Name="ViewBoxSecondText">
 					<TextBlock x:Name="TextBlock" TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0" FontSize="6.5">
-						<Run FontFamily="Verdana" FontSize="7.5" Text="RUFEN SIE UNS AN! WIR TAUCHEN FÜR SIE AB!" Foreground="#FF0088B7"/>
+						<Run  FontSize="7.5" Text="RUFEN SIE UNS AN! WIR TAUCHEN FÜR SIE AB!" Foreground="#FF0088B7"/>
 						<LineBreak/>
-						<LineBreak/><Run FontFamily="Verdana" FontWeight="Bold" FontSize="6.5" Text="Telefon:" Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontWeight="Bold" FontSize="6.5" Text="Telefon:" Foreground="#FF4D4D4D"/>
 						<LineBreak/>
-						<LineBreak/><Run FontFamily="Verdana" FontSize="6.5" Text="+49 (0) 3362-23344" Foreground="#FF4D4D4D"/>
+						<LineBreak/><Run  FontSize="6.5" Text="+49 (0) 3362-23344" Foreground="#FF4D4D4D"/>
 						<LineBreak/>
 					</TextBlock>
 				</controls:Viewbox>

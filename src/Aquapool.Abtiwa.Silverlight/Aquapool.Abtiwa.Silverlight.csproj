@@ -395,19 +395,40 @@
     <Resource Include="Resources\Images\hg_welle_klein_transparent.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\Abtiwa\t1.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\Abtiwa\t2.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t3.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t4.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t5.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t6.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t7.jpg" />
-    <Resource Include="Resources\Images\Abtiwa\t8.jpg" />
+    <Resource Include="Resources\Images\Abtiwa\t2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Abtiwa\t8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Images\ap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\Intro_Wasser_07112008.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

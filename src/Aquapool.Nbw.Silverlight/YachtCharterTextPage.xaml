@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             d:DesignWidth="640" d:DesignHeight="600">
-    <Grid x:Name="LayoutRoot" Height="Auto" Width="Auto">
+             d:DesignHeight="600"
+             d:DesignWidth="640"
+             mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot"
+          Width="Auto"
+          Height="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.068*" />
             <RowDefinition Height="0.05*" />
@@ -24,46 +27,89 @@
             <ColumnDefinition Width="0.078*" />
             <ColumnDefinition Width="0.03*" />
         </Grid.ColumnDefinitions>
-        <Viewbox Grid.Column="1" Grid.Row="3" Grid.RowSpan="3" x:Name="ViewboxMainText" Grid.ColumnSpan="4">
-            <TextBlock TextAlignment="Left" Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0"
-                       FontFamily="Trebuchet MS">
+        <Viewbox x:Name="ViewboxMainText"
+                 Grid.Row="3"
+                 Grid.RowSpan="3"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="4">
+            <TextBlock Canvas.Left="0"
+                       Canvas.Top="0"
+                       Width="Auto"
+                       Height="Auto"
+                       FontFamily="Trebuchet MS"
+                       TextAlignment="Left">
                 <Run FontSize="10.5"
-                     Text="Mit unserer Elektroyacht, den Ruderbooten, dem Motorboot, der Segeljolle, dem Wassertreter"
-                     Foreground="#FF67A0CD" />
+                     Foreground="#FF67A0CD"
+                     Text="Mit unserer Elektroyacht, den Ruderbooten, dem Motorboot, der Segeljolle, dem Wassertreter" />
                 <LineBreak />
                 <Run FontSize="10.5"
-                     Text="können Sie die schönsten Wasserplätze im Land Brandenburg und in Berlin erleben ... "
-                     Foreground="#FF67A0CD" />
-                <Run Text=" " /><LineBreak />
-                <LineBreak />
-                <LineBreak />
-                <LineBreak /><Run FontSize="10.5" Text="WIR VERMIETEN FÜR SIE:" Foreground="#FF67A0CD" />
+                     Foreground="#FF67A0CD"
+                     Text="können Sie die schönsten Wasserplätze im Land Brandenburg und in Berlin erleben ... " />
+                <Run Text=" " />
                 <LineBreak />
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="10.5" Text="•  Kabinenelektroyacht (Führerscheinfrei)"
-                     Foreground="#FF67A0CD" />
+                <LineBreak /><Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="WIR VERMIETEN FÜR SIE:" />
                 <LineBreak />
-                <Run FontSize="10.5" Text="•  Motorboote mit 5 PS (Führerscheinfrei)"
-                     Foreground="#FF67A0CD" />
-                <LineBreak /><Run FontSize="10.5" Text="•  Segelyolle (Segelschein notwendig)" Foreground="#FF67A0CD" />
-                <LineBreak /><Run FontSize="10.5" Text="•  Ruderboote (Führerscheinfrei)" Foreground="#FF67A0CD" />
-                <LineBreak /><Run FontSize="10.5" Text="•  Kanus (Führerscheinfrei)" Foreground="#FF67A0CD" />
-                <LineBreak /><Run FontSize="10.5" Text="•  Wassertreter (Führerscheinfrei)" Foreground="#FF67A0CD" />
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Kabinenelektroyacht (Führerscheinfrei)" />
+                <LineBreak />
+                <Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Motorboote mit 5 PS (Führerscheinfrei)" />
+                <LineBreak /><Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Segelyolle (Segelschein notwendig)" />
+                <LineBreak /><Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Ruderboote (Führerscheinfrei)" />
+                <LineBreak /><Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Kanus (Führerscheinfrei)" />
+                <LineBreak /><Run FontSize="10.5"
+                     Foreground="#FF67A0CD"
+                     Text="•  Wassertreter (Führerscheinfrei)" />
             </TextBlock>
         </Viewbox>
-        <Viewbox HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="ViewboxAquaHeader_Copy" Width="Auto"
-                          Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1">
-            <Button Style="{StaticResource GlossButtonStyle}" IsEnabled="False" Background="#FFFFFFFF"
-                    d:LayoutOverrides="HorizontalAlignment" Width="Auto" Height="Auto" Foreground="#FF67A0CD"
-                    FontSize="7" x:Name="ButtonAquaHeaderDisabled1" Padding="0,0,0,0" BorderThickness="0,0,0,0">
-                <TextBlock TextAlignment="Left" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="12.5"
-                           Width="Auto" Height="Auto" Canvas.Left="0" Canvas.Top="0" Padding="0,4,0,0"
-                           Text="Mit uns Natur hautnah erleben!" />
+        <Viewbox x:Name="ViewboxAquaHeader_Copy"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="1"
+                 Width="Auto"
+                 Margin="0,0,0,0"
+                 HorizontalAlignment="Stretch">
+            <Button x:Name="ButtonAquaHeaderDisabled1"
+                    Width="Auto"
+                    Height="Auto"
+                    Background="#FFFFFFFF"
+                    BorderThickness="0,0,0,0"
+                    FontSize="7"
+                    Foreground="#FF67A0CD"
+                    IsEnabled="False"
+                    Padding="0,0,0,0"
+                    Style="{StaticResource GlossButtonStyle}"
+                    d:LayoutOverrides="HorizontalAlignment">
+                <TextBlock Canvas.Left="0"
+                           Canvas.Top="0"
+                           Width="Auto"
+                           Height="Auto"
+                           FontFamily="Trebuchet MS"
+                           FontSize="12.5"
+                           FontWeight="Bold"
+                           Padding="0,4,0,0"
+                           Text="Mit uns Natur hautnah erleben!"
+                           TextAlignment="Left" />
             </Button>
         </Viewbox>
-        <Border Grid.Column="3" Grid.Row="5" Grid.RowSpan="2" x:Name="ImageBorder">
+        <!--
+            <Border Grid.Column="3" Grid.Row="5" Grid.RowSpan="2" x:Name="ImageBorder">
             <Image Source="Media/NBW_Picture.jpg" />
-        </Border>
+            </Border>
+        -->
     </Grid>
 </UserControl>

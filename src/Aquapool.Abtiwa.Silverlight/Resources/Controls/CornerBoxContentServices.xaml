@@ -99,26 +99,26 @@
                    Canvas.Top="0"
                    FontSize="9"
                    TextAlignment="Left">
-            <Run FontFamily="Verdana"
+            <Run 
                  Foreground="#FF4D4D4D"
                  Text="Die Unternehmensgruppe" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  FontWeight="Bold"
                  Foreground="#FF4D4D4D"
                  Text="www.aquapool-werlsee.de" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="heißt Sie recht" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Herzlich Willkommen." /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Auf unserer Webpräsenz" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="möchten wir Sie ausführlich" /><Run Text=" " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="über unser Angebot informieren." />
         </TextBlock>
@@ -129,7 +129,7 @@
                           Margin="0,0,0,0">
             <TextBlock Width="Auto"
                        Height="Auto"
-                       FontFamily="Verdana"
+                       
                        FontSize="11"
                        FontWeight="Bold"
                        Foreground="#FFFFFFFF"

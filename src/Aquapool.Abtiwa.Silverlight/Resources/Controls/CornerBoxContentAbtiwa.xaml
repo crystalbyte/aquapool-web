@@ -102,34 +102,34 @@
                    Height="Auto"
                    FontSize="9"
                    TextAlignment="Left">
-            <Run FontFamily="Verdana"
+            <Run 
                  Foreground="#FF4D4D4D"
                  Text="Auf dieser Seite finden Sie " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="das Dienstleistungsangebot des " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  FontWeight="Bold"
                  Foreground="#FF4D4D4D"
                  Text="Ingenieurbüro Abfall-" />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  FontWeight="Bold"
                  Foreground="#FF4D4D4D"
                  Text="wirtschaft, Tiefbau, Wasser-" />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  FontWeight="Bold"
                  Foreground="#FF4D4D4D"
                  Text="bau." />
-            <Run FontFamily="Verdana"
+            <Run 
                  Foreground="#FF4D4D4D"
                  Text=" Von der konstruktiven " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Planung mit statischer " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="Berechnung bis zur Realisierung " />
-            <LineBreak /><Run FontFamily="Verdana"
+            <LineBreak /><Run 
                  Foreground="#FF4D4D4D"
                  Text="und Abnahme Ihres Projektes. " />
         </TextBlock>
@@ -140,7 +140,7 @@
                           Margin="0,0,0,0">
             <TextBlock Width="Auto"
                        Height="Auto"
-                       FontFamily="Verdana"
+                       
                        FontSize="11.5"
                        FontWeight="Bold"
                        Foreground="#FFFFFFFF"

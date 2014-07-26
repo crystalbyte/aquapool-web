@@ -3,6 +3,8 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace Aquapool.Nbw
 {
@@ -19,6 +21,8 @@ namespace Aquapool.Nbw
             InitializeNavigationButtons();
             Loaded += Root_Loaded;
             Application.Current.Host.Content.Resized += Content_Resized;
+
+
         }
 
         public static Root Instance

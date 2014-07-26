@@ -30,7 +30,7 @@
 			</vsm:VisualStateGroup>
 		</vsm:VisualStateManager.VisualStateGroups>
 		<Border Padding="1,0,1,0">
-			<Button Content="Contact" x:Name="ButtonContact" Click="ButtonContact_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkContactStyle}" FontFamily="Verdana" FontSize="11.5" Foreground="#FFFFFFFF" />
+			<Button Content="Contact" x:Name="ButtonContact" Click="ButtonContact_Click" Height="Auto" Width="Auto" Style="{StaticResource HyperlinkContactStyle}"  FontSize="11.5" Foreground="#FFFFFFFF" />
 		</Border>
 	</Grid>
 </UserControl>

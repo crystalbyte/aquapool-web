@@ -196,34 +196,29 @@
                            FontFamily="Trebuchet MS"
                            RenderTransformOrigin="0.5,0.5"
                            TextAlignment="Left">
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="WIR VERMIETEN FÜR SIE:" />
                     <Run Text=" " />
                     <LineBreak /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Kabinenelektroyacht" />
                     <Run Text=" " />
                     <LineBreak /><Run Text=" " />
                     <LineBreak />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Motorboote" />
                     <Run Text=" " />
@@ -231,13 +226,11 @@
                     <Run Text=" " />
                     <LineBreak />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Ruderboote" />
                     <Run Text=" " />
@@ -245,13 +238,11 @@
                     <Run Text=" " />
                     <LineBreak />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Segelboote" />
                     <Run Text=" " />
@@ -259,13 +250,11 @@
                     <Run Text=" " />
                     <LineBreak />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Wassertreter" />
                     <Run Text=" " />
@@ -273,13 +262,11 @@
                     <Run Text=" " />
                     <LineBreak />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
                     <Run Text=" " />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Kanus" />
                     <Run Text=" " />
@@ -297,50 +284,51 @@
               Margin="0,0,0,0"
               HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.138*" />
-                <RowDefinition Height="0.443*" />
-                <RowDefinition Height="0.42*" />
+                <RowDefinition Height="42*" />
+                <RowDefinition Height="147*" />
+                <RowDefinition Height="116*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.819*" />
-                <ColumnDefinition Width="0.181*" />
+                <ColumnDefinition Width="189*" />
+                <ColumnDefinition Width="76*" />
             </Grid.ColumnDefinitions>
             <Viewbox Grid.Row="1"
-                     Grid.RowSpan="1"
                      Grid.ColumnSpan="1"
                      Width="Auto"
                      Height="Auto"
                      HorizontalAlignment="Stretch"
                      VerticalAlignment="Stretch">
-                <TextBlock Canvas.Left="0"
-                           Canvas.Top="0"
-                           Width="Auto"
-                           Height="Auto"
+                <TextBlock Width="Auto"
+                           Height="123"
                            FontFamily="Trebuchet MS"
                            TextAlignment="Left">
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="WIR VERMIETEN FÜR SIE:" />
                     <LineBreak />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Stegliegeplätze" />
+
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="   Dienstleistungen" />
+                    <LineBreak />
+                    <LineBreak />
+                    <Run FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="   Ausrüstungen von Steganlagen" />
                     <LineBreak />
@@ -351,14 +339,14 @@
         <Grid x:Name="TextGridRight"
               Grid.Row="3"
               Grid.RowSpan="2"
-              Grid.Column="9"
+              Grid.Column="7"
               Width="Auto"
               Margin="0,0,0,0"
               HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.134*" />
-                <RowDefinition Height="0.692*" />
-                <RowDefinition Height="0.174*" />
+                <RowDefinition Height="41*" />
+                <RowDefinition Height="234*" />
+                <RowDefinition Height="30*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.844*" />
@@ -376,67 +364,62 @@
                            Height="Auto"
                            FontFamily="Trebuchet MS"
                            TextAlignment="Left">
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="WIR ERSTELLEN FÜR SIE:" />
                     <LineBreak />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="  Großkopien bis A0+" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="  Farb- und Schwarz-Weiß Kopien" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="  Farb- und Schwarz-Weiß" />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="    Plottausdrucke bis A0+" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
-                         Text="  Bindungen verschiendenster Art" />
+                         Text="  Bürodienstleistungen" />
                     <LineBreak />
                     <LineBreak />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="•" />
-                    <Run FontFamily="Verdana"
-                         FontSize="10.5"
+                    <Run FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="  Bindungen verschiedenster Art" />
+                    <LineBreak />
+                    <LineBreak />
+                    <Run FontSize="10.5"
+                         Foreground="#FF67A0CD"
+                         Text="•" />
+                    <Run FontSize="10.5"
                          Foreground="#FF67A0CD"
                          Text="  u.ä." />
-                    <LineBreak />
                     <LineBreak />
                     <LineBreak />
                 </TextBlock>

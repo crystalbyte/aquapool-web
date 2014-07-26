@@ -91,7 +91,7 @@
                               d:LayoutOverrides="Width">
                 <TextBlock Width="Auto"
                            Height="Auto"
-                           FontFamily="Verdana"
+                           
                            FontSize="11.5"
                            FontWeight="Bold"
                            Foreground="{StaticResource GreenOverlay}"
@@ -105,13 +105,13 @@
                               Margin="0,0,0,0"
                               HorizontalAlignment="Stretch"
                               VerticalAlignment="Stretch"
-                              FontFamily="Verdana">
+                              >
                 <TextBlock x:Name="TextBlock"
                            Canvas.Left="0"
                            Canvas.Top="0"
                            Width="Auto"
                            Height="Auto"
-                           FontFamily="Verdana"
+                           
                            FontSize="7.5"
                            Foreground="#FF4D4D4D"
                            TextAlignment="Left">
