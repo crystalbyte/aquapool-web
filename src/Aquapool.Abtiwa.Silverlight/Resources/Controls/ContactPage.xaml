@@ -15,7 +15,7 @@
     <Grid x:Name="LayoutRoot"
           Width="Auto"
           Height="Auto"
-          Background="{x:Null}"
+          Background="White"
           ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.014*" />
@@ -49,36 +49,9 @@
             <RowDefinition Height="19*" />
             <RowDefinition Height="190*" />
         </Grid.RowDefinitions>
-        <Border Grid.Row="2"
-                Grid.Column="3"
-                Grid.ColumnSpan="9"
-                Background="#FFFFFFFF"
-                BorderBrush="#3EE8E8E8"
-                BorderThickness="2,0,2,0">
-            <Grid x:Name="HeaderImageLayer"
-                  Width="Auto"
-                  Height="Auto">
-                <Grid.Background>
-                    <LinearGradientBrush StartPoint="0.5,0.999998" EndPoint="0.5,2.99692e-006">
-                        <GradientStop Offset="0" Color="#9AFFFFFF" />
-                        <GradientStop Offset="0.119049" Color="#9AFFFFFF" />
-                        <GradientStop Offset="0.290482" Color="#9AFFFFFF" />
-                        <GradientStop Offset="0.816617" Color="#9AECF0F2" />
-                        <GradientStop Offset="0.895233" Color="#9ADAE2E6" />
-                        <GradientStop Offset="1" Color="#9AD2DDE2" />
-                    </LinearGradientBrush>
-                </Grid.Background>
-                <Image Margin="0,0,0,0"
-                       IsHitTestVisible="True"
-                       Source="../Images/map.jpg"
-                       Stretch="Fill" />
-            </Grid>
-        </Border>
         <Border Grid.Column="1" BorderThickness="2,0,0,0">
             <Grid Width="20" Height="20">
                 <controls:Viewbox x:Name="Group"
-                                  Canvas.Left="0"
-                                  Canvas.Top="1.52588e-005"
                                   Width="Auto"
                                   Height="Auto">
                     <Canvas Width="20" Height="20">
@@ -157,7 +130,6 @@
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -175,6 +147,31 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
         </controls:Viewbox>
+        <Border Grid.Row="2"
+                Grid.Column="3"
+                Grid.ColumnSpan="9"
+                Background="#FFFFFFFF"
+                BorderBrush="#3EE8E8E8"
+                BorderThickness="2,0,2,0">
+            <Grid x:Name="HeaderImageLayer"
+                  Width="Auto"
+                  Height="Auto">
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0.5,0.999998" EndPoint="0.5,2.99692e-006">
+                        <GradientStop Offset="0" Color="#9AFFFFFF" />
+                        <GradientStop Offset="0.119049" Color="#9AFFFFFF" />
+                        <GradientStop Offset="0.290482" Color="#9AFFFFFF" />
+                        <GradientStop Offset="0.816617" Color="#9AECF0F2" />
+                        <GradientStop Offset="0.895233" Color="#9ADAE2E6" />
+                        <GradientStop Offset="1" Color="#9AD2DDE2" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Image Margin="0,0,0,0"
+                       IsHitTestVisible="True"
+                       Source="../Images/map.jpg"
+                       Stretch="Fill" />
+            </Grid>
+        </Border>
         <Border Grid.Row="3"
                 Grid.Column="1"
                 Margin="0,0,0,0"
@@ -261,7 +258,6 @@
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -270,50 +266,55 @@
                        Text="Schreiben Sie uns, rufen Sie uns an,"
                        TextWrapping="Wrap" />
         </controls:Viewbox>
-        <Border Grid.Row="4"
-                Grid.RowSpan="6"
-                Grid.Column="3"
-                Grid.ColumnSpan="9"
-                Background="#FFFFFFFF"
-                BorderBrush="#3EE8E8E8"
-                BorderThickness="2,0,2,0">
-            <Grid Width="457" Height="116" />
-        </Border>
         <Grid x:Name="Text1"
               Grid.Row="5"
               Grid.RowSpan="4"
               Grid.Column="4"
-              Grid.ColumnSpan="1"
               Margin="0,0,0,0">
             <controls:Viewbox Margin="0,0,0,0">
                 <TextBlock x:Name="TextBlock"
-                           Canvas.Left="0"
-                           Canvas.Top="0"
                            Width="Auto"
                            Height="Auto"
-                           FontSize="6.5"><Run 
-                         FontSize="7.5"
+                           FontSize="6.5"><Run FontSize="7.5"
                          Foreground="#FF0088B7"
                          Text="AQUAPOOL WERLSEE" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="6.75"
+                    <LineBreak /><Run FontSize="6.75"
                          FontWeight="Bold"
                          Foreground="#FF4D4D4D"
                          Text="Anschrift:" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="7.5"
+                    <LineBreak /><Run FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="Werlseestraße 37" /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="7.5"
+                    <LineBreak /><Run FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="D-15537 Grünheide" /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="7.5"
+                    <LineBreak /><Run FontSize="7.5"
                          Foreground="#FF4D4D4D"
                          Text="OT Fangschleuse" />
+                </TextBlock>
+            </controls:Viewbox>
+        </Grid>
+        <Grid x:Name="Text2"
+              Grid.Row="6"
+              Grid.RowSpan="2"
+              Grid.Column="6"
+              Grid.ColumnSpan="2"
+              Margin="0,0,0,0">
+            <controls:Viewbox Height="Auto"
+                              Margin="0,0,0,0"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              FontSize="9.5">
+                <TextBlock FontSize="6.5"><Run FontSize="6.75"
+                         FontWeight="Bold"
+                         Foreground="#FF4D4D4D"
+                         Text="Telefon:" /><Run Text=" " />
+                    <LineBreak /><Run Text=" " />
+                    <LineBreak /><Run FontSize="6.75"
+                         Foreground="#FF4D4D4D"
+                         Text="+49 (0) 3362-23344" />
                 </TextBlock>
             </controls:Viewbox>
         </Grid>
@@ -330,53 +331,31 @@
                               FontSize="9.5">
                 <TextBlock Canvas.Left="0"
                            Canvas.Top="0"
-                           FontSize="6.5"><Run 
-                         FontSize="6.75"
+                           FontSize="6.5"><Run FontSize="6.75"
                          FontWeight="Bold"
                          Foreground="#FF4D4D4D"
                          Text="Fax:" /><Run Text=" " />
                     <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="6.75"
+                    <LineBreak /><Run FontSize="6.75"
                          Foreground="#FF4D4D4D"
                          Text="+49 (0) 3362-23355" />
                 </TextBlock>
             </controls:Viewbox>
         </Grid>
-        <Grid x:Name="Text2"
-              Grid.Row="6"
-              Grid.RowSpan="2"
-              Grid.Column="6"
-              Grid.ColumnSpan="2"
-              Margin="0,0,0,0">
-            <controls:Viewbox Height="Auto"
-                              Margin="0,0,0,0"
-                              HorizontalAlignment="Stretch"
-                              VerticalAlignment="Stretch"
-                              FontSize="9.5">
-                <TextBlock Canvas.Left="0"
-                           Canvas.Top="0"
-                           FontSize="6.5"><Run 
-                         FontSize="6.75"
-                         FontWeight="Bold"
-                         Foreground="#FF4D4D4D"
-                         Text="Telefon:" /><Run Text=" " />
-                    <LineBreak /><Run Text=" " />
-                    <LineBreak /><Run 
-                         FontSize="6.75"
-                         Foreground="#FF4D4D4D"
-                         Text="+49 (0) 3362-23344" />
-                </TextBlock>
-            </controls:Viewbox>
-        </Grid>
+        <HyperlinkButton Grid.Row="8"
+                         Grid.Column="6"
+                         Grid.ColumnSpan="4"
+                         VerticalAlignment="Center"
+                         NavigateUri="mailto:info@aquapool-werlsee.de">
+            info@aquapool-werlsee.de
+        </HyperlinkButton>
         <Border Grid.Row="10"
                 Grid.Column="1"
                 Margin="0,0,0,0"
-                BorderThickness="2,0,0,0">
+                BorderThickness="2,0,0,0"
+                Visibility="Collapsed">
             <Grid Width="20" Height="20">
                 <controls:Viewbox x:Name="Group1"
-                                  Canvas.Left="0"
-                                  Canvas.Top="1.52588e-005"
                                   Width="Auto"
                                   Height="Auto">
                     <Canvas Width="20" Height="20">
@@ -443,7 +422,8 @@
             <Rectangle Width="Auto"
                        Height="Auto"
                        Fill="#FF85BF50"
-                       Stroke="{x:Null}" />
+                       Stroke="{x:Null}"
+                       Visibility="Collapsed" />
         </Border>
         <controls:Viewbox Grid.Row="10"
                           Grid.Column="4"
@@ -451,11 +431,11 @@
                           Height="Auto"
                           Margin="0,0,0,0"
                           HorizontalAlignment="Stretch"
-                          VerticalAlignment="Stretch">
+                          VerticalAlignment="Stretch"
+                          Visibility="Collapsed">
             <TextBlock Width="Auto"
                        HorizontalAlignment="Stretch"
                        VerticalAlignment="Stretch"
-                       
                        FontSize="10"
                        FontStretch="Normal"
                        FontWeight="Thin"
@@ -474,7 +454,8 @@
             <Grid x:Name="ContactForm"
                   Width="Auto"
                   Height="Auto"
-                  Background="#FFFFFFFF">
+                  Background="#FFFFFFFF"
+                  Visibility="Collapsed">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.018*" />
                     <ColumnDefinition Width="0.203*" />
@@ -516,7 +497,6 @@
                                    Canvas.Top="0"
                                    Width="Auto"
                                    Height="Auto"
-                                   
                                    FontSize="6.75"
                                    TextAlignment="Right"><Run Foreground="#FF0088B7" Text="*NAME:" /><Run Text=" " />
                             <LineBreak /><Run Text=" " />
@@ -542,6 +522,23 @@
                          Text="{Binding Name,
                                         Mode=TwoWay}"
                          TextWrapping="Wrap" />
+                <Grid x:Name="ReminderLayer"
+                      Grid.Row="1"
+                      Grid.Column="6"
+                      Grid.ColumnSpan="1"
+                      Margin="0,0,0,-3">
+                    <controls:Viewbox Margin="0,0,0,0">
+                        <TextBlock x:Name="TextBlockReminder"
+                                   Canvas.Left="0"
+                                   Canvas.Top="0"
+                                   Width="Auto"
+                                   Height="Auto"
+                                   FontSize="6.75"
+                                   FontStyle="Italic"><Run Foreground="#FF0088B7" Text="Die mit * gekennzeichneten " /><Run Text=" " />
+                            <LineBreak /><Run Foreground="#FF0088B7" Text="Felder bitte ausfüllen!" />
+                        </TextBlock>
+                    </controls:Viewbox>
+                </Grid>
                 <TextBox x:Name="TextBoxCompany"
                          Grid.Row="2"
                          Grid.Column="3"
@@ -587,24 +584,6 @@
                          Text="{Binding Text,
                                         Mode=TwoWay}"
                          TextWrapping="Wrap" />
-                <Grid x:Name="ReminderLayer"
-                      Grid.Row="1"
-                      Grid.Column="6"
-                      Grid.ColumnSpan="1"
-                      Margin="0,0,0,-3">
-                    <controls:Viewbox Margin="0,0,0,0">
-                        <TextBlock x:Name="TextBlockReminder"
-                                   Canvas.Left="0"
-                                   Canvas.Top="0"
-                                   Width="Auto"
-                                   Height="Auto"
-                                   
-                                   FontSize="6.75"
-                                   FontStyle="Italic"><Run Foreground="#FF0088B7" Text="Die mit * gekennzeichneten " /><Run Text=" " />
-                            <LineBreak /><Run Foreground="#FF0088B7" Text="Felder bitte ausfüllen!" />
-                        </TextBlock>
-                    </controls:Viewbox>
-                </Grid>
                 <Grid x:Name="ButtonSend"
                       Grid.Row="8"
                       Grid.Column="3">
